@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfair.variable} ${lato.variable} mx-8 antialiased`}
+        className={`${playfair.variable} ${lato.variable} md:mx-8 antialiased`}
       >
         <Header />
         <div className="min-h-screen">
