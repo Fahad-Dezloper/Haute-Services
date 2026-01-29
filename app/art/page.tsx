@@ -186,7 +186,7 @@ export default function ArtPage() {
                 <div className="relative z-10 w-full max-w-7xl mx-auto">
                     <Reveal>
                         <span className="block text-white/50 uppercase tracking-[0.4em] text-[10px] lg:text-xs font-bold mb-6 lg:mb-8">Founders of Cultural Legacy</span>
-                        <h1 className="text-5xl md:text-8xl lg:text-[10rem] font-serif text-white mb-8 lg:mb-12 leading-[0.9] lg:leading-[0.85] tracking-tighter">
+                        <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[10rem] font-serif text-white mb-8 lg:mb-12 leading-[0.9] lg:leading-[0.85] tracking-tighter">
                             Art <br />
                             <span className="italic font-light text-white/90 pl-6 lg:pl-24">Advisory</span>
                         </h1>
@@ -208,7 +208,7 @@ export default function ArtPage() {
                         </Reveal>
                         <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-end">
                             <Reveal delay={0.1}>
-                                <p className="text-2xl md:text-3xl lg:text-5xl font-serif text-charcoal leading-tight">
+                                <p className="text-3xl md:text-4xl lg:text-5xl font-serif text-charcoal leading-tight">
                                     "We curate not just spaces, but <span className="italic font-light">legacies</span>."
                                 </p>
                             </Reveal>
@@ -339,11 +339,11 @@ export default function ArtPage() {
                             </p>
                         </Reveal>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 lg:gap-20">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-20">
                             {artspaces.map((item, i) => (
                                 <Reveal key={i} delay={i * 0.1}>
                                     <div className="group cursor-pointer">
-                                        <div className="relative aspect-[16/10] w-full bg-charcoal/5 overflow-hidden mb-6 lg:mb-8 rounded-sm shadow-sm group-hover:shadow-xl transition-all duration-700">
+                                        <div className="relative aspect-16/10 w-full bg-charcoal/5 overflow-hidden mb-6 lg:mb-8 rounded-sm shadow-sm group-hover:shadow-xl transition-all duration-700">
                                             <Image
                                                 src={item.img}
                                                 alt={item.title}
@@ -391,7 +391,7 @@ export default function ArtPage() {
                         {engagements.map((item, index) => (
                             <Reveal key={index} delay={index * 0.1}>
                                 <div className="h-full bg-white border border-charcoal/5 group hover:border-charcoal/20 transition-all duration-500 flex flex-col overflow-hidden shadow-sm hover:shadow-xl">
-                                    <div className="relative aspect-[3/4] lg:h-[46vh] w-full overflow-hidden">
+                                    <div className="relative aspect-3/4 lg:h-[46vh] w-full overflow-hidden">
                                         <Image
                                             src={item.img || "/images/art.png"}
                                             alt={item.title}
@@ -472,7 +472,7 @@ export default function ArtPage() {
                         {news_cycle.map((item, index) => (
                             <Reveal key={index} delay={index * 0.1}>
                                 <div className="group cursor-pointer">
-                                    <div className="relative aspect-[3/4] lg:h-[40vh] w-full bg-charcoal/5 rounded-sm overflow-hidden mb-6 shadow-md lg:shadow-lg transition-all duration-700">
+                                    <div className="relative h-fit lg:h-[40vh] w-full bg-charcoal/5 rounded-sm overflow-hidden mb-6 shadow-md lg:shadow-lg transition-all duration-700">
                                         <img src={item.image} alt={item.title} className="w-full h-full object-contain grayscale-20 group-hover:grayscale-0 transition-all duration-700" />
                                         {item.image === "/art/news/toi1.jpeg" && (
                                             <span className="absolute bottom-0 right-0 w-32 h-36 lg:w-44 lg:h-48 shadow-[0_20px_50px_rgba(0,0,0,0.3)] border-2 border-white overflow-hidden group-hover:scale-105 transition-transform duration-700">

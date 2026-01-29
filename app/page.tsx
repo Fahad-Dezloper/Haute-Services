@@ -116,14 +116,14 @@ export default function HomePage() {
             <div className="absolute inset-0 bg-linear-to-t from-cream/20 to-transparent pointer-events-none" />
           </div>
 
-          <motion.div className="absolute -bottom-12 right-12 lg:right-24 w-[35vw] md:w-[25vw] max-w-sm aspect-6/5 shadow-2xl z-20 group"
+          <motion.div className="absolute -bottom-8 sm:-bottom-12 right-6 sm:right-12 lg:right-24 w-[45vw] sm:w-[35vw] md:w-[25vw] max-w-sm aspect-6/5 shadow-2xl z-20 group"
           >
             <div className="w-full h-full border-2 border-white bg-white overflow-hidden shadow-lg">
               <Image
                 src="https://static.wixstatic.com/media/e86273_3cf2a07072524c97affc88166c70e75d~mv2.png?originWidth=1152&originHeight=832"
                 alt="Artistic detail"
                 fill
-                className="object-cover grayscale-[10%] border-8"
+                className="object-cover grayscale-10 border-8"
               />
             </div>
           </motion.div>
@@ -142,20 +142,18 @@ export default function HomePage() {
                 </div>
               </Reveal>
 
-              <div className='flex justify-between w-full items-center'>
+              <div className='flex flex-col lg:flex-row justify-between w-full items-start lg:items-center gap-12 lg:gap-0'>
 
                 <Reveal delay={0.1}>
-                  <h1 className="text-7xl md:text-8xl lg:text-[10rem] font-serif text-charcoal leading-[0.85] tracking-tighter">
+                  <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] font-serif text-charcoal leading-[0.85] tracking-tighter">
                     Haute <br />
                     <span className="italic font-light text-charcoal/90 pl-4 lg:pl-12">Services</span>
                   </h1>
-
-
                 </Reveal>
 
                 <Reveal delay={0.3}>
                   <div className="flex flex-col items-start gap-8">
-                    <p className="text-sm text-charcoal/70 leading-relaxed max-w-xs">
+                    <p className="text-sm sm:text-base text-charcoal/70 leading-relaxed max-w-xs">
                       Specializing in international gastronomy, turnkey art advisory services, and bespoke brand strategy for discerning clients.
                     </p>
                     <Link
@@ -190,25 +188,25 @@ export default function HomePage() {
       </section>
 
       {/* --- WHO WE ARE --- */}
-      <section className="py-24 lg:py-40 px-6 lg:px-12 max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-12 gap-16 items-start">
-          <div className="lg:col-span-4 sticky top-32">
+      <section className="py-20 lg:py-40 px-6 lg:px-12 max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+          <div className="lg:col-span-4 lg:sticky lg:top-32">
             <Reveal>
               <h2 className="text-3xl lg:text-4xl font-serif mb-6">Who We Are</h2>
-              <div className="h-px w-24 bg-charcoal/20 mb-6" />
-              <p className="text-charcoal/80 leading-relaxed text-sm lg:text-base">
+              <div className="h-px w-24 bg-charcoal/20 mb-10 lg:mb-6" />
+              <p className="text-charcoal/80 leading-relaxed text-sm lg:text-base hidden lg:block">
                 Established as a premier boutique consultancy for discerning clients.
               </p>
             </Reveal>
           </div>
           <div className="lg:col-span-8 space-y-12">
             <Reveal delay={0.2}>
-              <p className="text-2xl lg:text-4xl font-serif leading-tight text-charcoal/90">
+              <p className="text-2xl sm:text-3xl lg:text-4xl font-serif leading-snug lg:leading-tight text-charcoal/90">
                 "We don’t just offer services—we build ecosystems around ideas, heritage, and value."
               </p>
             </Reveal>
             <Reveal delay={0.3}>
-              <div className="grid md:grid-cols-2 gap-8 text-lg text-charcoal/70 leading-relaxed">
+              <div className="grid md:grid-cols-2 gap-8 lg:gap-12 text-base lg:text-lg text-charcoal/70 leading-relaxed">
                 <div>
                   <p className="mb-6">
                     Haute Services is a boutique consultancy firm specializing in lifestyle events and art advisory. With over a decade of experience, we operate in two distinct but culturally rich verticals—food and art.
@@ -221,8 +219,8 @@ export default function HomePage() {
                   <p className="mb-6">
                     Whether creating immersive culinary festivals or curating investment-grade art portfolios, our work celebrates culture, community, and creative expression.
                   </p>
-                  <Link href="/about" className="text-charcoal underline decoration-charcoal/50 hover:decoration-charcoal transition-all">
-                    Read more about our us
+                  <Link href="/about" className="text-charcoal underline underline-offset-4 decoration-charcoal/20 hover:decoration-charcoal transition-all">
+                    Read more about us
                   </Link>
                 </div>
               </div>
@@ -232,30 +230,30 @@ export default function HomePage() {
       </section>
 
       {/* --- CORE VALUES --- */}
-      <section className="bg-charcoal text-white py-24 lg:py-40">
+      <section className="bg-charcoal text-white py-20 lg:py-40">
         <div className="container mx-auto px-6 lg:px-12">
           <Reveal>
-            <div className="lg:flex justify-between items-end mb-16">
-              <h2 className="text-4xl lg:text-6xl font-serif">Our Philosophy</h2>
-              <p className="hidden lg:block text-white/80 max-w-sm text-right">Guided by principles that ensure exceptional results for every client.</p>
+            <div className="lg:flex justify-between items-end mb-12 lg:mb-16">
+              <h2 className="text-4xl lg:text-6xl font-serif mb-6 lg:mb-0">Our Philosophy</h2>
+              <p className="text-white/60 max-w-sm lg:text-right font-light">Guided by principles that ensure exceptional results for every client.</p>
             </div>
           </Reveal>
-          <div className="grid md:grid-cols-3 gap-12 border-t border-white/20 pt-16">
+          <div className="grid md:grid-cols-3 gap-12 lg:gap-16 border-t border-white/10 pt-16">
             <Reveal delay={0.1}>
               <h3 className="text-2xl font-serif mb-4 text-cream">Excellence</h3>
-              <p className="text-white/70 leading-relaxed">
+              <p className="text-white/60 leading-relaxed font-light">
                 We maintain the highest standards in everything we do, ensuring results that do not just meet but exceed expectations.
               </p>
             </Reveal>
             <Reveal delay={0.2}>
               <h3 className="text-2xl font-serif mb-4 text-cream">Authenticity</h3>
-              <p className="text-white/70 leading-relaxed">
+              <p className="text-white/60 leading-relaxed font-light">
                 We believe in genuine connections. Whether in art or events, we prioritize experiences that resonate deeply with audiences.
               </p>
             </Reveal>
             <Reveal delay={0.3}>
               <h3 className="text-2xl font-serif mb-4 text-cream">Innovation</h3>
-              <p className="text-white/90 leading-relaxed">
+              <p className="text-white/60 leading-relaxed font-light">
                 Continuously exploring new ideas and approaches to create unique, memorable moments that stand the test of time.
               </p>
             </Reveal>
@@ -298,7 +296,7 @@ export default function HomePage() {
                     <ParallaxImage2
                       src="/services/art.jpg"
                       alt="Art Advisory"
-                      className="w-full h-full grayscale-20 hover:grayscale-0 transition-all duration-1000"
+                      className="w-full h-full grayscale-20 transition-all duration-1000"
                     />
                   </div>
                 </Reveal>
@@ -402,15 +400,15 @@ export default function HomePage() {
       </section>
 
       {/* --- MISSION / FOOTER TEASER --- */}
-      <section className="py-24 lg:py-40 px-6 lg:px-12 bg-white text-center">
+      <section className="py-20 lg:py-40 px-6 lg:px-12 bg-white text-center">
         <Reveal>
-          <h2 className="text-4xl lg:text-6xl font-serif text-charcoal mb-8">
+          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-serif text-charcoal mb-8 leading-tight">
             Ready to elevate your experience?
           </h2>
-          <p className="text-charcoal/60 max-w-2xl mx-auto mb-12">
+          <p className="text-charcoal/60 max-w-2xl mx-auto mb-10 sm:mb-12 font-light">
             Connect with us to discuss your art portfolio or upcoming lifestyle event.
           </p>
-          <a href="mailto:contact@hauteservices.in" className="inline-block bg-charcoal text-white px-10 py-4 hover:bg-charcoal/80 transition-colors font-serif italic text-xl">
+          <a href="mailto:contact@hauteservices.in" className="inline-block bg-charcoal text-white px-10 py-5 hover:bg-charcoal/80 transition-colors font-serif italic text-xl">
             Get in Touch
           </a>
         </Reveal>
