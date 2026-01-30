@@ -35,30 +35,27 @@ export default function FilmFestivalPage() {
     return (
         <main className="bg-cream min-h-screen text-charcoal font-sans selection:bg-charcoal selection:text-white overflow-hidden pb-12">
 
-            {/* --- HERO SECTION --- */}
-            <section className="relative h-[70vh] flex flex-col justify-end pb-24 px-6 lg:px-12 bg-charcoal overflow-hidden pt-12">
-                <div className="absolute inset-0 opacity-40">
+            <section className="relative min-h-[40vh] h-fit flex flex-col justify-end pb-12 px-6 lg:px-12 bg-charcoal overflow-hidden pt-12">
+                <div className="absolute inset-0 opacity-30">
                     <ParallaxImage
                         src="/images/lifestyle.png"
                         alt="Cinematography and Heritage"
                         className="w-full h-full"
                     />
-                    <div className="absolute inset-0 bg-linear-to-b from-transparent via-charcoal/20 to-charcoal" />
+                    <div className="absolute inset-0 bg-linear-to-b from-transparent via-charcoal/40 to-charcoal" />
                 </div>
 
                 <div className="relative z-10 w-full max-w-7xl mx-auto">
                     <Reveal>
-                        <nav className="mb-12">
-                            <Link href="/lifestyle" className="inline-flex items-center gap-3 text-white/60 hover:text-white transition-colors uppercase tracking-[0.3em] text-[10px] font-bold group">
-                                <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" /> Back to Lifestyle
+                        <nav className="mb-8">
+                            <Link href="/lifestyle" className="inline-flex items-center gap-2 text-white/60 hover:text-white transition-colors uppercase tracking-[0.3em] text-[10px] font-bold group">
+                                <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" /> Back
                             </Link>
                         </nav>
-                        <span className="block text-white/50 uppercase tracking-[0.4em] text-xs font-bold mb-6">Vertical 04</span>
-                        <h1 className="text-6xl md:text-8xl lg:text-[9rem] font-serif text-white mb-8 leading-[0.85] tracking-tighter">
-                            Film <br />
-                            <span className="italic font-light text-white/90 pl-12 lg:pl-24">Festival</span>
+                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-white mb-6 leading-tight tracking-tighter">
+                            Film <span className="italic font-light text-white/90 ml-2">Festival</span>
                         </h1>
-                        <p className="text-xl lg:text-2xl text-white/80 max-w-2xl font-light leading-relaxed border-l-2 border-white/20 pl-8 mt-12">
+                        <p className="text-base md:text-lg text-white/70 max-w-xl font-light leading-relaxed border-l border-white/20 pl-6 uppercase tracking-widest text-[10px]">
                             Exploring cultural storytelling through the lens of gastronomy and South Asian heritage.
                         </p>
                     </Reveal>
@@ -71,10 +68,22 @@ export default function FilmFestivalPage() {
                     <div className="lg:col-span-8">
                         <Reveal>
                             <span className="text-xs uppercase tracking-[0.4em] font-bold text-charcoal/30 mb-6 block">Advisory Role</span>
-                            <h2 className="text-4xl lg:text-7xl font-serif text-charcoal mb-12 leading-tight">SAFACH <br /> <span className="italic">& Culinary Cinema</span></h2>
-                            <p className="text-lg lg:text-2xl text-charcoal/70 font-light leading-relaxed mb-12">
-                                The founder serves on the advisory board of **SAFACH (South Asia Forum for Art & Creative Heritage)**, playing a key role in shaping the forum’s engagement with culinary cinema and cultural storytelling.
+                            <h2 className="text-4xl lg:text-7xl font-serif text-charcoal mb-12 leading-tight">SAFACH (South Asia Forum for Art & Creative Heritage)</h2>
+                            <p className="text-lg lg:text-2xl text-charcoal/70 font-light leading-relaxed mb-8">
+                                The founder serves on the advisory board of <strong className="font-bold text-charcoal">SAFACH (South Asia Forum for Art & Creative Heritage)</strong>, playing a key role in shaping the forum’s engagement with culinary cinema and cultural storytelling.
                             </p>
+                            <Link
+                                href="http://safach.com/advisors/"
+                                target="_blank"
+                                className="inline-flex items-center gap-3 text-charcoal hover:translate-x-1 transition-all duration-500 uppercase tracking-[0.3em] text-[10px] font-bold border-b border-charcoal/20 pb-2 mb-12"
+                            >
+                                SAFACH Advisors <ArrowUpRight className="w-3 h-3" />
+                            </Link>
+                        </Reveal>
+                        <Reveal>
+                            <Image src="/film/safach.png" alt="SAFACH" width={500} height={500} className="w-full h-full  mb-12 object-cover" />
+                        </Reveal>
+                        <Reveal>
                             <div className="prose prose-xl font-light text-charcoal/80 space-y-8">
                                 <p>
                                     With extensive experience curating conversations around food, heritage, and identity, he brings a nuanced understanding of how culinary traditions are represented through film and visual media.
@@ -113,7 +122,6 @@ export default function FilmFestivalPage() {
                     ].map((item, i) => (
                         <Reveal key={i} delay={i * 0.1}>
                             <div className="p-10 bg-white border border-charcoal/5 rounded-sm hover:shadow-xl transition-all duration-700 h-full">
-                                <item.icon className="w-8 h-8 text-charcoal/20 mb-6" strokeWidth={1} />
                                 <h3 className="text-xl font-serif mb-4 leading-tight">{item.title}</h3>
                                 <p className="text-sm text-charcoal/50 leading-relaxed font-light">{item.desc}</p>
                             </div>
@@ -123,9 +131,6 @@ export default function FilmFestivalPage() {
 
                 {/* --- VISION --- */}
                 <div className="bg-charcoal text-white p-12 lg:p-24 rounded-sm relative overflow-hidden">
-                    <div className="absolute top-0 right-0 p-12 opacity-5 pointer-events-none">
-                        <Film className="w-64 h-64" />
-                    </div>
                     <div className="max-w-3xl">
                         <Reveal>
                             <h3 className="text-3xl lg:text-5xl font-serif mb-8 italic">The Vision</h3>
@@ -138,13 +143,17 @@ export default function FilmFestivalPage() {
             </section>
 
             {/* --- CTA --- */}
-            <section className="py-24 lg:py-40 px-6 lg:px-12 bg-cream text-charcoal text-center border-t border-charcoal/5">
+            <section className="py-20 lg:py-40 px-6 lg:px-12 bg-white text-center">
                 <Reveal>
-                    <h2 className="text-4xl lg:text-6xl font-serif mb-12">Explore Cultural Collaborations</h2>
-                    <Link href="mailto:contact@hauteservices.in" className="inline-flex items-center gap-6 group bg-charcoal text-white px-12 py-6 text-sm uppercase tracking-[0.3em] font-bold hover:bg-charcoal/90 transition-all">
+                    <h2 className="text-3xl sm:text-4xl lg:text-6xl font-serif text-charcoal mb-8 leading-tight">
+                        Explore Cultural Collaborations
+                    </h2>
+                    <p className="text-charcoal/60 max-w-2xl mx-auto mb-10 sm:mb-12 font-light">
+                        Connect with us to discuss international film festivals, diplomacy events, and artistic heritage projects.
+                    </p>
+                    <a href="mailto:maneesh@hauteservices.in" className="inline-block bg-charcoal text-white px-10 py-5 hover:bg-charcoal/80 transition-colors font-serif italic text-xl">
                         Get in Touch
-                        <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-                    </Link>
+                    </a>
                 </Reveal>
             </section>
         </main>

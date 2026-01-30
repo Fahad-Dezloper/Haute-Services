@@ -227,29 +227,27 @@ export default function CulinaryFestivalsPage() {
                 )}
             </AnimatePresence>
 
-            {/* --- HERO SECTION --- */}
-            <section className="relative h-[70vh] flex flex-col justify-end pb-24 px-6 lg:px-12 bg-charcoal overflow-hidden pt-12">
-                <div className="absolute inset-0 opacity-40">
+            <section className="relative min-h-[40vh] h-fit flex flex-col justify-end pb-12 px-6 lg:px-12 bg-charcoal overflow-hidden pt-12">
+                <div className="absolute inset-0 opacity-30">
                     <ParallaxImage
                         src="/images/lifestyle.png"
                         alt="Culinary Festival Atmosphere"
                         className="w-full h-full"
                     />
-                    <div className="absolute inset-0 bg-linear-to-b from-transparent via-charcoal/20 to-charcoal" />
+                    <div className="absolute inset-0 bg-linear-to-b from-transparent via-charcoal/40 to-charcoal" />
                 </div>
 
                 <div className="relative z-10 w-full max-w-7xl mx-auto">
                     <Reveal>
-                        <nav className="mb-12">
-                            <Link href="/lifestyle" className="inline-flex items-center gap-3 text-white/60 hover:text-white transition-colors uppercase tracking-[0.3em] text-[10px] font-bold group">
-                                <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" /> Back to Lifestyle
+                        <nav className="mb-8">
+                            <Link href="/lifestyle" className="inline-flex items-center gap-2 text-white/60 hover:text-white transition-colors uppercase tracking-[0.3em] text-[10px] font-bold group">
+                                <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" /> Back
                             </Link>
                         </nav>
-                        <h1 className="text-5xl md:text-8xl lg:text-[9rem] font-serif text-white mb-8 leading-[0.85] tracking-tighter">
-                            Culinary <br />
-                            <span className="italic font-light text-white/90 pl-8 md:pl-16 lg:pl-24">Festivals</span>
+                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-white mb-6 leading-tight tracking-tighter">
+                            Culinary <span className="italic font-light text-white/90 ml-2">Festivals</span>
                         </h1>
-                        <p className="text-lg md:text-xl lg:text-2xl text-white/80 max-w-2xl font-light leading-relaxed border-l-2 border-white/20 pl-6 md:pl-8 mt-12">
+                        <p className="text-base md:text-lg text-white/70 max-w-xl font-light leading-relaxed border-l border-white/20 pl-6 uppercase tracking-widest text-[10px]">
                             Creating authoritative platforms for South Asian gastronomy, where heritage cuisines meet high-level industry discourse.
                         </p>
                     </Reveal>
@@ -408,7 +406,7 @@ export default function CulinaryFestivalsPage() {
                             <h2 className="text-4xl lg:text-7xl font-serif leading-tight">Literary <span className="italic">Features</span></h2>
                         </div>
                     </Reveal>
-                    <div className="grid grid-cols-2 gap-x-4 sm:gap-x-12 gap-y-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
                         {magazines.map((mag, i) => (
                             <Reveal key={i} delay={i * 0.1}>
                                 <div className="group space-y-4 sm:space-y-10">
@@ -553,15 +551,19 @@ export default function CulinaryFestivalsPage() {
             </section >
 
             {/* --- CTA --- */}
-            < section className="py-24 lg:py-40 px-6 lg:px-12 bg-charcoal text-white text-center" >
+            <section className="py-20 lg:py-40 px-6 lg:px-12 bg-white text-center">
                 <Reveal>
-                    <h2 className="text-4xl lg:text-6xl font-serif mb-12 italic">Discuss Your Next Event</h2>
-                    <Link href="mailto:contact@hauteservices.in" className="inline-flex items-center gap-6 group bg-white text-charcoal px-12 py-6 text-sm uppercase tracking-[0.3em] font-bold hover:bg-white/90 transition-all">
+                    <h2 className="text-3xl sm:text-4xl lg:text-6xl font-serif text-charcoal mb-8 leading-tight italic">
+                        Discuss Your Next Event
+                    </h2>
+                    <p className="text-charcoal/60 max-w-2xl mx-auto mb-10 sm:mb-12 font-light">
+                        Connect with us to discuss your heritage culinary festivals, subcontinental diplomacy, or cultural curation.
+                    </p>
+                    <a href="mailto:maneesh@hauteservices.in" className="inline-block bg-charcoal text-white px-10 py-5 hover:bg-charcoal/80 transition-colors font-serif italic text-xl">
                         Inquire Now
-                        <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-                    </Link>
+                    </a>
                 </Reveal>
-            </section >
-        </main >
+            </section>
+        </main>
     );
 }

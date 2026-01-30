@@ -26,10 +26,10 @@ export default function Header() {
 
     return (
         <>
-            <header className="relative w-full z-50 py-6 lg:py-8 px-6 lg:px-12">
+            <header className="relative w-full z-50 py-6 lg:py-8 px-6 lg:px-12 bg-cream">
                 <div className="flex items-center justify-between w-full">
                     <Link href="/" className="group flex items-baseline gap-1">
-                        <Image src="/logo.png" alt="Logo" width={180} height={180} className="w-[140px] lg:w-[180px] h-auto" />
+                        <Image src="/logo/MainLogo.jpeg" alt="Logo" width={180} height={180} className="w-[140px] lg:w-[180px] h-auto" />
                     </Link>
 
                     {/* Desktop Nav */}
@@ -66,7 +66,7 @@ export default function Header() {
                             </div>
                         ))}
                         <Link
-                            href="mailto:contact@hauteservices.in"
+                            href="mailto:maneesh@hauteservices.in"
                             className="flex items-center gap-2 px-6 py-2.5 border border-charcoal/20 text-charcoal hover:bg-charcoal hover:text-white transition-all duration-500 text-[10px] uppercase tracking-[0.2em] font-bold"
                         >
                             Let&apos;s Talk
@@ -155,7 +155,7 @@ export default function Header() {
                                 className="mt-16 flex flex-col gap-10"
                             >
                                 <Link
-                                    href="mailto:contact@hauteservices.in"
+                                    href="mailto:maneesh@hauteservices.in"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                     className="inline-flex items-center justify-between bg-charcoal text-white px-8 py-6 text-[10px] uppercase tracking-widest font-bold group rounded-sm"
                                 >
@@ -165,7 +165,7 @@ export default function Header() {
 
                                 <div className="flex flex-col gap-3 px-1">
                                     <span className="text-[10px] uppercase tracking-widest text-charcoal/30 font-bold">Inquiries</span>
-                                    <p className="text-sm text-charcoal/60 font-light underline decoration-charcoal/10">contact@hauteservices.in</p>
+                                    <p className="text-sm text-charcoal/60 font-light underline decoration-charcoal/10">maneesh@hauteservices.in</p>
                                 </div>
                             </motion.div>
 

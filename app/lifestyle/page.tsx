@@ -66,25 +66,22 @@ export default function LifestylePage() {
     return (
         <main className="bg-cream min-h-screen text-charcoal font-sans selection:bg-charcoal selection:text-white overflow-hidden pb-12">
 
-            {/* --- HERO SECTION --- */}
-            <section className="relative h-[70vh] lg:h-[80vh] flex flex-col justify-end pb-20 lg:pb-32 px-6 lg:px-12 bg-charcoal overflow-hidden pt-12">
-                <div className="absolute inset-0 opacity-60">
+            <section className="relative min-h-[40vh] h-fit flex flex-col justify-end pb-12 px-6 lg:px-12 bg-charcoal overflow-hidden pt-12">
+                <div className="absolute inset-0 opacity-40">
                     <ParallaxImage
                         src="/images/lifestyle.png"
                         alt="Stunning Lifestyle Event"
                         className="w-full h-full"
                     />
-                    <div className="absolute inset-0 bg-linear-to-b from-transparent via-charcoal/20 to-charcoal" />
+                    <div className="absolute inset-0 bg-linear-to-b from-transparent via-charcoal/40 to-charcoal" />
                 </div>
 
                 <div className="relative z-10 w-full max-w-7xl mx-auto">
                     <Reveal>
-                        <span className="block text-white/50 uppercase tracking-[0.4em] text-[10px] lg:text-xs font-bold mb-6">Lifestyle Consultancy</span>
-                        <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] font-serif text-white mb-10 leading-[0.85] tracking-tighter">
-                            Lifestyle <br />
-                            <span className="italic font-light text-white/90 pl-6 lg:pl-24">Events</span>
+                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-white mb-6 leading-tight tracking-tighter">
+                            Lifestyle <span className="italic font-light text-white/90 ml-2">Events</span>
                         </h1>
-                        <p className="text-lg lg:text-2xl text-white/80 max-w-2xl font-light leading-relaxed border-l-2 border-white/20 pl-6 lg:pl-8 mt-12">
+                        <p className="text-base md:text-lg text-white/70 max-w-xl font-light leading-relaxed border-l border-white/20 pl-6 uppercase tracking-widest text-[10px]">
                             Curating extraordinary experiences that bridge the gap between cultural heritage and modern luxury.
                         </p>
                     </Reveal>
@@ -154,15 +151,15 @@ export default function LifestylePage() {
             </section>
 
             {/* --- CTA --- */}
-            <section className="py-24 lg:py-40 px-6 lg:px-12 bg-white text-center">
+            <section className="py-20 lg:py-40 px-6 lg:px-12 bg-white text-center">
                 <Reveal>
-                    <h2 className="text-3xl sm:text-4xl lg:text-6xl font-serif text-charcoal mb-8">
+                    <h2 className="text-3xl sm:text-4xl lg:text-6xl font-serif text-charcoal mb-8 leading-tight">
                         Ready to elevate your experience?
                     </h2>
-                    <p className="text-charcoal/60 max-w-2xl mx-auto mb-12 font-light">
+                    <p className="text-charcoal/60 max-w-2xl mx-auto mb-10 sm:mb-12 font-light">
                         Connect with us to discuss your upcoming lifestyle event, book launch, or cultural curation.
                     </p>
-                    <a href="mailto:contact@hauteservices.in" className="inline-block bg-charcoal text-white px-12 py-5 hover:bg-charcoal/80 transition-colors font-serif italic text-xl">
+                    <a href="mailto:maneesh@hauteservices.in" className="inline-block bg-charcoal text-white px-10 py-5 hover:bg-charcoal/80 transition-colors font-serif italic text-xl">
                         Get in Touch
                     </a>
                 </Reveal>

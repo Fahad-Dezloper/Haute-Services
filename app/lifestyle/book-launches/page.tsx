@@ -38,7 +38,7 @@ export default function BookLaunchesPage() {
             book: "Ammu: Indian Home-Cooking to Nourish the Soul",
             tag: "Chef, Darjeeling Express",
             desc: "Strategic launch curation for the Netflix 'Chef's Table' star, celebrating the heritage of home cooking and maternal legacy.",
-            image: "/images/books/asmakhan.jpg",
+            image: "/book/Asmaa.png",
             highlight: "Netflix Chef's Table Star"
         },
         {
@@ -46,7 +46,7 @@ export default function BookLaunchesPage() {
             book: "Urban Desi",
             tag: "Celebrity Chef & Author",
             desc: "Conceptualized and executed the launch of Chef Vicky's modern take on global Indian cuisine, merging urban trends with traditional roots.",
-            image: "/images/books/vickyratnani.jpg",
+            image: "/book/vicky.png",
             highlight: "Global Indian Gastronomy"
         },
         {
@@ -54,7 +54,7 @@ export default function BookLaunchesPage() {
             book: "The Royal Nepali Table",
             tag: "Cultural Historian",
             desc: "Highlighting the royal culinary traditions of Nepal through a curated literary and gastronomic event that explored lost recipes.",
-            image: "/images/books/rukmini.jpg",
+            image: "/book/rukmini.png",
             highlight: "Royal Culinary Heritage"
         },
         {
@@ -62,7 +62,7 @@ export default function BookLaunchesPage() {
             book: "Avant-Garde & Beyond",
             tag: "Modern Indian Gastronomy Pioneer",
             desc: "Launching the visual and narrative journey of one of India's most celebrated avant-garde chefs, focusing on the intersection of art and food.",
-            image: "/images/books/abhijit.jpg",
+            image: "/book/Abhijit.png",
             highlight: "Culinary Innovation"
         }
     ];
@@ -71,29 +71,27 @@ export default function BookLaunchesPage() {
         <main className="bg-cream min-h-screen text-charcoal font-sans selection:bg-charcoal selection:text-white overflow-hidden pb-12">
 
             {/* --- HERO SECTION --- */}
-            <section className="relative h-[70vh] flex flex-col justify-end pb-24 px-6 lg:px-12 bg-charcoal overflow-hidden pt-12">
-                <div className="absolute inset-0 opacity-40">
+            <section className="relative min-h-[40vh] h-fit flex flex-col justify-end pb-12 px-6 lg:px-12 bg-charcoal overflow-hidden pt-12">
+                <div className="absolute inset-0 opacity-30">
                     <ParallaxImage
                         src="/work/bigArt.jpg"
                         alt="Literary Event Atmosphere"
                         className="w-full h-full"
                     />
-                    <div className="absolute inset-0 bg-linear-to-b from-transparent via-charcoal/20 to-charcoal" />
+                    <div className="absolute inset-0 bg-linear-to-b from-transparent via-charcoal/40 to-charcoal" />
                 </div>
 
                 <div className="relative z-10 w-full max-w-7xl mx-auto">
                     <Reveal>
-                        <nav className="mb-12">
-                            <Link href="/lifestyle" className="inline-flex items-center gap-3 text-white/60 hover:text-white transition-colors uppercase tracking-[0.3em] text-[10px] font-bold group">
-                                <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" /> Back to Lifestyle
+                        <nav className="mb-8">
+                            <Link href="/lifestyle" className="inline-flex items-center gap-2 text-white/60 hover:text-white transition-colors uppercase tracking-[0.3em] text-[9px] font-bold group">
+                                <ArrowLeft className="w-3 h-3 transition-transform group-hover:-translate-x-1" /> Back
                             </Link>
                         </nav>
-                        <span className="block text-white/50 uppercase tracking-[0.4em] text-xs font-bold mb-6">Vertical 02</span>
-                        <h1 className="text-6xl md:text-8xl lg:text-[9rem] font-serif text-white mb-8 leading-[0.85] tracking-tighter">
-                            Book <br />
-                            <span className="italic font-light text-white/90 pl-12 lg:pl-24">Launches</span>
+                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-white mb-6 leading-tight tracking-tighter">
+                            Book <span className="italic font-light text-white/90 ml-2">Launches</span>
                         </h1>
-                        <p className="text-xl lg:text-2xl text-white/80 max-w-2xl font-light leading-relaxed border-l-2 border-white/20 pl-8 mt-12">
+                        <p className="text-base md:text-lg text-white/70 max-w-xl font-light leading-relaxed border-l border-white/20 pl-6 uppercase tracking-widest text-[10px]">
                             Curating boutique literary experiences for international culinary masters and cultural historians.
                         </p>
                     </Reveal>
@@ -119,16 +117,22 @@ export default function BookLaunchesPage() {
                     {authors.map((item, i) => (
                         <Reveal key={i} delay={i * 0.1}>
                             <div className="group cursor-default">
-                                <div className="relative aspect-4/5 bg-charcoal/5 mb-10 overflow-hidden rounded-sm shadow-xl">
+                                <div className={`relative bg-charcoal/5 mb-10 overflow-hidden rounded-sm shadow-xl ${item.highlight === "Netflix Chef's Table Star" ? "aspect-6/5" : "aspect-4/5"}`}>
                                     <div className="absolute inset-0 bg-charcoal/20 group-hover:bg-transparent transition-all duration-700 z-10" />
                                     <div className="w-full h-full flex items-center justify-center text-charcoal/10 font-serif italic text-4xl p-12 text-center">
-                                        Asset: {item.author} Content
+                                        Asset: {item.author}
                                     </div>
-                                    <div className="absolute top-6 left-6 z-20">
+                                    {/* <div className="absolute top-6 left-6 z-20">
                                         <div className="bg-white/90 backdrop-blur-md px-4 py-2 text-[10px] uppercase tracking-widest font-bold text-charcoal shadow-sm">
                                             {item.highlight}
                                         </div>
-                                    </div>
+                                    </div> */}
+                                    <Image
+                                        src={item.image}
+                                        alt={item.author}
+                                        fill
+                                        className="object-cover"
+                                    />
                                 </div>
                                 <div className="max-w-md">
                                     <div className="flex items-center gap-3 mb-4">
@@ -154,7 +158,6 @@ export default function BookLaunchesPage() {
             <section className="py-24 lg:py-40 bg-white">
                 <div className="max-w-4xl mx-auto px-6 lg:px-12 text-center">
                     <Reveal>
-                        <BookOpen className="w-12 h-12 text-charcoal/20 mx-auto mb-12" strokeWidth={1} />
                         <h3 className="text-3xl lg:text-5xl font-serif text-charcoal leading-tight italic mb-8">
                             "Every cookbook is a legacy. Our role is to ensure that legacy is launched with the prestige it deserves."
                         </h3>
@@ -164,13 +167,17 @@ export default function BookLaunchesPage() {
             </section>
 
             {/* --- CTA --- */}
-            <section className="py-24 lg:py-40 px-6 lg:px-12 bg-charcoal text-white text-center">
+            <section className="py-20 lg:py-40 px-6 lg:px-12 bg-white text-center">
                 <Reveal>
-                    <h2 className="text-4xl lg:text-6xl font-serif mb-12 italic">Launch Your Narrative</h2>
-                    <Link href="mailto:contact@hauteservices.in" className="inline-flex items-center gap-6 group bg-white text-charcoal px-12 py-6 text-sm uppercase tracking-[0.3em] font-bold hover:bg-white/90 transition-all">
+                    <h2 className="text-3xl sm:text-4xl lg:text-6xl font-serif text-charcoal mb-8 leading-tight italic">
+                        Launch Your Narrative
+                    </h2>
+                    <p className="text-charcoal/60 max-w-2xl mx-auto mb-10 sm:mb-12 font-light">
+                        Connect with us to ensure your literary legacy is launched with the prestige it deserves.
+                    </p>
+                    <a href="mailto:maneesh@hauteservices.in" className="inline-block bg-charcoal text-white px-10 py-5 hover:bg-charcoal/80 transition-colors font-serif italic text-xl">
                         Inquire Now
-                        <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-                    </Link>
+                    </a>
                 </Reveal>
             </section>
         </main>

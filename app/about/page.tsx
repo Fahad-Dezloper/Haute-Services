@@ -45,30 +45,27 @@ export default function AboutPage() {
     return (
         <main className="bg-cream min-h-screen text-charcoal font-sans selection:bg-charcoal selection:text-white overflow-hidden pb-12">
 
-            {/* --- HERO SECTION --- */}
-            {/* <section className="relative h-[70vh] flex flex-col justify-end pb-24 px-6 lg:px-12 bg-charcoal overflow-hidden pt-12">
-                <div className="absolute inset-0 opacity-60">
+            <section className="relative min-h-[40vh] h-fit flex flex-col justify-end pb-12 px-6 lg:px-12 bg-charcoal overflow-hidden pt-12">
+                <div className="absolute inset-0 opacity-40">
                     <ParallaxImage
                         src="/images/about.png"
                         alt="Antique Architectural Detail"
                         className="w-full h-full"
                     />
-                    <div className="absolute inset-0 bg-linear-to-b from-transparent via-charcoal/20 to-charcoal" />
+                    <div className="absolute inset-0 bg-linear-to-b from-transparent via-charcoal/40 to-charcoal" />
                 </div>
 
                 <div className="relative z-10 w-full max-w-7xl mx-auto">
                     <Reveal>
-                        <span className="block text-white/50 uppercase tracking-[0.4em] text-xs font-bold mb-6">The Vanguard of Culture & Hospitality</span>
-                        <h1 className="text-6xl md:text-8xl lg:text-[10rem] font-serif text-white mb-10 leading-[0.85] tracking-tighter">
-                            About <br />
-                            <span className="italic font-light text-white/90 pl-12 lg:pl-24">Haute</span>
+                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-white mb-6 leading-tight tracking-tighter">
+                            About <span className="italic font-light text-white/90 ml-2">Haute</span>
                         </h1>
-                        <p className="text-xl lg:text-2xl text-white/80 max-w-2xl font-light leading-relaxed border-l-2 border-white/20 pl-8 mt-12">
-                            A boutique consultancy founded on three decades of hospitality excellence and a deep-rooted passion for the visual and culinary arts.
+                        <p className="text-base md:text-lg text-white/70 max-w-xl font-light leading-relaxed border-l border-white/20 pl-6 uppercase tracking-widest text-[10px]">
+                            A boutique consultancy founded on three decades of hospitality excellence and artistic passion.
                         </p>
                     </Reveal>
                 </div>
-            </section> */}
+            </section>
 
             {/* --- OUR IDENTITY --- */}
             <section className="py-24 lg:py-40 px-6 lg:px-12 max-w-7xl mx-auto">
@@ -210,7 +207,7 @@ export default function AboutPage() {
                             <h2 className="text-4xl lg:text-7xl font-serif leading-none italic">Trusted By</h2>
                         </div>
                     </Reveal>
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-12 gap-x-12 border-l border-charcoal/5 pl-12">
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-12 gap-x-12 border-l border-charcoal/5 pl-6 md:pl-12">
                         {clients.map((client, i) => (
                             <Reveal key={i} delay={i * 0.05}>
                                 <div className="group cursor-default">
@@ -250,12 +247,16 @@ export default function AboutPage() {
             </section>
 
             {/* --- CTA --- */}
-            <section className="py-24 lg:py-40 px-6 lg:px-12 bg-charcoal text-white text-center">
+            <section className="py-20 lg:py-40 px-6 lg:px-12 bg-white text-center">
                 <Reveal>
-                    <h2 className="text-3xl lg:text-6xl font-serif mb-12 italic">Collaborate With Us</h2>
-                    <a href="mailto:contact@hauteservices.in" className="inline-flex items-center gap-6 group bg-white text-charcoal px-12 py-6 text-sm uppercase tracking-[0.3em] font-bold hover:bg-white/90 transition-all">
+                    <h2 className="text-3xl sm:text-4xl lg:text-6xl font-serif text-charcoal mb-8 leading-tight italic">
+                        Collaborate With Us
+                    </h2>
+                    <p className="text-charcoal/60 max-w-2xl mx-auto mb-10 sm:mb-12 font-light">
+                        Connect with us to discuss heritage culinary festivals, high-fashion showcases, or architectural art curation.
+                    </p>
+                    <a href="mailto:maneesh@hauteservices.in" className="inline-block bg-charcoal text-white px-10 py-5 hover:bg-charcoal/80 transition-colors font-serif italic text-xl">
                         Get in Touch
-                        <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                     </a>
                 </Reveal>
             </section>

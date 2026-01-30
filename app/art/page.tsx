@@ -172,26 +172,23 @@ export default function ArtPage() {
     return (
         <main className="bg-cream min-h-screen text-charcoal font-sans selection:bg-charcoal selection:text-white overflow-hidden">
 
-            {/* --- HERO SECTION --- */}
-            <section className="relative min-h-[90vh] lg:h-[95vh] flex flex-col justify-end pb-20 lg:pb-32 px-6 lg:px-12 bg-charcoal overflow-hidden pt-24">
-                <div className="absolute inset-0 opacity-60">
+            <section className="relative min-h-[40vh] h-fit flex flex-col justify-end pb-12 px-6 lg:px-12 bg-charcoal overflow-hidden pt-12">
+                <div className="absolute inset-0 opacity-40">
                     <ParallaxImage
                         src="/work/bigArt.jpg"
                         alt="Fine Art Detail"
                         className="w-full h-full"
                     />
-                    <div className="absolute inset-0 bg-linear-to-b from-transparent via-charcoal/20 to-charcoal" />
+                    <div className="absolute inset-0 bg-linear-to-b from-transparent via-charcoal/40 to-charcoal" />
                 </div>
 
                 <div className="relative z-10 w-full max-w-7xl mx-auto">
                     <Reveal>
-                        <span className="block text-white/50 uppercase tracking-[0.4em] text-[10px] lg:text-xs font-bold mb-6 lg:mb-8">Founders of Cultural Legacy</span>
-                        <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[10rem] font-serif text-white mb-8 lg:mb-12 leading-[0.9] lg:leading-[0.85] tracking-tighter">
-                            Art <br />
-                            <span className="italic font-light text-white/90 pl-6 lg:pl-24">Advisory</span>
+                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-white mb-6 leading-tight tracking-tighter">
+                            Art <span className="italic font-light text-white/90 ml-2">Advisory</span>
                         </h1>
-                        <p className="text-lg lg:text-2xl text-white/80 max-w-2xl font-light leading-relaxed border-l-2 border-white/20 pl-6 lg:pl-8 mt-12 lg:mt-16">
-                            Over a decade of curatorial expertise, bridging the gap between historical heritage and contemporary investment-grade art.
+                        <p className="text-base md:text-lg text-white/70 max-w-xl font-light leading-relaxed border-l border-white/20 pl-6 uppercase tracking-widest text-[10px]">
+                            Over a decade of curatorial expertise, bridging the gap between historical heritage and contemporary art.
                         </p>
                     </Reveal>
                 </div>
@@ -507,17 +504,16 @@ export default function ArtPage() {
             </section>
 
             {/* --- CTA SECTION --- */}
-            <section className="py-20 lg:py-32 px-6 lg:px-12 bg-charcoal text-white text-center">
+            <section className="py-20 lg:py-40 px-6 lg:px-12 bg-white text-center">
                 <Reveal>
-                    <h2 className="text-3xl md:text-5xl lg:text-7xl font-serif mb-8 max-w-4xl mx-auto leading-tight">
+                    <h2 className="text-3xl sm:text-4xl lg:text-6xl font-serif text-charcoal mb-8 leading-tight">
                         Begin your journey with <span className="italic font-light">Haute Art</span>
                     </h2>
-                    <p className="text-white/60 max-w-2xl mx-auto mb-12 lg:mb-16 font-light text-base lg:text-lg">
+                    <p className="text-charcoal/60 max-w-2xl mx-auto mb-10 sm:mb-12 font-light">
                         Consult with us to discuss your private collection, corporate curation, or restoration needs.
                     </p>
-                    <a href="mailto:contact@hauteservices.in" className="inline-flex items-center gap-4 lg:gap-6 group bg-white text-charcoal px-8 lg:px-12 py-4 lg:py-6 text-xs lg:text-sm uppercase tracking-[0.3em] font-bold hover:bg-white/90 transition-all">
+                    <a href="mailto:maneesh@hauteservices.in" className="inline-block bg-charcoal text-white px-10 py-5 hover:bg-charcoal/80 transition-colors font-serif italic text-xl">
                         Inquire Now
-                        <ArrowUpRight className="w-4 h-4 lg:w-5 lg:h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                     </a>
                 </Reveal>
             </section>

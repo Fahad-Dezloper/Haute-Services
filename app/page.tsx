@@ -145,9 +145,9 @@ export default function HomePage() {
               <div className='flex flex-col lg:flex-row justify-between w-full items-start lg:items-center gap-12 lg:gap-0'>
 
                 <Reveal delay={0.1}>
-                  <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] font-serif text-charcoal leading-[0.85] tracking-tighter">
+                  <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[10rem] font-serif text-charcoal leading-[0.9] lg:leading-[0.85] tracking-tighter">
                     Haute <br />
-                    <span className="italic font-light text-charcoal/90 pl-4 lg:pl-12">Services</span>
+                    <span className="italic font-light text-charcoal/90 pl-2 sm:pl-4 lg:pl-12">Services</span>
                   </h1>
                 </Reveal>
 
@@ -408,7 +408,7 @@ export default function HomePage() {
           <p className="text-charcoal/60 max-w-2xl mx-auto mb-10 sm:mb-12 font-light">
             Connect with us to discuss your art portfolio or upcoming lifestyle event.
           </p>
-          <a href="mailto:contact@hauteservices.in" className="inline-block bg-charcoal text-white px-10 py-5 hover:bg-charcoal/80 transition-colors font-serif italic text-xl">
+          <a href="mailto:maneesh@hauteservices.in" className="inline-block bg-charcoal text-white px-10 py-5 hover:bg-charcoal/80 transition-colors font-serif italic text-xl">
             Get in Touch
           </a>
         </Reveal>

@@ -9,3 +9,9 @@ https://www.linkedin.com/posts/manish-kumar-baheti_timesofindia-theartofindia-pa
 
 under food for thought
 {/* http://safach.com/advisors/ */}
+
+-- media coverage page with all the details
+
+-- articles indepth page
+
+-- seo optimization
