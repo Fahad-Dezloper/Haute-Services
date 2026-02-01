@@ -40,7 +40,8 @@ export default function FashionShowsPage() {
             location: "Alliance Française, Delhi",
             desc: "Jury for model selection alongside Maison de Bose team, evaluating talent and runway readiness.",
             highlights: "Talent Evaluation",
-            tag: "Advisory"
+            tag: "Advisory",
+            image: "/fashion/Maison.jpeg"
         },
         {
             title: "Dreamers Are Achievers",
@@ -49,7 +50,8 @@ export default function FashionShowsPage() {
             location: "Khubani, Andaz Hotel, Aerocity",
             desc: "Fashion show celebrating women achievers, collab with Sayali Bhagat, Rina Dhaka, and Liza Varma.",
             highlights: "Cultural + Fashion Crossover",
-            tag: "Production"
+            tag: "Production",
+            image: "/fashion/2023Khubani.jpg"
         },
         {
             title: "Audi e-tron Launch",
@@ -58,7 +60,8 @@ export default function FashionShowsPage() {
             location: "New Delhi",
             desc: "Fashion integrated automotive launch featuring designers Charu & Arjun Parashar.",
             highlights: "Luxury Brand x Fashion",
-            tag: "Luxury Launch"
+            tag: "Luxury Launch",
+            image: "/fashion/Audi.jpg"
         },
         {
             title: "Delhi Fashion Week – Edition 5",
@@ -67,7 +70,8 @@ export default function FashionShowsPage() {
             location: "Radisson Blu, New Delhi",
             desc: "Fashion week finale collaboration with Maison de Bose, supporting India's established circuit.",
             highlights: "DFW Circuit Integration",
-            tag: "Fashion Week"
+            tag: "Fashion Week",
+            image: "/fashion/dfw.jpeg"
         },
         {
             title: "Khubani Fashion Event",
@@ -76,7 +80,8 @@ export default function FashionShowsPage() {
             location: "Andaz Hotel, Aerocity",
             desc: "Boutique fashion show and after party with Skylark and Lakmé.",
             highlights: "Multi-brand Showcase",
-            tag: "Lifestyle"
+            tag: "Lifestyle",
+            image: "/fashion/Khubani.png"
         },
         {
             title: "Designer Fashion Week (Grand Finale)",
@@ -85,7 +90,8 @@ export default function FashionShowsPage() {
             location: "Radisson Blu, New Delhi",
             desc: "Finale designer presentation for Radisson Blu's showcase series.",
             highlights: "Grand Finale Showcase",
-            tag: "Curation"
+            tag: "Curation",
+            image: "/fashion/dfw.jpeg"
         }
     ];
 
@@ -112,7 +118,7 @@ export default function FashionShowsPage() {
             <section className="relative min-h-[40vh] h-fit flex flex-col justify-end pb-12 px-6 lg:px-12 bg-charcoal overflow-hidden pt-12">
                 <div className="absolute inset-0 opacity-30">
                     <ParallaxImage
-                        src="https://static.wixstatic.com/media/e86273_57cdee80347a45fa8d0d12a449a0768b~mv2.png?originWidth=1152&originHeight=832"
+                        src="/fashion/banner.jpeg"
                         alt="High Fashion Atmosphere"
                         className="w-full h-full"
                     />
@@ -147,17 +153,19 @@ export default function FashionShowsPage() {
                     {fashionWork.map((work, i) => (
                         <Reveal key={i} delay={i * 0.1}>
                             <div className="group space-y-10">
-                                <div className="relative aspect-16/10 bg-charcoal/5 rounded-sm overflow-hidden shadow-xl">
-                                    <div className="absolute inset-0 bg-charcoal/40 group-hover:bg-transparent transition-all duration-700 z-10" />
+                                <div className="relative h-fit w-full bg-charcoal/5 rounded-sm overflow-hidden shadow-xl">
+                                    {/* <div className="absolute inset-0 bg-charcoal/40 group-hover:bg-transparent transition-all duration-700 z-10" /> */}
                                     {/* USER: PLACE IMAGE HERE */}
-                                    <div className="w-full h-full flex items-center justify-center text-charcoal/10 font-serif italic text-2xl p-12 text-center">
+                                    {/* <div className="w-full h-full flex items-center justify-center text-charcoal/10 font-serif italic text-2xl p-12 text-center">
                                         Asset: {work.title}
-                                    </div>
-                                    <div className="absolute top-6 left-6 z-20">
+                                    </div> */}
+                                    {/* <div className="absolute top-6 left-6 z-20">
                                         <div className="bg-white/90 backdrop-blur-md px-4 py-2 text-[10px] uppercase tracking-widest font-bold text-charcoal shadow-lg">
                                             {work.tag}
                                         </div>
-                                    </div>
+                                    </div> */}
+
+                                    <Image src={work.image} alt={work.title} width={400} height={400} className="w-full h-full object-cover" />
                                 </div>
                                 <div className="space-y-6">
                                     <div>

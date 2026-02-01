@@ -25,7 +25,7 @@ const ParallaxImage = ({ src, alt, className }: { src: string; alt: string; clas
     return (
         <div ref={ref} className={`overflow-hidden ${className}`}>
             <motion.div style={{ y }} className="w-full h-[120%] -mt-[10%]">
-                <img src={src} alt={alt} className="w-full h-full object-cover" />
+                <img src={src} alt={alt} className="w-full h-full object-contain" />
             </motion.div>
         </div>
     );
@@ -43,23 +43,23 @@ export default function BookLaunchesPage() {
         },
         {
             author: "Vicky Ratnani",
-            book: "Urban Desi",
+            book: "Urban Desi Non-Vegetarian",
             tag: "Celebrity Chef & Author",
             desc: "Conceptualized and executed the launch of Chef Vicky's modern take on global Indian cuisine, merging urban trends with traditional roots.",
             image: "/book/vicky.png",
             highlight: "Global Indian Gastronomy"
         },
         {
-            author: "Rukmini Rana",
-            book: "The Royal Nepali Table",
+            author: "Rohini Rana",
+            book: "The Rana Cookbook: Recipes from the Palaces of Nepal",
             tag: "Cultural Historian",
             desc: "Highlighting the royal culinary traditions of Nepal through a curated literary and gastronomic event that explored lost recipes.",
-            image: "/book/rukmini.png",
+            image: "/book/rohini.png",
             highlight: "Royal Culinary Heritage"
         },
         {
             author: "Abhijit Saha",
-            book: "Avant-Garde & Beyond",
+            book: "The Caperberry Cookbook",
             tag: "Modern Indian Gastronomy Pioneer",
             desc: "Launching the visual and narrative journey of one of India's most celebrated avant-garde chefs, focusing on the intersection of art and food.",
             image: "/book/Abhijit.png",
@@ -74,7 +74,7 @@ export default function BookLaunchesPage() {
             <section className="relative min-h-[40vh] h-fit flex flex-col justify-end pb-12 px-6 lg:px-12 bg-charcoal overflow-hidden pt-12">
                 <div className="absolute inset-0 opacity-30">
                     <ParallaxImage
-                        src="/work/bigArt.jpg"
+                        src="/book/banner.jpeg"
                         alt="Literary Event Atmosphere"
                         className="w-full h-full"
                     />
@@ -117,16 +117,11 @@ export default function BookLaunchesPage() {
                     {authors.map((item, i) => (
                         <Reveal key={i} delay={i * 0.1}>
                             <div className="group cursor-default">
-                                <div className={`relative bg-charcoal/5 mb-10 overflow-hidden rounded-sm shadow-xl ${item.highlight === "Netflix Chef's Table Star" ? "aspect-6/5" : "aspect-4/5"}`}>
+                                <div className={`relative bg-charcoal/5 mb-10 overflow-hidden rounded-sm shadow-xl ${item.image === "/book/Asmaa.png" || item.image === "/book/rohini.png" ? "aspect-6/5" : "aspect-4/5"}`}>
                                     <div className="absolute inset-0 bg-charcoal/20 group-hover:bg-transparent transition-all duration-700 z-10" />
                                     <div className="w-full h-full flex items-center justify-center text-charcoal/10 font-serif italic text-4xl p-12 text-center">
                                         Asset: {item.author}
                                     </div>
-                                    {/* <div className="absolute top-6 left-6 z-20">
-                                        <div className="bg-white/90 backdrop-blur-md px-4 py-2 text-[10px] uppercase tracking-widest font-bold text-charcoal shadow-sm">
-                                            {item.highlight}
-                                        </div>
-                                    </div> */}
                                     <Image
                                         src={item.image}
                                         alt={item.author}
