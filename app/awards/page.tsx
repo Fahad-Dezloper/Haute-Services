@@ -20,33 +20,33 @@ const Reveal = ({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
 export default function AwardsPage() {
     const awards = [
         {
-            title: "Gastronomy Event of the Year",
-            organization: "Peaklife Gourmet Awards",
-            category: "Editor’s Choice",
-            event: "S.A.A.G – Food for Thought Fest",
-            year: "2024",
-            desc: "Honored with the 'Gastronomy Event of the Year' at the Peaklife Gourmet Awards for the S.A.A.G – Food for Thought Fest, celebrating innovation and excellence in the culinary arts.",
-            image: "/awards/peaklife.png",
-            icon: Trophy
-        },
-        {
-            title: "Hospitality Hope Ambassador",
-            organization: "Hospitality Hope",
-            recipient: "Maneesh Epiqurist (Founder)",
-            year: "2023",
-            location: "Soraia, Mumbai",
-            desc: "Honoured as a Hospitality Hope Ambassador at Soraia Mumbai. A recognition of dedication to the industry, felicitated by Rashmi Uday Singh alongside legendary stalwarts like Camelia Punjabi and Rahul Akerkar.",
-            details: "A wonderful evening celebrating those who have devotedly stood by noble ventures in the hospitality sector.",
-            image: "/awards/hospitality-hope.jpeg",
-            icon: Award
-        },
-        {
             title: "Delhiites Food & Nightlife Awards",
             organization: "Delhiites",
             year: "2022",
             desc: "Recognized for significant contributions to Delhi's vibrant culinary landscape and nightlife excellence.",
-            image: "/awards/delhiites.jpeg",
+            image: "/awards/d&f.png",
             icon: Star
+        },
+        {
+            title: "Hospitality Hope Ambassador",
+            organization: "Hospitality Hope",
+            // recipient: "Maneesh Epiqurist (Founder)",
+            year: "2023",
+            // location: "Soraia, Mumbai",
+            desc: "Honoured as a Hospitality Hope Ambassador at Soraia Mumbai. A recognition of dedication to the industry, felicitated by Rashmi Uday Singh alongside legendary stalwarts like Camelia Punjabi and Rahul Akerkar.",
+            // details: "A wonderful evening celebrating those who have devotedly stood by noble ventures in the hospitality sector.",
+            image: "/awards/hope.png",
+            icon: Award
+        },
+        {
+            title: "Gastronomy Event of the Year",
+            organization: "Peaklife Gourmet Awards",
+            // category: "Editor’s Choice",
+            // event: "S.A.A.G – Food for Thought Fest",
+            year: "2024",
+            desc: "Honored with the 'Gastronomy Event of the Year' at the Peaklife Gourmet Awards for the S.A.A.G – Food for Thought Fest, celebrating innovation and excellence in the culinary arts.",
+            image: "/awards/peaklife.jpeg",
+            icon: Trophy
         }
     ];
 
@@ -84,13 +84,14 @@ export default function AwardsPage() {
                             <div className={`flex flex-col ${i % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 lg:gap-24 items-center`}>
                                 {/* Image Container */}
                                 <div className="w-full lg:w-1/2 group">
-                                    <div className="relative aspect-4/3 overflow-hidden rounded-sm bg-charcoal/5 shadow-2xl">
+                                    <div className="relative aspect-3/4 overflow-hidden rounded-sm bg-charcoal/5 shadow-2xl">
                                         <div className="absolute inset-0 bg-charcoal/10 group-hover:bg-transparent transition-colors duration-700 z-10" />
                                         {/* Placeholder for now - I'll use the uploaded image for the first one */}
                                         <div className="w-full h-full flex items-center justify-center text-charcoal/10 font-serif italic text-2xl p-12 text-center">
                                             {award.title}
                                         </div>
                                         {/* Once images are ready, use: <Image src={award.image} alt={award.title} fill className="object-cover transition-transform duration-700 group-hover:scale-105" /> */}
+                                        <Image src={award.image} alt={award.title} fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
                                     </div>
                                 </div>
 
@@ -98,15 +99,15 @@ export default function AwardsPage() {
                                 <div className="w-full lg:w-1/2 space-y-8">
                                     <div className="space-y-4">
                                         <div className="flex items-center gap-3">
-                                            <award.icon className="w-5 h-5 text-charcoal/40" strokeWidth={1.5} />
+                                            {/* <award.icon className="w-5 h-5 text-charcoal/40" strokeWidth={1.5} /> */}
                                             <span className="text-xs uppercase tracking-[0.3em] font-bold text-charcoal/40">{award.organization} {award.year && `— ${award.year}`}</span>
                                         </div>
                                         <h3 className="text-3xl lg:text-5xl font-serif leading-tight">{award.title}</h3>
-                                        {award.category && (
+                                        {/* {award.category && (
                                             <span className="inline-block px-4 py-1.5 border border-charcoal/10 rounded-full text-[10px] uppercase tracking-widest font-bold text-charcoal/60">
                                                 {award.category}
                                             </span>
-                                        )}
+                                        )} */}
                                     </div>
 
                                     <div className="space-y-6">
@@ -114,15 +115,15 @@ export default function AwardsPage() {
                                             <p className="text-lg text-charcoal/60 font-light leading-relaxed">
                                                 {award.desc}
                                             </p>
-                                            {award.details && (
+                                            {/* {award.details && (
                                                 <p className="text-sm text-charcoal/40 italic font-light leading-relaxed">
                                                     {award.details}
                                                 </p>
-                                            )}
+                                            )} */}
                                         </div>
 
                                         <div className="pt-8 border-t border-charcoal/5 grid grid-cols-2 gap-8">
-                                            {award.event && (
+                                            {/* {award.event && (
                                                 <div>
                                                     <span className="text-[10px] uppercase font-bold tracking-widest text-charcoal/30 block mb-2">Platform</span>
                                                     <span className="text-xs font-medium text-charcoal/60">{award.event}</span>
@@ -139,7 +140,7 @@ export default function AwardsPage() {
                                                     <span className="text-[10px] uppercase font-bold tracking-widest text-charcoal/30 block mb-2">Location</span>
                                                     <span className="text-xs font-medium text-charcoal/60">{award.location}</span>
                                                 </div>
-                                            )}
+                                            )} */}
                                         </div>
                                     </div>
                                 </div>

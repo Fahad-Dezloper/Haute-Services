@@ -111,14 +111,14 @@ export default function AboutPage() {
                                 </div>
                                 <div className="grid grid-cols-2 gap-8 pt-8 border-t border-charcoal/5">
                                     <div className="flex items-start gap-4">
-                                        <Building2 className="w-5 h-5 text-charcoal/30 mt-1" />
+                                        {/* <Building2 className="w-5 h-5 text-charcoal/30 mt-1" /> */}
                                         <div>
                                             <span className="block text-xs font-bold uppercase tracking-widest text-charcoal mb-1">Oberoi Group</span>
                                             <span className="text-sm text-charcoal/50">Management Trainee</span>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-4">
-                                        <GraduationCap className="w-5 h-5 text-charcoal/30 mt-1" />
+                                        {/* <GraduationCap className="w-5 h-5 text-charcoal/30 mt-1" /> */}
                                         <div>
                                             <span className="block text-xs font-bold uppercase tracking-widest text-charcoal mb-1">MBA</span>
                                             <span className="text-sm text-charcoal/50">Dual D.H.M Diplomas</span>
@@ -165,14 +165,14 @@ export default function AboutPage() {
                                 </div>
                                 <div className="grid grid-cols-2 gap-8 pt-8 border-t border-charcoal/5">
                                     <div className="flex items-start gap-4">
-                                        <Globe className="w-5 h-5 text-charcoal/30 mt-1" />
+                                        {/* <Globe className="w-5 h-5 text-charcoal/30 mt-1" /> */}
                                         <div>
                                             <span className="block text-xs font-bold uppercase tracking-widest text-charcoal mb-1">Global Governance</span>
                                             <span className="text-sm text-charcoal/50">United Nations Consultant</span>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-4">
-                                        <GraduationCap className="w-5 h-5 text-charcoal/30 mt-1" />
+                                        {/* <GraduationCap className="w-5 h-5 text-charcoal/30 mt-1" /> */}
                                         <div>
                                             <span className="block text-xs font-bold uppercase tracking-widest text-charcoal mb-1">M.Sc & M.A</span>
                                             <span className="text-sm text-charcoal/50">UK & France Degrees</span>
