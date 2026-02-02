@@ -34,16 +34,6 @@ const ParallaxImage = ({ src, alt, className }: { src: string; alt: string; clas
 export default function FashionShowsPage() {
     const fashionWork = [
         {
-            title: "Maison de Bose Fashion Week – Jury",
-            role: "Jury & Advisory",
-            date: "2024",
-            location: "Alliance Française, Delhi",
-            desc: "Jury for model selection alongside Maison de Bose team, evaluating talent and runway readiness.",
-            highlights: "Talent Evaluation",
-            tag: "Advisory",
-            image: "/fashion/Maison.jpeg"
-        },
-        {
             title: "Dreamers Are Achievers",
             role: "Producer / Partner",
             date: "Feb 2017",
@@ -64,19 +54,9 @@ export default function FashionShowsPage() {
             image: "/fashion/Audi.jpg"
         },
         {
-            title: "Delhi Fashion Week – Edition 5",
-            role: "Collaboration Partner",
-            date: "Dec 2025",
-            location: "Radisson Blu, New Delhi",
-            desc: "Fashion week finale collaboration with Maison de Bose, supporting India's established circuit.",
-            highlights: "DFW Circuit Integration",
-            tag: "Fashion Week",
-            image: "/fashion/dfw.jpeg"
-        },
-        {
             title: "Khubani Fashion Event",
             role: "Event Support",
-            date: "6 Feb",
+            date: "6 Feb 2024",
             location: "Andaz Hotel, Aerocity",
             desc: "Boutique fashion show and after party with Skylark and Lakmé.",
             highlights: "Multi-brand Showcase",
@@ -84,14 +64,24 @@ export default function FashionShowsPage() {
             image: "/fashion/Khubani.png"
         },
         {
-            title: "Designer Fashion Week (Grand Finale)",
-            role: "Collaboration Support",
+            title: "Maison de Bose Fashion Week – Jury",
+            role: "Jury & Advisory",
+            date: "2024",
+            location: "Alliance Française, Delhi",
+            desc: "Jury for model selection alongside Maison de Bose team, evaluating talent and runway readiness.",
+            highlights: "Talent Evaluation",
+            tag: "Advisory",
+            image: "/fashion/Maison.jpeg"
+        },
+        {
+            title: "DFW Grand Finale – Showstopper",
+            role: "Showstopper / Maison de Bose",
             date: "27–28 Dec 2025",
-            location: "Radisson Blu, New Delhi",
-            desc: "Finale designer presentation for Radisson Blu's showcase series.",
-            highlights: "Grand Finale Showcase",
-            tag: "Curation",
-            image: "/fashion/dfw.jpeg"
+            location: "Mapple Gold, Radisson Blu, Paschim Vihar",
+            desc: "Featured as the celebrity showstopper for the Maison de Bose Grand Finale showcase at Designer Fashion Week Edition 5.",
+            highlights: "Grand Finale Showstopper",
+            tag: "Runway",
+            image: "/fashion/dfw2.png"
         }
     ];
 
@@ -165,7 +155,9 @@ export default function FashionShowsPage() {
                                         </div>
                                     </div> */}
 
+
                                     <Image src={work.image} alt={work.title} width={400} height={400} className="w-full h-full object-cover" />
+                                    {work.image == "/fashion/dfw2.png" && <Image src="/fashion/dfw.png" alt={work.title} width={400} height={400} className="absolute bottom-0 right-0 w-[40vw] h-[20vh] object-cover" />}
                                 </div>
                                 <div className="space-y-6">
                                     <div>

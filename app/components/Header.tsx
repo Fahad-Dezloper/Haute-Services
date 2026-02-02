@@ -21,7 +21,14 @@ export default function Header() {
                 { name: 'Film Festival', href: '/lifestyle/film-festival' },
             ]
         },
-        { name: 'About Us', href: '/about' },
+        {
+            name: 'About Us',
+            href: '/about',
+            subLinks: [
+                { name: 'Our Story', href: '/about' },
+                { name: 'Awards', href: '/awards' },
+            ]
+        },
     ];
 
     return (

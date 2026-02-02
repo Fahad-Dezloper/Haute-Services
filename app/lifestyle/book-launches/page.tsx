@@ -64,6 +64,14 @@ export default function BookLaunchesPage() {
             desc: "Launching the visual and narrative journey of one of India's most celebrated avant-garde chefs, focusing on the intersection of art and food.",
             image: "/book/Abhijit.png",
             highlight: "Culinary Innovation"
+        },
+        {
+            author: "Chris Gayle",
+            book: "Six Machine",
+            tag: "Cricket Legend Autobiography",
+            desc: "Launched at The Roseate Hotels, coinciding with the debut of their now-iconic clover leaf logo. From a momentous book launch to a lasting friendship, Chris Gayle remains a close associate while playing the Legends Cup and meeting national leadership in India.",
+            image: "/book/chris.png",
+            highlight: "Global Sports Icon"
         }
     ];
 
@@ -128,6 +136,7 @@ export default function BookLaunchesPage() {
                                         fill
                                         className="object-cover"
                                     />
+                                    {item.image == "/book/chris.png" && <Image src="/book/chris2.jpg" alt={item.author} width={400} height={400} className="absolute bottom-0 right-0 w-[40vw] h-[20vh] object-cover" />}
                                 </div>
                                 <div className="max-w-md">
                                     <div className="flex items-center gap-3 mb-4">
