@@ -7,56 +7,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 
-const news = [
-  {
-    source: "Zee Business",
-    date: "",
-    title: "Art as a Strategic Investment",
-    description: "Manish K. Baheti was featured as an expert on Zee Business, sharing insights on art market investment, legacy building, and how art is emerging as a strategic wealth asset.",
-    image: "/news/zeebusinessnews.jpeg",
-    link: ""
-  },
-  {
-    source: "Fortune Exchange Magazine",
-    date: "",
-    title: "A Gentleman Passionate About Gastronomy & Art",
-    description: "A detailed interview with Manish Kumar Baheti covering his journey in hospitality, founding HAUTE Services, curating art events, and leading India's celebrated Food For Thought Fest.",
-    image: "/news/fortune.jpeg",
-    link: ""
-  },
-  {
-    source: "HAUTE Services x Shantanu & Nikhil",
-    date: "",
-    title: "Customer Excellence Project for Shantanu & Nikhil",
-    description: "HAUTE Services designed the ‘Customer Excellence Project’ for luxury retail brand Shantanu & Nikhil, which involved creating a specialized Brand Standards Manual and training teams across multiple locations.",
-    image: "/news/shantanu.png",
-    link: ""
-  },
-  {
-    source: "Times of India",
-    date: "January 13, 2025",
-    title: "AOI’s Starry Night Captures the Energy and Colour of Indian Art",
-    description: "Times of India covered the Art of India exhibition featuring artworks supported and curated by HAUTE Services. The article highlights the vibrancy and cultural significance of contemporary Indian art.",
-    image: "/news/toi.png",
-    link: ""
-  },
-  {
-    source: "Outlook India",
-    date: "",
-    title: "Maneesh Baheti – A Visionary in Lifestyle Consultancy & Gastronomy",
-    description: "Outlook India profiled Manish Baheti’s pioneering role in lifestyle consulting, gastronomy events, and redefining India’s food & art experience landscape.",
-    image: "/news/outlook.png",
-    link: "https://www.outlookindia.com/amp/story/hub4business/maneesh-baheti-a-visionary-in-lifestyle-consultancy-gastronomy"
-  },
-  {
-    source: "Multiple News Channels",
-    date: "",
-    title: "Hospitality Expert Featured Across Media",
-    description: "Manish Baheti has appeared seven times in national news as a hospitality expert, offering commentary on industry trends, service excellence, and consumer experience.",
-    image: "/news/covid2.png",
-    link: ""
-  }
-]
+import { mediaCoverage } from '@/lib/data';
+
+const news = mediaCoverage.slice(0, 6);
 
 
 // --- Components ---
@@ -385,7 +338,7 @@ export default function HomePage() {
         <Reveal delay={0.6}>
           <div className="mt-20 flex justify-center">
             <Link
-              href="/about"
+              href="/media-coverage"
               className="inline-flex items-center gap-6 group"
             >
               <span className="text-xs uppercase tracking-[0.4em] font-bold text-charcoal border-b border-charcoal/20 pb-1 group-hover:border-charcoal transition-colors">

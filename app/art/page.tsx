@@ -96,29 +96,13 @@ const engagements = [
     }
 ]
 
-const news_cycle = [
-    {
-        source: "Zee Business News",
-        date: "Nov 2009",
-        title: "Art as a Strategic Investment",
-        description: "Manish K Baheti featured as an expert on Zee Business, discussing the dynamics of art market investment.",
-        image: "/news/zeebusinessnews.jpeg"
-    },
-    {
-        source: "The Times of India",
-        date: "Jan 2025",
-        title: "The Art of India Show",
-        description: "A beautifully curated showcase by Dr. Alka Pande in collaboration with Art Magnum, featuring rare and exceptional works across six distinct genres of visual arts.",
-        image: "/art/news/toi1.jpeg"
-    },
-    {
-        source: "Newspaper Feature",
-        date: "March 2023",
-        title: "A Way to Bengal",
-        description: "Showcasing regional talent through fine art curation in the national capital.",
-        image: "/art/news/bengal.png"
-    }
-]
+import { mediaCoverage } from '@/lib/data';
+
+const news_cycle = mediaCoverage.filter(item =>
+    item.title.toLowerCase().includes('art') ||
+    item.source.toLowerCase().includes('art') ||
+    item.category === 'Press'
+).slice(0, 3);
 
 const published_articles = [
     {

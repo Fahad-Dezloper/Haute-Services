@@ -4,6 +4,8 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { ArrowUpRight, Award, BookOpen, GraduationCap, Building2, Globe } from 'lucide-react';
 import Image from 'next/image';
+import { mediaCoverage } from '@/lib/data';
+import Link from 'next/link';
 
 // --- Shared Components ---
 
@@ -228,21 +230,31 @@ export default function AboutPage() {
                         <h2 className="text-3xl lg:text-5xl font-serif mb-24 text-center">Recognition & Media</h2>
                     </Reveal>
                     <div className="grid md:grid-cols-3 gap-12">
-                        {[
-                            { source: "Associated Press", title: "Cultural Vanguard", date: "Multiple Features", icon: Globe },
-                            { source: "Zee Business", title: "Industry Leadership", date: "Nov 2009", icon: Building2 },
-                            { source: "India Today", title: "Culinary Diplomacy", date: "Inaugural Feature", icon: Award }
-                        ].map((item, i) => (
+                        {mediaCoverage.slice(0, 3).map((item, i) => (
                             <Reveal key={i} delay={i * 0.1}>
-                                <div className="p-10 border border-charcoal/5 bg-white group hover:border-charcoal/20 transition-all duration-500 rounded-sm shadow-sm">
-                                    <item.icon className="w-8 h-8 text-charcoal/20 mb-8" strokeWidth={1} />
+                                <div className="p-10 border border-charcoal/5 bg-white group hover:border-charcoal/20 transition-all duration-500 rounded-sm shadow-sm flex flex-col h-full">
                                     <span className="text-[10px] uppercase tracking-widest font-bold text-charcoal/40 block mb-2">{item.source}</span>
                                     <h3 className="text-2xl font-serif mb-4 leading-tight">{item.title}</h3>
-                                    <p className="text-xs text-charcoal/50 uppercase tracking-widest">{item.date}</p>
+                                    <p className="text-sm text-charcoal/60 line-clamp-3 mb-6 font-light">{item.description}</p>
+                                    <div className="mt-auto pt-6 border-t border-charcoal/5 flex items-center justify-between">
+                                        <span className="text-[10px] text-charcoal/40 uppercase tracking-widest">{item.date}</span>
+                                        {item.link && (
+                                            <Link href={item.link} target="_blank" className="text-charcoal hover:translate-x-1 transition-transform">
+                                                <ArrowUpRight className="w-4 h-4" />
+                                            </Link>
+                                        )}
+                                    </div>
                                 </div>
                             </Reveal>
                         ))}
                     </div>
+                    <Reveal delay={0.4}>
+                        <div className="mt-16 text-center">
+                            <Link href="/media-coverage" className="text-xs uppercase tracking-[0.3em] font-bold text-charcoal border-b border-charcoal/20 pb-1 hover:border-charcoal transition-all">
+                                View Full Press Archive
+                            </Link>
+                        </div>
+                    </Reveal>
                 </div>
             </section>
 

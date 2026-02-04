@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from 'motion/react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowUpRight } from 'lucide-react';
+import { mediaCoverage } from '@/lib/data';
 
 const Reveal = ({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) => (
     <motion.div
@@ -148,6 +149,41 @@ export default function LifestylePage() {
                         <p className="text-white/40 uppercase tracking-[0.4em] text-[10px] font-bold">Haute Lifestyle Division</p>
                     </div>
                 </Reveal>
+            </section>
+
+            {/* --- MEDIA & PRESS --- */}
+            <section className="py-24 lg:py-40 bg-white">
+                <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                    <Reveal>
+                        <h2 className="text-3xl lg:text-5xl font-serif mb-24 text-center">Press & Recognition</h2>
+                    </Reveal>
+                    <div className="grid md:grid-cols-3 gap-12">
+                        {mediaCoverage.filter(item => item.category === 'Interview' || item.category === 'Award' || item.source.includes('Outlook') || item.source.includes('Fortune')).slice(0, 3).map((item, i) => (
+                            <Reveal key={i} delay={i * 0.1}>
+                                <div className="p-10 border border-charcoal/5 bg-cream/20 group hover:border-charcoal/20 transition-all duration-500 rounded-sm shadow-sm flex flex-col h-full">
+                                    <span className="text-[10px] uppercase tracking-widest font-bold text-charcoal/40 block mb-2">{item.source}</span>
+                                    <h3 className="text-2xl font-serif mb-4 leading-tight">{item.title}</h3>
+                                    <p className="text-sm text-charcoal/60 line-clamp-3 mb-6 font-light">{item.description}</p>
+                                    <div className="mt-auto pt-6 border-t border-charcoal/5 flex items-center justify-between">
+                                        <span className="text-[10px] text-charcoal/40 uppercase tracking-widest">{item.date}</span>
+                                        {item.link && (
+                                            <Link href={item.link} target="_blank" className="text-charcoal hover:translate-x-1 transition-transform">
+                                                <ArrowUpRight className="w-4 h-4" />
+                                            </Link>
+                                        )}
+                                    </div>
+                                </div>
+                            </Reveal>
+                        ))}
+                    </div>
+                    <Reveal delay={0.4}>
+                        <div className="mt-16 text-center">
+                            <Link href="/media-coverage" className="text-xs uppercase tracking-[0.3em] font-bold text-charcoal border-b border-charcoal/20 pb-1 hover:border-charcoal transition-all">
+                                View Full Media Archive
+                            </Link>
+                        </div>
+                    </Reveal>
+                </div>
             </section>
 
             {/* --- CTA --- */}

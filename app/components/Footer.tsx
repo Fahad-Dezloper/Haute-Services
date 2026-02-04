@@ -38,6 +38,7 @@ export default function Footer() {
                             <li><Link href="/art" className="text-lg hover:text-white/60 transition-colors">Art Advisory</Link></li>
                             <li><Link href="/lifestyle" className="text-lg hover:text-white/60 transition-colors">Lifestyle Events</Link></li>
                             <li><Link href="/about" className="text-lg hover:text-white/60 transition-colors">About Us</Link></li>
+                            <li><Link href="/media-coverage" className="text-lg hover:text-white/60 transition-colors">Media Coverage</Link></li>
                         </ul>
                     </div>
 

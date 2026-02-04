@@ -51,7 +51,7 @@ export default function FashionShowsPage() {
             desc: "Fashion integrated automotive launch featuring designers Charu & Arjun Parashar.",
             highlights: "Luxury Brand x Fashion",
             tag: "Luxury Launch",
-            image: "/fashion/Audi.jpg"
+            image: "/fashion/Audi.png"
         },
         {
             title: "Khubani Fashion Event",
@@ -82,6 +82,16 @@ export default function FashionShowsPage() {
             highlights: "Grand Finale Showstopper",
             tag: "Runway",
             image: "/fashion/dfw2.png"
+        },
+        {
+            title: "Power Creator Travel Awards",
+            role: "Award Presenter",
+            date: "2024 & 2025",
+            location: "Times of India",
+            desc: "Haute Services Founder presented the Power Creator Travel Awards by Times of India for two consecutive years, recognizing excellence in travel and lifestyle content creation.",
+            highlights: "Industry Leadership",
+            tag: "Awards",
+            image: "/fashion/Toi.png"
         }
     ];
 
@@ -92,14 +102,7 @@ export default function FashionShowsPage() {
         { title: "Luxury Brand Launches", icon: ArrowUpRight, desc: "Integrated launch events combining fashion, hospitality, and culture." }
     ];
 
-    const involvementHighlights = [
-        { title: "Talent Jury", ref: "Maison de Bose", year: "2024", aspect: "aspect-square" },
-        { title: "Runway Production", ref: "Khubani", year: "2017", aspect: "aspect-[3/4]" },
-        { title: "Luxury Launch", ref: "Audi India", year: "2021", aspect: "aspect-square" },
-        { title: "Finale Curation", ref: "DFW Edition 5", year: "2025", aspect: "aspect-[4/5]" },
-        { title: "Brand Support", ref: "Lakmé", year: "2024", aspect: "aspect-square" },
-        { title: "Grand Finale", ref: "Radisson Blu", year: "2025", aspect: "aspect-[3/5]" }
-    ];
+    const involvementHighlights = ["/extra/arjunparashar.png", "/extra/ashishsoni.png", "/extra/fashionicons.png", "/extra/ToiAwards.png", "/extra/ToiAwards2.png", "/extra/ashishsoni2.png", "/extra/showstopper.png"];
 
     return (
         <main className="bg-cream min-h-screen text-charcoal font-sans selection:bg-charcoal selection:text-white overflow-hidden pb-12">
@@ -210,7 +213,6 @@ export default function FashionShowsPage() {
                 <div className="max-w-7xl mx-auto px-6 lg:px-12">
                     <Reveal>
                         <div className="mb-20">
-                            <span className="text-xs uppercase tracking-[0.4em] font-bold text-white/30 mb-8 block">The Visual Ledger</span>
                             <h2 className="text-4xl lg:text-7xl font-serif leading-tight">Involvement & <br /><span className="italic">Highlights</span></h2>
                         </div>
                     </Reveal>
@@ -218,17 +220,15 @@ export default function FashionShowsPage() {
                     <div className="columns-2 md:columns-2 lg:columns-3 gap-6 space-y-6">
                         {involvementHighlights.map((item, i) => (
                             <Reveal key={i} delay={i * 0.1}>
-                                <div className={`relative group overflow-hidden bg-white/5 rounded-sm ${item.aspect}`}>
-                                    <div className="absolute inset-0 opacity-40 group-hover:opacity-100 transition-opacity duration-700 grayscale group-hover:grayscale-0">
-                                        {/* USER: PLACE MASONRY IMAGE HERE */}
-                                        <div className="w-full h-full flex items-center justify-center text-white/10 font-serif italic text-xl p-8 text-center leading-tight">
-                                            Highlight: <br /> {item.title}
-                                        </div>
-                                    </div>
-                                    <div className="absolute inset-x-0 bottom-0 p-4 sm:p-6 bg-linear-to-t from-charcoal/90 to-transparent translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                <div className={`relative group overflow-hidden bg-white/5 rounded-sm`}>
+                                    {/* <div className="absolute inset-0 opacity-40 group-hover:opacity-100 transition-opacity duration-700 grayscale group-hover:grayscale-0">
+                                        
+                                    </div> */}
+                                    <Image src={item} alt="" width={400} height={400} className="w-full h-full object-cover" />
+                                    {/* <div className="absolute inset-x-0 bottom-0 p-4 sm:p-6 bg-linear-to-t from-charcoal/90 to-transparent translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                                         <span className="text-[9px] sm:text-[10px] uppercase font-bold tracking-widest text-white/50">{item.year} — {item.ref}</span>
                                         <h4 className="text-base sm:text-lg font-serif mt-1">{item.title}</h4>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </Reveal>
                         ))}
