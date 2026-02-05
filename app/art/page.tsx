@@ -179,7 +179,7 @@ export default function ArtPage() {
             </section>
 
             {/* --- THE PHILOSOPHY --- */}
-            <section className="py-20 lg:py-32 px-6 lg:px-12 max-w-7xl mx-auto">
+            <section className="py-20 lg:py-32 px-6 lg:px-12 max-w-screen-2xl mx-auto">
                 <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
                     <div className="lg:col-span-12">
                         <Reveal>
@@ -361,7 +361,7 @@ export default function ArtPage() {
 
             {/* --- PUBLIC ENGAGEMENTS & GUEST APPEARANCES --- */}
             <section className="py-20 lg:py-32 px-6 lg:px-12 bg-cream">
-                <div className="max-w-7xl mx-auto">
+                <div className="max-w-screen-2xl mx-auto">
                     <Reveal>
                         <div className="mb-16 lg:mb-24 text-center">
                             <h2 className="text-4xl md:text-5xl lg:text-7xl font-serif text-charcoal leading-none">Curatorial &<br /> <span className="italic font-light">Cultural Footprint</span></h2>
@@ -398,7 +398,7 @@ export default function ArtPage() {
 
             {/* --- PUBLISHED ARTICLES SECTION --- */}
             <section className="py-20 lg:py-32 px-6 lg:px-12 bg-white">
-                <div className="max-w-7xl mx-auto">
+                <div className="max-w-screen-2xl mx-auto">
                     <Reveal>
                         <div className="text-center mb-16 lg:mb-24">
                             <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-charcoal/30 mb-4 block">Thought Leadership</span>
@@ -444,7 +444,7 @@ export default function ArtPage() {
 
             {/* --- ART MEDIA COVERAGE --- */}
             <section className="py-20 lg:py-32 px-6 lg:px-12 bg-white">
-                <div className="max-w-7xl mx-auto">
+                <div className="max-w-screen-2xl mx-auto">
                     <Reveal>
                         <h2 className="text-4xl md:text-5xl lg:text-7xl font-serif mb-16 lg:mb-24 text-center">Media & <span className="italic font-light">Press</span></h2>
                     </Reveal>

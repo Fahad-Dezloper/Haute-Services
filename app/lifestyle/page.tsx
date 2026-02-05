@@ -90,7 +90,7 @@ export default function LifestylePage() {
             </section>
 
             {/* --- CATEGORIES GRID --- */}
-            <section className="py-20 lg:py-40 px-6 lg:px-12 max-w-7xl mx-auto">
+            <section className="py-20 lg:py-40 px-6 lg:px-12 max-w-screen-2xl mx-auto">
                 <div className="grid lg:grid-cols-2 gap-x-16 gap-y-24 lg:gap-y-32">
                     {categories.map((cat, i) => (
                         <Reveal key={i} delay={i * 0.1}>
@@ -153,7 +153,7 @@ export default function LifestylePage() {
 
             {/* --- MEDIA & PRESS --- */}
             <section className="py-24 lg:py-40 bg-white">
-                <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="max-w-screen-2xl mx-auto px-6 lg:px-12">
                     <Reveal>
                         <h2 className="text-3xl lg:text-5xl font-serif mb-24 text-center">Press & Recognition</h2>
                     </Reveal>

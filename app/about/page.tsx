@@ -70,7 +70,7 @@ export default function AboutPage() {
             </section>
 
             {/* --- OUR IDENTITY --- */}
-            <section className="py-24 lg:py-40 px-6 lg:px-12 max-w-7xl mx-auto">
+            <section className="py-24 lg:py-40 px-6 lg:px-12 max-w-screen-2xl mx-auto">
                 <div className="grid lg:grid-cols-12 gap-16 items-start">
                     <div className="lg:col-span-8">
                         <Reveal>
@@ -94,7 +94,7 @@ export default function AboutPage() {
 
             {/* --- LEADERSHIP: MANEESH BAHETI --- */}
             <section className="py-24 lg:py-40 bg-white">
-                <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="max-w-screen-2xl mx-auto px-6 lg:px-12">
                     <div className="grid lg:grid-cols-12 gap-16 lg:gap-24 items-center">
                         <div className="lg:col-span-6 lg:order-2">
                             <Reveal>
@@ -148,7 +148,7 @@ export default function AboutPage() {
 
             {/* --- LEADERSHIP: SONALI ANAND --- */}
             <section className="py-24 lg:py-40 bg-cream/30">
-                <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="max-w-screen-2xl mx-auto px-6 lg:px-12">
                     <div className="grid lg:grid-cols-12 gap-16 lg:gap-24 items-center">
                         <div className="lg:col-span-6">
                             <Reveal>
@@ -209,7 +209,7 @@ export default function AboutPage() {
                             <h2 className="text-4xl lg:text-7xl font-serif leading-none italic">Trusted By</h2>
                         </div>
                     </Reveal>
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-12 gap-x-12 border-l border-charcoal/5 pl-6 md:pl-12">
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-y-12 gap-x-12 border-l border-charcoal/5 pl-6 md:pl-12">
                         {clients.map((client, i) => (
                             <Reveal key={i} delay={i * 0.05}>
                                 <div className="group cursor-default">
@@ -225,7 +225,7 @@ export default function AboutPage() {
 
             {/* --- RECOGNITION & PRESS --- */}
             <section className="py-24 lg:py-40 bg-cream/20">
-                <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="max-w-screen-2xl mx-auto px-6 lg:px-12">
                     <Reveal>
                         <h2 className="text-3xl lg:text-5xl font-serif mb-24 text-center">Recognition & Media</h2>
                     </Reveal>

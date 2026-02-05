@@ -10,37 +10,19 @@ export interface MediaItem {
 
 export const mediaCoverage: MediaItem[] = [
     {
-        source: "Times of India",
-        date: "2024 & 2025",
-        title: "Power Creator Travel Awards",
-        description: "Maneesh Baheti, Founder of Haute Services, was invited to present the prestigious Power Creator Travel Awards by Times of India for two consecutive years, highlighting his influence in the luxury travel and hospitality sector.",
-        image: "/fashion/Toi.png",
+        source: "India Art Fair Parallel",
+        date: "February 2026",
+        title: "Borrowed Identities – Co-curated by Haute Services",
+        description: "An official India Art Fair Parallel event presented by the Liszt Institute and co-curated by Haute Services & SANDARBH. Featuring an exhibition by István Eross at the Hungarian Culture Centre, New Delhi.",
+        image: "/news/iaf.png",
         link: "",
-        category: 'Award'
-    },
-    {
-        source: "Outlook India",
-        date: "Jan 2024",
-        title: "Maneesh Baheti – A Visionary in Lifestyle Consultancy & Gastronomy",
-        description: "Outlook India profiled Maneesh Baheti’s pioneering role in lifestyle consulting, gastronomy events, and redefining India’s food & art experience landscape.",
-        image: "/news/outlook.png",
-        link: "https://www.outlookindia.com/amp/story/hub4business/maneesh-baheti-a-visionary-in-lifestyle-consultancy-gastronomy",
         category: 'Press'
     },
     {
-        source: "ET Hospitality",
-        date: "August 7, 2020",
-        title: "Street food parks - the time is ripe",
-        description: "Maneesh Baheti advocates for the development of street food parks in India, drawing parallels with successful international models to boost tourism and entrepreneurship.",
-        image: "/news/ethospitality.jpeg",
-        link: "https://hospitality.economictimes.indiatimes.com/news/speaking-heads/street-food-parks-the-time-is-ripe/77409240",
-        category: 'Expert Opinion'
-    },
-    {
         source: "Zee Business",
-        date: "Feb 2024",
+        date: "",
         title: "Art as a Strategic Investment",
-        description: "Maneesh K. Baheti was featured as an expert on Zee Business, sharing insights on art market investment, legacy building, and how art is emerging as a strategic wealth asset.",
+        description: "Manish K. Baheti was featured as an expert on Zee Business, sharing insights on art market investment, legacy building, and how art is emerging as a strategic wealth asset.",
         image: "/news/zeebusinessnews.jpeg",
         link: "",
         category: 'Expert Opinion'
@@ -49,10 +31,19 @@ export const mediaCoverage: MediaItem[] = [
         source: "Fortune Exchange Magazine",
         date: "March 2024",
         title: "A Gentleman Passionate About Gastronomy & Art",
-        description: "A detailed interview with Maneesh Kumar Baheti covering his journey in hospitality, founding HAUTE Services, curating art events, and leading India's celebrated Food For Thought Fest.",
+        description: "A detailed interview with Manish Kumar Baheti covering his journey in hospitality, founding HAUTE Services, curating art events, and leading India's celebrated Food For Thought Fest.",
         image: "/news/fortune.jpeg",
         link: "",
         category: 'Interview'
+    },
+    {
+        source: "HAUTE Services x Shantanu & Nikhil",
+        date: "2023",
+        title: "Customer Excellence Project for Shantanu & Nikhil",
+        description: "HAUTE Services designed the ‘Customer Excellence Project’ for luxury retail brand Shantanu & Nikhil, which involved creating a specialized Brand Standards Manual and training teams across multiple locations.",
+        image: "/news/shantanu.png",
+        link: "",
+        category: 'Press'
     },
     {
         source: "Times of India",
@@ -64,21 +55,39 @@ export const mediaCoverage: MediaItem[] = [
         category: 'Press'
     },
     {
-        source: "HAUTE Services x Shantanu & Nikhil",
-        date: "2023",
-        title: "Customer Excellence Project for Shantanu & Nikhil",
-        description: "HAUTE Services designed the ‘Customer Excellence Project’ for luxury retail brand Shantanu & Nikhil, creating a specialized Brand Standards Manual and training teams.",
-        image: "/news/shantanu.png",
-        link: "",
+        source: "Outlook India",
+        date: "Jan 2024",
+        title: "Maneesh Baheti – A Visionary in Lifestyle Consultancy & Gastronomy",
+        description: "Outlook India profiled Manish Baheti’s pioneering role in lifestyle consulting, gastronomy events, and redefining India’s food & art experience landscape.",
+        image: "/news/outlook.png",
+        link: "https://www.outlookindia.com/amp/story/hub4business/maneesh-baheti-a-visionary-in-lifestyle-consultancy-gastronomy",
         category: 'Press'
     },
     {
-        source: "National Media",
+        source: "Multiple News Channels",
         date: "Multiple Appearances",
         title: "Hospitality Expert Featured Across Media",
-        description: "Maneesh Baheti has appeared multiple times in national news as a hospitality expert, offering commentary on industry trends, service excellence, and consumer experience.",
+        description: "Manish Baheti has appeared seven times in national news as a hospitality expert, offering commentary on industry trends, service excellence, and consumer experience.",
         image: "/news/covid2.png",
         link: "",
+        category: 'Expert Opinion'
+    },
+    {
+        source: "Times of India",
+        date: "2024 & 2025",
+        title: "Power Creator Travel Awards",
+        description: "Maneesh Baheti, Founder of Haute Services, was invited to present the prestigious Power Creator Travel Awards by Times of India for two consecutive years, highlighting his influence in the luxury travel and hospitality sector.",
+        image: "/fashion/Toi.png",
+        link: "",
+        category: 'Award'
+    },
+    {
+        source: "ET Hospitality",
+        date: "August 7, 2020",
+        title: "Street food parks - the time is ripe",
+        description: "Maneesh Baheti advocates for the development of street food parks in India, drawing parallels with successful international models to boost tourism and entrepreneurship.",
+        image: "/news/ethospitality.jpeg",
+        link: "https://hospitality.economictimes.indiatimes.com/news/speaking-heads/street-food-parks-the-time-is-ripe/77409240",
         category: 'Expert Opinion'
     },
     {

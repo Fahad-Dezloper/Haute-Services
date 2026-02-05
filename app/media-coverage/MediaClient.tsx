@@ -36,7 +36,7 @@ export default function MediaClient({ mediaCoverage }: { mediaCoverage: MediaIte
                     <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1)_0%,transparent_50%)]" />
                 </div>
 
-                <div className="relative z-10 max-w-7xl mx-auto">
+                <div className="relative z-10 max-w-screen-2xl mx-auto">
                     <Reveal>
                         <div className="flex items-center gap-4 mb-8">
                             <div className="h-px w-12 bg-cream/30" />
@@ -53,8 +53,8 @@ export default function MediaClient({ mediaCoverage }: { mediaCoverage: MediaIte
             </section>
 
             {/* --- MEDIA GRID --- */}
-            <section className="py-24 lg:py-40 px-6 lg:px-12 max-w-7xl mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24">
+            <section className="py-24 lg:py-40 px-6 lg:px-12 max-w-screen-2xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-16 lg:gap-32">
                     {mediaCoverage.map((item, index) => (
                         <Reveal key={index} delay={index * 0.1}>
                             <div className="group flex flex-col h-full border-b border-charcoal/10 pb-12">
@@ -110,7 +110,7 @@ export default function MediaClient({ mediaCoverage }: { mediaCoverage: MediaIte
 
             {/* --- EXPERT VOICE SECTION --- */}
             <section className="bg-charcoal text-white py-24 lg:py-40">
-                <div className="max-w-7xl mx-auto px-6 lg:px-12">
+                <div className="max-w-screen-2xl mx-auto px-6 lg:px-12">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <Reveal>
                             <h2 className="text-4xl lg:text-6xl font-serif mb-12 italic">The Voice of Expertise</h2>

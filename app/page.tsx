@@ -59,8 +59,8 @@ export default function HomePage() {
 
       {/* --- HERO SECTION --- */}
       <section className="relative flex flex-col items-center overflow-hidden">
-        <div className="relative w-full px-6 lg:px-12 mb-16 lg:mb-8">
-          <div className="relative h-[50vh] sm:h-[60vh] lg:h-[75vh] w-full rounded-sm overflow-hidden bg-charcoal/5">
+        <div className="relative w-full px-6 lg:px-12 xl:px-24 mb-16 lg:mb-8">
+          <div className="relative h-[50vh] sm:h-[60vh] lg:h-[80vh] xl:h-[85vh] w-full rounded-sm overflow-hidden bg-charcoal/5">
             <ParallaxImage
               src="https://static.wixstatic.com/media/e86273_57cdee80347a45fa8d0d12a449a0768b~mv2.png?originWidth=1152&originHeight=832"
               alt="Elegant lifestyle event setting"
@@ -98,9 +98,9 @@ export default function HomePage() {
               <div className='flex flex-col lg:flex-row justify-between w-full items-start lg:items-center gap-12 lg:gap-0'>
 
                 <Reveal delay={0.1}>
-                  <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[10rem] font-serif text-charcoal leading-[0.9] lg:leading-[0.85] tracking-tighter">
+                  <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] 2xl:text-[14rem] font-serif text-charcoal leading-[0.9] lg:leading-[0.85] tracking-tighter">
                     Haute <br />
-                    <span className="italic font-light text-charcoal/90 pl-2 sm:pl-4 lg:pl-12">Services</span>
+                    <span className="italic font-light text-charcoal/90 pl-2 sm:pl-4 lg:pl-12 xl:pl-20">Services</span>
                   </h1>
                 </Reveal>
 
@@ -129,7 +129,7 @@ export default function HomePage() {
 
               <div className="grid md:grid-cols-2 gap-12 lg:mt-24">
                 <Reveal delay={0.2}>
-                  <p className="text-lg lg:text-xl text-charcoal/80 leading-relaxed font-light">
+                  <p className="text-lg lg:text-xl xl:text-2xl text-charcoal/80 leading-relaxed font-light xl:max-w-2xl">
                     Transforming the landscape of luxury through expert art advisory and
                     sophisticated lifestyle events. We bridge the gap between cultural heritage and modern excellence.
                   </p>
@@ -145,9 +145,9 @@ export default function HomePage() {
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           <div className="lg:col-span-4 lg:sticky lg:top-32">
             <Reveal>
-              <h2 className="text-3xl lg:text-4xl font-serif mb-6">Who We Are</h2>
+              <h2 className="text-3xl lg:text-4xl xl:text-5xl font-serif mb-6">Who We Are</h2>
               <div className="h-px w-24 bg-charcoal/20 mb-10 lg:mb-6" />
-              <p className="text-charcoal/80 leading-relaxed text-sm lg:text-base hidden lg:block">
+              <p className="text-charcoal/80 leading-relaxed text-sm lg:text-base xl:text-lg hidden lg:block">
                 Established as a premier boutique consultancy for discerning clients.
               </p>
             </Reveal>
@@ -226,7 +226,7 @@ export default function HomePage() {
                   <p className="text-lg lg:text-xl text-charcoal/80 mb-12 leading-relaxed max-w-xl">
                     Comprehensive advisory for collectors, investors, and spaces. We provide a bridge between the creator and the connoisseur, ensuring every acquisition is a legacy in the making.
                   </p>
-                  <ul className="space-y-4 mb-12">
+                  <ul className="grid grid-cols-2 gap-x-8 gap-y-4 mb-12">
                     {['Strategic Acquisition', 'Portfolio Management', 'Restoration & Valuation', 'Corporate Curations'].map((item) => (
                       <li key={item} className="flex items-center gap-4 text-sm uppercase tracking-widest text-charcoal/60">
                         <div className="w-1.5 h-1.5 rounded-full bg-charcoal/20" />
@@ -269,7 +269,7 @@ export default function HomePage() {
                   <p className="text-lg lg:text-xl text-charcoal/80 mb-12 leading-relaxed max-w-xl">
                     Curating high-impact festivals, book launches, and luxury F&B experiences. Our events are more than gatherings—they are cultural milestones that celebrate regional heritage and culinary excellence.
                   </p>
-                  <ul className="space-y-4 mb-12">
+                  <ul className="grid grid-cols-2 gap-x-8 gap-y-4 mb-12">
                     {['Culinary Festivals', 'Book Launches', 'Fashion Shows', 'Film Festival'].map((item) => (
                       <li key={item} className="flex items-center gap-4 text-sm uppercase tracking-widest text-charcoal/60">
                         <div className="w-1.5 h-1.5 rounded-full bg-charcoal/20" />
@@ -288,9 +288,9 @@ export default function HomePage() {
               </div>
               <div className="lg:col-span-6">
                 <Reveal delay={0.2}>
-                  <div className="relative aspect-square w-full bg-charcoal/5 rounded-sm overflow-hidden shadow-2xl">
+                  <div className="relative h-[250px] w-full bg-charcoal/5 rounded-sm overflow-hidden shadow-2xl">
                     <ParallaxImage
-                      src="/images/lifestyle.png"
+                      src="/lifestyle.avif"
                       alt="Lifestyle Events"
                       className="w-full h-full grayscale-20 hover:grayscale-0 transition-all duration-1000"
                     />
@@ -308,7 +308,7 @@ export default function HomePage() {
           <h2 className="text-3xl lg:text-4xl font-serif mb-16 text-center">Legacy & Recognition</h2>
         </Reveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-12 xl:gap-24">
           {news.map((item, index) => (
             <Reveal key={index} delay={index * 0.1}>
               <div className="group cursor-pointer">

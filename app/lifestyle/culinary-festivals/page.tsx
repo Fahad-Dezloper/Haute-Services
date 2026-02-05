@@ -255,7 +255,7 @@ export default function CulinaryFestivalsPage() {
             </section>
 
             {/* --- FLAGSHIP: FOOD FOR THOUGHT FEST --- */}
-            <section className="py-24 lg:py-40 px-6 lg:px-12 max-w-7xl mx-auto">
+            <section className="py-24 lg:py-40 px-6 lg:px-12 max-w-screen-2xl mx-auto">
                 <div className="grid md:grid-cols-12 gap-12 lg:gap-16 items-start mb-32">
                     <div className="md:col-span-11 lg:col-span-8">
                         <Reveal>
@@ -321,7 +321,7 @@ export default function CulinaryFestivalsPage() {
                         <span className="text-xs uppercase tracking-[0.4em] font-bold text-charcoal/30 mb-8 block">Voices of Excellence</span>
                         <h2 className="text-4xl lg:text-6xl font-serif mb-20 leading-tight">Legendary <span className="italic">Endorsements</span></h2>
                     </Reveal>
-                    <div className="grid md:grid-cols-2 gap-24 lg:gap-24">
+                    <div className="grid md:grid-cols-2 gap-24 lg:gap-32">
                         {testimonials.map((t, i) => (
                             <Reveal key={i} delay={i * 0.1}>
                                 <div className="relative pt-20 border-t border-charcoal/10">
@@ -406,7 +406,7 @@ export default function CulinaryFestivalsPage() {
                             <h2 className="text-4xl lg:text-7xl font-serif leading-tight">Literary <span className="italic">Features</span></h2>
                         </div>
                     </Reveal>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 lg:gap-x-24 gap-y-16">
                         {magazines.map((mag, i) => (
                             <Reveal key={i} delay={i * 0.1}>
                                 <div className="group space-y-4 sm:space-y-10">
@@ -427,7 +427,7 @@ export default function CulinaryFestivalsPage() {
                                                 {mag.title}
                                             </h3>
                                         </div>
-                                        <p className="text-[10px] sm:text-lg text-charcoal/60 font-light leading-relaxed max-w-2xl line-clamp-3 sm:line-clamp-none">
+                                        <p className="text-base sm:text-lg text-charcoal/60 font-light leading-relaxed max-w-2xl ">
                                             {mag.desc}
                                         </p>
                                         <div className="pt-2 sm:pt-4 items-center gap-2 sm:gap-4 group-hover:gap-6 transition-all duration-500 opacity-0 group-hover:opacity-100 hidden sm:flex">
@@ -480,7 +480,7 @@ export default function CulinaryFestivalsPage() {
                     <div className="space-y-14 mb-40">
                         {yearBlocks.map((yearBlock, i) => (
                             <div key={i} className="space-y-12">
-                                <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+                                <div className="grid lg:grid-cols-2 gap-8 lg:gap-20">
                                     {yearBlock.videos.map((vid, j) => (
                                         <Reveal key={j} delay={j * 0.1}>
                                             <div
