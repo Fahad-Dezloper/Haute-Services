@@ -20,6 +20,17 @@ export const metadata: Metadata = {
   description: "Haute Services is a premier boutique consultancy specializing in international gastronomy, turnkey art advisory, and bespoke brand strategy since 2014. Based in New Delhi, we bridge the gap between cultural heritage and modern excellence.",
   keywords: ["Haute Services", "Art Advisory", "Lifestyle Events", "Gastronomy Consultancy", "Food For Thought Fest", "SAAG", "Maneesh Baheti", "Sonali Anand", "Luxury Brand Strategy", "Art Curation Delhi"],
   authors: [{ name: "Maneesh Baheti" }, { name: "Sonali Anand" }],
+  icons: {
+    icon: [
+      { url: "/favicon_io/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon_io/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon_io/favicon.ico" },
+    ],
+    apple: [
+      { url: "/favicon_io/apple-touch-icon.png" },
+    ],
+  },
+  manifest: "/favicon_io/site.webmanifest",
   openGraph: {
     title: "Haute Services | Lifestyle & Art Advisory",
     description: "Boutique consultancy specializing in international gastronomy, turnkey art advisory, and bespoke brand strategy.",
@@ -27,7 +38,7 @@ export const metadata: Metadata = {
     siteName: "Haute Services",
     images: [
       {
-        url: "/og-image.png", // Make sure to suggest or create this
+        url: "/og/image.png",
         width: 1200,
         height: 630,
         alt: "Haute Services Logo and Banner",
@@ -40,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Haute Services | Lifestyle & Art Advisory",
     description: "Boutique consultancy specializing in international gastronomy, turnkey art advisory, and bespoke brand strategy.",
-    images: ["/og-image.png"],
+    images: ["/og/image.png"],
   },
   alternates: {
     canonical: "https://hauteservices.in",
