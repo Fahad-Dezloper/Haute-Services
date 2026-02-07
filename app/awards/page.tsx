@@ -76,7 +76,7 @@ export default function AwardsPage() {
                 </div>
             </section>
 
-            {/* --- AWARDS LIST --- */}
+
             <section className="py-24 lg:py-40 px-6 lg:px-12 max-w-7xl mx-auto">
                 <div className="grid gap-24 lg:gap-40">
                     {awards.map((award, i) => (
