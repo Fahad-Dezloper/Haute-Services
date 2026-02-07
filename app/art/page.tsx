@@ -4,7 +4,7 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowLeft, ArrowRight, ArrowUpRight, Award, Mic, Users, Eye, Heart, Sparkles, Globe } from 'lucide-react';
+import { ArrowLeft, ArrowRight, ArrowUpRight, Award, Mic, Users, Eye, Heart, Sparkles, Globe, Instagram } from 'lucide-react';
 
 // --- Shared Components ---
 
@@ -124,6 +124,14 @@ const published_articles = [
         image: "/art/article/medley.jpeg"
     }
 ]
+
+const iafArtists = [
+    { name: "Buddhadev Mukherjee", link: "https://www.instagram.com/buddh.mukherjee?igsh=MWZ3OGlwNnJ0d2Z2cA==" },
+    { name: "Vinod Balak", link: "https://www.instagram.com/vinodbalak?igsh=Z2U1b3F4d2JrNWMz" },
+    { name: "Om Soorya", link: "https://www.instagram.com/omsoorya?igsh=MWZrczB4ZWUzYWlxcw==" },
+    { name: "Chintan Upadhyay", link: "https://www.instagram.com/chintanupadhyayart?igsh=bG81d2U3bnZtZzBo" },
+    { name: "Biswajit", link: null }
+];
 
 const Reveal = ({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) => (
     <motion.div
@@ -354,6 +362,157 @@ export default function ArtPage() {
                                     </div>
                                 </Reveal>
                             ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* --- INDIA ART FAIR PARALLEL EVENT --- */}
+            <section className="py-24 lg:py-40 bg-white overflow-hidden">
+                <div className="container mx-auto px-6 lg:px-12">
+                    <Reveal>
+                        <div className="flex items-center gap-4 mb-8">
+                            <div className="h-px w-12 bg-charcoal/20" />
+                            <span className="text-xs uppercase tracking-[0.4em] font-bold text-charcoal/40">Exclusive Collaboration</span>
+                        </div>
+                        <h2 className="text-4xl md:text-6xl lg:text-8xl font-serif text-charcoal mb-12 leading-tight">
+                            India Art Fair <br />
+                            <span className="italic font-light">Parallel Event</span>
+                        </h2>
+                    </Reveal>
+
+                    <div className="grid lg:grid-cols-12 gap-16 items-start mb-24">
+                        <div className="lg:col-span-5">
+                            <Reveal delay={0.1}>
+                                <div className="relative aspect-3/4 w-full bg-charcoal/5 rounded-sm overflow-hidden shadow-xl mb-8">
+                                    <Image
+                                        src="/news/iaf.png"
+                                        alt="IAF Parallel Event Poster"
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                            </Reveal>
+                        </div>
+                        <div className="lg:col-span-7">
+                            <Reveal delay={0.2}>
+                                <h3 className="text-2xl lg:text-4xl font-serif mb-8 leading-tight">
+                                    Borrowed Identities – <br />
+                                    <span className="text-charcoal/60 font-light italic">Co-curated by Haute Services</span>
+                                </h3>
+                                <div className="space-y-6 text-lg font-light leading-relaxed text-charcoal/70">
+                                    <p>
+                                        An official India Art Fair Parallel event presented by the <strong>Liszt Institute (Hungarian Culture Centre)</strong> and co-curated by <strong>Haute Services & SANDARBH</strong>.
+                                    </p>
+                                    <p>
+                                        Featuring a profound exhibition by <strong>István Erőss</strong> at the Hungarian Culture Centre, New Delhi, this collaboration explores the intersections of identity, nature, and cultural heritage.
+                                    </p>
+                                </div>
+                                <div className="grid grid-cols-2 gap-4 mt-12">
+                                    {[1, 2, 4].map((num) => (
+                                        <div key={num} className="relative aspect-square overflow-hidden rounded-sm shadow-md">
+                                            <Image
+                                                src={`/iaf/${num}.jpeg`}
+                                                alt={`IAF Exhibition ${num}`}
+                                                fill
+                                                className="object-cover hover:scale-105 transition-transform duration-700"
+                                            />
+                                        </div>
+                                    ))}
+                                    <div className="h-full flex flex-col justify-center p-6 bg-cream/50 border border-charcoal/5 italic text-sm lg:text-base font-serif text-charcoal/60">
+                                        "Bridging global artistic visions with the heart of New Delhi’s art landscape."
+                                    </div>
+                                </div>
+                            </Reveal>
+                        </div>
+                    </div>
+
+                    {/* Renowned Artists Section */}
+                    <div className="grid lg:grid-cols-12 gap-16 items-center mb-32 border-t border-charcoal/10 pt-24">
+                        <div className="lg:col-span-6 order-2 lg:order-1">
+                            <Reveal>
+                                <div className="relative aspect-4/3 mb-12 rounded-sm overflow-hidden shadow-2xl">
+                                    <Image
+                                        src="/iaf/3.jpeg"
+                                        alt="Founder with Renowned Artists"
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
+                                {/* Mobile Only Artists List */}
+                                <div className="lg:hidden space-y-6">
+                                    <p className="text-sm text-charcoal/60 italic leading-relaxed">
+                                        A convergence of contemporary masters including Om Soorya, Vinod Balak, Chintan Upadhyay, Biswajit and Buddhadev Mukherjee.
+                                    </p>
+                                    <div className="flex flex-wrap gap-x-6 gap-y-4">
+                                        {iafArtists.map((artist, i) => (
+                                            artist.link ? (
+                                                <a
+                                                    key={i}
+                                                    href={artist.link}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-charcoal hover:text-charcoal/60"
+                                                >
+                                                    <Instagram className="w-4 h-4" /> {artist.name}
+                                                </a>
+                                            ) : (
+                                                <span key={i} className="text-[10px] font-bold uppercase tracking-widest text-charcoal/40">
+                                                    {artist.name}
+                                                </span>
+                                            )
+                                        ))}
+                                    </div>
+                                </div>
+                            </Reveal>
+                        </div>
+                        <div className="lg:col-span-6 order-1 lg:order-2">
+                            <Reveal>
+                                <span className="text-[10px] uppercase font-bold tracking-widest text-charcoal/40 mb-4 block">Artistic Confluence</span>
+                                <h3 className="text-3xl lg:text-5xl font-serif mb-2">Renowned <span className="italic">Collaborators</span></h3>
+                            </Reveal>
+                        </div>
+                    </div>
+
+                    {/* Performance Section */}
+                    <div className="bg-charcoal text-white rounded-sm overflow-hidden">
+                        <div className="grid lg:grid-cols-12">
+                            <div className="lg:col-span-7 p-8 lg:p-24 order-2 lg:order-1">
+                                <Reveal>
+                                    <h4 className="text-2xl lg:text-4xl font-serif mb-12 italic text-white/90">The Performance</h4>
+                                    <div className="max-w-none text-white/50 font-light leading-relaxed space-y-6 text-sm lg:text-base">
+                                        <p>
+                                            This performance is developed in response to <strong>István Erőss’s</strong> body of work on nature action, in which nature is approached as a condition rather than a representation, and durational actions function as methodical and effective procedures.
+                                        </p>
+                                        <p>
+                                            While Erőss engages directly with outdoor environments, this work translates his logic into a constructed interior situation, where light, soil, smoke, and spatial constraint operate as active conditions.
+                                        </p>
+                                        <p>
+                                            Stillness is used as a durational method, allowing the body to remain subject to these conditions without gesture or intervention. The performance does not interpret Erőss’s actions, but responds to their structural principles by placing the body in sustained exposure, where action is defined by remaining rather than doing.
+                                        </p>
+                                    </div>
+                                </Reveal>
+                            </div>
+                            <div className="lg:col-span-5 relative aspect-square lg:aspect-auto min-h-[400px] lg:h-full overflow-hidden order-1 lg:order-2">
+                                <video
+                                    className="w-full h-full object-cover"
+                                    autoPlay
+                                    muted
+                                    loop
+                                    playsInline
+                                >
+                                    <source src="/iafvideo/iaf.mp4" type="video/mp4" />
+                                </video>
+                                <div className="absolute inset-0 bg-charcoal/20" />
+                                <a
+                                    href="https://www.instagram.com/eross_istvan?igsh=MXh5cXg1ZHN0cW0ybg=="
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="absolute bottom-6 right-14 z-10 flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md border border-white/20 text-white text-[10px] font-bold uppercase tracking-widest hover:bg-white hover:text-charcoal transition-all duration-500"
+                                >
+                                    <Instagram className="w-4 h-4" /> István Erőss
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

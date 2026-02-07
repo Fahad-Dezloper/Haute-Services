@@ -12,10 +12,10 @@ export const mediaCoverage: MediaItem[] = [
     {
         source: "India Art Fair Parallel",
         date: "February 2026",
-        title: "Borrowed Identities – Co-curated by Haute Services",
+        title: "Solo Exhibition ‘Borrowed Identities’ By István Erőss To Open At Liszt Institute Delhi",
         description: "An official India Art Fair Parallel event presented by the Liszt Institute and co-curated by Haute Services & SANDARBH. Featuring an exhibition by István Eross at the Hungarian Culture Centre, New Delhi.",
-        image: "/news/iaf.png",
-        link: "",
+        image: "/news/iaf2.png",
+        link: "https://everythingexperiential.com/article/solo-exhibition-borrowed-identities-by-istv-n-er-ss-to-open-at-liszt-institute-delhi-591259",
         category: 'Press'
     },
     {
