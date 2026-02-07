@@ -35,7 +35,7 @@ export default function AwardsPage() {
             // location: "Soraia, Mumbai",
             desc: "Honoured as a Hospitality Hope Ambassador at Soraia Mumbai. A recognition of dedication to the industry, felicitated by Rashmi Uday Singh alongside legendary stalwarts like Camelia Punjabi and Rahul Akerkar.",
             // details: "A wonderful evening celebrating those who have devotedly stood by noble ventures in the hospitality sector.",
-            image: "/awards/hope.png",
+            image: "/awards/Hope.png",
             icon: Award
         },
         {
@@ -45,7 +45,7 @@ export default function AwardsPage() {
             // event: "S.A.A.G – Food for Thought Fest",
             year: "2024",
             desc: "Honored with the 'Gastronomy Event of the Year' at the Peaklife Gourmet Awards for the S.A.A.G – Food for Thought Fest, celebrating innovation and excellence in the culinary arts.",
-            image: "/awards/peaklife.jpeg",
+            image: "/awards/Peaklife.jpeg",
             icon: Trophy
         }
     ];

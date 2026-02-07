@@ -81,7 +81,7 @@ export default function FashionShowsPage() {
             desc: "Featured as the celebrity showstopper for the Maison de Bose Grand Finale showcase at Designer Fashion Week Edition 5.",
             highlights: "Grand Finale Showstopper",
             tag: "Runway",
-            image: "/fashion/dfw2.png"
+            image: "/fashion/Dfw2.png"
         },
         {
             title: "Power Creator Travel Awards",
@@ -160,7 +160,7 @@ export default function FashionShowsPage() {
 
 
                                     <Image src={work.image} alt={work.title} width={400} height={400} className="w-full h-full object-cover" />
-                                    {work.image == "/fashion/dfw2.png" && <Image src="/fashion/dfw.png" alt={work.title} width={400} height={400} className="absolute bottom-0 right-0 w-[40vw] h-[20vh] object-cover" />}
+                                    {work.image == "/fashion/Dfw2.png" && <Image src="/fashion/Dfw.png" alt={work.title} width={400} height={400} className="absolute bottom-0 right-0 w-[40vw] h-[20vh] object-cover" />}
                                 </div>
                                 <div className="space-y-6">
                                     <div>
