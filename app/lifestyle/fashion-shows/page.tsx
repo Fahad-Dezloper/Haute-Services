@@ -51,7 +51,7 @@ export default function FashionShowsPage() {
             desc: "Haute Services Pvt Ltd was proud to partner with Ex Miss India Sayali Bhagat , Designer Rina Dhaka and Show Director Liza Varma to produce a unique fashion show titled “Dreamers are Achievers” celebrating six women achievers from Nigeria and South Africa , in the stunningly gorgeous Khubani At Andaz Hotel .",
             highlights: "Cultural + Fashion Crossover",
             tag: "Production",
-            image: "/fashion/Khubanii.jpg"
+            image: "https://ox35safakaidjuzg.public.blob.vercel-storage.com/telegram-cloud-photo-size-5-6336883117930516241-y"
         },
         {
             title: "Maison de Bose Fashion Week – Jury",
@@ -151,7 +151,7 @@ export default function FashionShowsPage() {
 
                                     <Image src={work.image} alt={work.title} width={400} height={400} className="w-full h-full object-cover" />
                                     {work.image == "/fashion/Dfw2.png" && <Image src="/fashion/Dfw.png" alt={work.title} width={400} height={400} className="absolute bottom-0 right-0 w-[40vw] h-[20vh] object-cover" />}
-                                    {work.image == "/fashion/Khubanii.jpg" && <Image src="/fashion/Khubani.png" alt={work.title} width={400} height={400} className="absolute bottom-0 right-0 w-[25vw] h-[15vh] object-cover" />}
+                                    {work.image == "https://ox35safakaidjuzg.public.blob.vercel-storage.com/telegram-cloud-photo-size-5-6336883117930516241-y" && <Image src="/fashion/Khubani.png" alt={work.title} width={400} height={400} className="absolute bottom-0 right-0 w-[25vw] h-[15vh] object-cover" />}
                                 </div>
                                 <div className="space-y-6">
                                     <div>
