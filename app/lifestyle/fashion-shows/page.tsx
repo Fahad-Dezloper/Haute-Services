@@ -41,7 +41,7 @@ export default function FashionShowsPage() {
             desc: "Fashion show celebrating women achievers, collab with Sayali Bhagat, Rina Dhaka, and Liza Varma.",
             highlights: "Cultural + Fashion Crossover",
             tag: "Production",
-            image: "/fashion/2023Khubani.jpg"
+            image: "/fashion/Khubani.jpg"
         },
         {
             title: "Audi e-tron Launch",
