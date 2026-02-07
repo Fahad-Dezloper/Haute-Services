@@ -34,16 +34,6 @@ const ParallaxImage = ({ src, alt, className }: { src: string; alt: string; clas
 export default function FashionShowsPage() {
     const fashionWork = [
         {
-            title: "Dreamers Are Achievers",
-            role: "Producer / Partner",
-            date: "Feb 2017",
-            location: "Khubani, Andaz Hotel, Aerocity",
-            desc: "Fashion show celebrating women achievers, collab with Sayali Bhagat, Rina Dhaka, and Liza Varma.",
-            highlights: "Cultural + Fashion Crossover",
-            tag: "Production",
-            image: "/fashion/Khubani.jpg"
-        },
-        {
             title: "Audi e-tron Launch",
             role: "Partner / Curator",
             date: "26 Sep 2021",
@@ -54,14 +44,14 @@ export default function FashionShowsPage() {
             image: "/fashion/Audi.png"
         },
         {
-            title: "Khubani Fashion Event",
-            role: "Event Support",
+            title: "Dreamers Are Achievers",
+            role: "Producer / Partner",
             date: "6 Feb 2024",
-            location: "Andaz Hotel, Aerocity",
-            desc: "Boutique fashion show and after party with Skylark and Lakmé.",
-            highlights: "Multi-brand Showcase",
-            tag: "Lifestyle",
-            image: "/fashion/Khubani.png"
+            location: "Khubani At Andaz Hotel",
+            desc: "Haute Services Pvt Ltd was proud to partner with Ex Miss India Sayali Bhagat , Designer Rina Dhaka and Show Director Liza Varma to produce a unique fashion show titled “Dreamers are Achievers” celebrating six women achievers from Nigeria and South Africa , in the stunningly gorgeous Khubani At Andaz Hotel .",
+            highlights: "Cultural + Fashion Crossover",
+            tag: "Production",
+            image: "/fashion/Khubanii.jpg"
         },
         {
             title: "Maison de Bose Fashion Week – Jury",
@@ -161,6 +151,7 @@ export default function FashionShowsPage() {
 
                                     <Image src={work.image} alt={work.title} width={400} height={400} className="w-full h-full object-cover" />
                                     {work.image == "/fashion/Dfw2.png" && <Image src="/fashion/Dfw.png" alt={work.title} width={400} height={400} className="absolute bottom-0 right-0 w-[40vw] h-[20vh] object-cover" />}
+                                    {work.image == "/fashion/Khubanii.jpg" && <Image src="/fashion/Khubani.png" alt={work.title} width={400} height={400} className="absolute bottom-0 right-0 w-[25vw] h-[15vh] object-cover" />}
                                 </div>
                                 <div className="space-y-6">
                                     <div>

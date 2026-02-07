@@ -187,7 +187,7 @@ export default function AboutPage() {
                             <Reveal delay={0.2}>
                                 <div className="relative aspect-3/4 bg-charcoal/5 rounded-sm overflow-hidden shadow-2xl">
                                     {/* Asset Space for Sonali Portrait */}
-                                    <Image src="/founder/Sonali2.png" alt="Manish Baheti" fill className="object-cover" />
+                                    <Image src="/founder/Sonali3.jpg" alt="Manish Baheti" fill className="object-cover" />
                                     <div className="absolute inset-0 flex items-center justify-center text-8xl font-serif text-charcoal/5 italic">S.A</div>
                                     <div className="absolute bottom-10 left-10 text-charcoal/40 z-10">
                                         <p className="text-xs uppercase tracking-[0.3em] font-bold mb-2">Strategy & Sales</p>
