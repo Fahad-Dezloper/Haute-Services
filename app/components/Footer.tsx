@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="grid lg:grid-cols-12 gap-16 mb-24 ">
           {/* Brand Column */}
-          <div className="">
+          <div className="lg:col-span-6">
             <Image
               src="/logo/MainLogo.jpeg"
               alt="Logo"
@@ -18,7 +18,7 @@ export default function Footer() {
               height={200}
               className="mb-12 bg-white"
             />
-            <p className="text-white/60 max-w-xs leading-relaxed mb-12">
+            <p className="text-white/60 max-w-xs lg:max-w-sm leading-relaxed mb-12">
               A boutique consultancy dedicated to creating exceptional
               experiences in the lifestyle and art sectors.
             </p>
@@ -122,8 +122,7 @@ export default function Footer() {
                 <span className="block text-white/40 text-[10px] uppercase tracking-widest mb-1.5">
                   Location
                 </span>
-                T-14/7, DLF City Phase III, <br />
-                Gurgaon, Haryana
+                Delhi, NCR
               </li>
             </ul>
           </div>

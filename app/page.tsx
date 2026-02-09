@@ -48,7 +48,11 @@ const ParallaxImage = ({
   return (
     <div ref={ref} className={`overflow-hidden ${className}`}>
       <motion.div style={{ y }} className="w-full h-[120%] -mt-[10%]">
-        <img src={src} alt={alt} className="w-full h-full object-cover" />
+        <img
+          src={src}
+          alt={alt}
+          className="w-full h-full object-contain md:object-cover"
+        />
       </motion.div>
     </div>
   );
@@ -87,23 +91,30 @@ export default function HomePage() {
     <main className="bg-cream min-h-screen  text-charcoal font-sans selection:bg-charcoal selection:text-white">
       {/* --- HERO SECTION --- */}
       <section className="relative flex flex-col items-center overflow-hidden">
-        <div className="relative w-full px-6 lg:px-12 xl:px-24 mb-16 lg:mb-8">
-          <div className="relative h-[50vh] sm:h-[60vh] lg:h-[80vh] xl:h-[85vh] w-full rounded-sm overflow-hidden bg-charcoal/5">
+        <div className="relative w-full px-6 lg:px-12 xl:px-24 mb-24 lg:mb-8">
+          <div className="relative h-[45vh] md:h-[60vh] lg:h-[60vh] xl:h-[65vh] w-full rounded-sm overflow-hidden bg-charcoal/5">
+            {/* Vertical image for small screens */}
             <ParallaxImage
-              src="https://static.wixstatic.com/media/e86273_57cdee80347a45fa8d0d12a449a0768b~mv2.png?originWidth=1152&originHeight=832"
+              src="/hero/big2.jpeg"
               alt="Elegant lifestyle event setting"
-              className="w-full h-full object-cover grayscale-20 hover:grayscale-0 transition-all duration-1000"
+              className="w-full h-full object-cover grayscale-20 hover:grayscale-0 transition-all duration-1000 md:hidden"
             />
-            <div className="absolute inset-0 bg-linear-to-t from-cream/20 to-transparent pointer-events-none" />
+            {/* Horizontal image for medium and large screens */}
+            <ParallaxImage
+              src="/hero/big.jpeg"
+              alt="Elegant lifestyle event setting"
+              className="w-full h-full object-cover grayscale-20 hover:grayscale-0 transition-all duration-1000 hidden md:block"
+            />
+            {/* <div className="absolute inset-0 bg-linear-to-t from-cream/20 to-transparent pointer-events-none" /> */}
           </div>
 
-          <motion.div className="absolute -bottom-8 sm:-bottom-12 right-6 sm:right-12 lg:right-24 w-[45vw] sm:w-[35vw] md:w-[25vw] max-w-sm aspect-6/5 shadow-2xl z-20 group">
-            <div className="w-full h-full border-2 border-white bg-white overflow-hidden shadow-lg">
+          <motion.div className="absolute -bottom-21 sm:-bottom-12 right-6 sm:right-12 lg:right-24 w-[40vw] h-[25vh] sm:w-[35vw] sm:h-[30vh] md:w-[25vw] md:h-[40vh] lg:h-[45vh] shadow-2xl z-20 group">
+            <div className="w-full h-full bg-white  overflow-hidden shadow-lg">
               <Image
-                src="https://static.wixstatic.com/media/e86273_3cf2a07072524c97affc88166c70e75d~mv2.png?originWidth=1152&originHeight=832"
+                src="/hero/small2.jpeg"
                 alt="Artistic detail"
                 fill
-                className="object-cover grayscale-10 border-8"
+                className="object-cover md:object-contain grayscale-10 border-8"
               />
             </div>
           </motion.div>
@@ -197,7 +208,7 @@ export default function HomePage() {
                     Haute Services is a boutique consultancy firm specializing
                     in lifestyle events and art advisory. With over a decade of
                     experience, we operate in two distinct but culturally rich
-                    verticals Gourmet and Art.
+                    verticals-Gastronomy and Art.
                   </p>
                   <p>
                     We are the Founders of S.A.A.G – South Asian Association for
@@ -453,7 +464,7 @@ export default function HomePage() {
             event.
           </p>
           <a
-            href="mailto:maneesh@hauteservices.in"
+            href="mailto:info@hauteservices.in"
             className="inline-block bg-charcoal text-white px-10 py-5 hover:bg-charcoal/80 transition-colors font-serif italic text-xl"
           >
             Get in Touch
