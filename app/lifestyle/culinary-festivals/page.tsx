@@ -573,6 +573,49 @@ export default function CulinaryFestivalsPage() {
           </div>
         </div>
 
+        <section className="py-20 lg:py-32 px-6 lg:px-12 bg-cream/30">
+          <div className="max-w-screen-2xl mx-auto">
+            <Reveal>
+              <div className="text-center mb-16 lg:mb-24">
+                <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-charcoal/30 mb-4 block">
+                  Visual Stories
+                </span>
+                <h2 className="text-4xl md:text-5xl lg:text-7xl font-serif text-charcoal leading-none">
+                  Featured <span className="italic font-light">Shorts</span>
+                </h2>
+              </div>
+            </Reveal>
+
+            <div className="grid grid-cols-1 gap-6 lg:gap-8">
+              {[
+                {
+                  id: "3yjSjzWYwkk",
+                  url: "https://youtube.com/shorts/3yjSjzWYwkk?si=fah6gZ825jCyA6kc",
+                },
+              ].map((short, index) => (
+                <Reveal key={short.id} delay={index * 0.15}>
+                  <div className="group relative">
+                    <div className="relative aspect-9/16 w-full max-w-md mx-auto overflow-hidden rounded-sm shadow-xl hover:shadow-2xl transition-all duration-700 bg-charcoal/5">
+                      <iframe
+                        src={`https://www.youtube.com/embed/${short.id}`}
+                        title={`YouTube Short ${index + 1}`}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="absolute inset-0 w-full h-full"
+                      />
+                      <div className="absolute inset-0 border border-charcoal/5 pointer-events-none group-hover:border-charcoal/20 transition-colors duration-500" />
+                    </div>
+
+                    {/* Decorative corner accent */}
+                    <div className="absolute -top-3 -left-3 w-12 h-12 border-l-2 border-t-2 border-charcoal/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute -bottom-3 -right-3 w-12 h-12 border-r-2 border-b-2 border-charcoal/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* GLOBAL RECOGNITION SUMMARY */}
         <div className="grid bg-charcoal text-white py-16 md:py-24 px-8 md:px-16 my-24 md:grid-cols-2 gap-12 lg:gap-16 items-center rounded-sm">
           <Reveal>
