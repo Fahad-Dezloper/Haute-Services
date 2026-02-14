@@ -76,7 +76,7 @@ export const mediaCoverage: MediaItem[] = [
         source: "Times of India",
         date: "2024 & 2025",
         title: "Power Creator Travel Awards",
-        description: "Maneesh Baheti, Founder of Haute Services, was invited to present the prestigious Power Creator Travel Awards by Times of India for two consecutive years, highlighting his influence in the luxury travel and hospitality sector.",
+        description: "Maneesh Baheti, Founder of Haute Services, continous to be invited to present the prestigious Power Creator Travel Awards by Times of India since 2024, highlighting his influence in the luxury travel and hospitality sector.",
         image: "/fashion/Toi.png",
         link: "",
         category: 'Award'
@@ -84,7 +84,7 @@ export const mediaCoverage: MediaItem[] = [
     {
         source: "ET Hospitality",
         date: "August 7, 2020",
-        title: "Street food parks - the time is ripe",
+        title: "Street Food Parks - The Time Is Ripe",
         description: "Maneesh Baheti advocates for the development of street food parks in India, drawing parallels with successful international models to boost tourism and entrepreneurship.",
         image: "/news/streefood.jpeg",
         link: "https://hospitality.economictimes.indiatimes.com/news/speaking-heads/street-food-parks-the-time-is-ripe/77409240",
@@ -93,7 +93,7 @@ export const mediaCoverage: MediaItem[] = [
     {
         source: "Newspaper Feature",
         date: "April 2014",
-        title: "A Way to Bengal",
+        title: "Contemporary Affordable Art Show",
         description: "Showcasing regional talent through fine art curation in the national capital, highlighting the depth and diversity of Bengali artistic traditions.",
         image: "/art/news/bengal.png",
         link: "",

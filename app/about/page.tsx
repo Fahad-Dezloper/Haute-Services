@@ -194,7 +194,7 @@ export default function AboutPage() {
                 <div className="relative aspect-3/4 bg-charcoal/5 rounded-sm overflow-hidden shadow-2xl">
                   {/* Asset Space for Maneesh Portrait */}
                   <Image
-                    src="/founder/Maneesh.jpeg"
+                    src="/founder/Manish.jpeg"
                     alt="Maneesh Baheti"
                     fill
                     className="object-cover"

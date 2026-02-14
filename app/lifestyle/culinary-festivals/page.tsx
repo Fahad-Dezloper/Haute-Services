@@ -269,30 +269,36 @@ export default function CulinaryFestivalsPage() {
 
   const involvementHighlights = [
     "/food/imp/25.jpeg",
-    "/food/imp/1.jpeg",
     "/food/imp/2.jpeg",
     "/food/imp/23.jpeg",
     "/food/imp/24.jpeg",
     "/food/imp/19.jpeg",
+    "/food/imp/12.jpeg",
     // "/food/imp/3.jpeg",
     // "/food/imp/4.jpeg",
     // "/food/imp/5.jpeg",
+    "/food/imp/20.jpeg",
+    "/food/imp/29.jpeg",
+    "/food/imp/30.jpeg",
+    "/food/imp/28.jpeg",
     "/food/imp/26.jpeg",
     "/food/imp/27.jpeg",
     "/food/imp/6.jpeg",
     "/food/imp/7.jpeg",
     "/food/imp/8.jpeg",
+    "/food/imp/31.jpeg",
+    "/food/imp/32.jpeg",
+    "/food/imp/33.jpeg",
+    "/food/imp/34.jpeg",
+    "/food/imp/35.jpeg",
     "/food/imp/9.jpeg",
     // "/food/imp/11.jpeg",
-    "/food/imp/12.jpeg",
-    "/food/imp/13.jpeg",
-    "/food/imp/14.jpeg",
+    // "/food/imp/13.jpeg",
     "/food/imp/15.jpeg",
     // "/food/imp/16.jpeg",
     "/food/imp/17.jpeg",
     // "/food/imp/18.jpeg",
-    "/food/imp/20.jpeg",
-    "/food/imp/10.jpeg",
+    "/food/imp/1.jpeg",
     // "/food/imp/21.jpeg",
     // "/food/imp/22.jpeg",
   ];
@@ -645,6 +651,38 @@ export default function CulinaryFestivalsPage() {
                 </Reveal>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* --- HIGHLIGHT: SH RAZA --- */}
+        <section className="py-20 lg:py-32 px-6 lg:px-12 bg-charcoal border-b border-white/5">
+          <div className="max-w-screen-xl mx-auto text-center">
+            <Reveal>
+              <div className="flex items-center gap-4 mb-12 justify-center">
+                <div className="h-px w-12 bg-white/20" />
+                <span className="text-xs uppercase tracking-[0.4em] font-bold text-white/40">
+                  Iconic Moment
+                </span>
+                <div className="h-px w-12 bg-white/20" />
+              </div>
+
+              <div className="relative h-[40vh]  w-full mb-12 rounded-sm overflow-hidden shadow-2xl border border-white/10 group">
+                <Image
+                  src="/food/imp/25.jpeg"
+                  alt="Maneesh Baheti with Chef Vikas Khanna"
+                  fill
+                  className="h-full group-hover:scale-105 transition-transform duration-1000"
+                />
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-700" />
+              </div>
+
+              <div className="max-w-4xl mx-auto space-y-4">
+                <p className="text-2xl lg:text-4xl font-serif text-white/90 leading-tight">
+                  "With the living legend, Chef{" "}
+                  <span className="italic text-white">Vikas Khanna</span>.
+                </p>
+              </div>
+            </Reveal>
           </div>
         </section>
 

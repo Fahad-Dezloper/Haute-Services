@@ -57,8 +57,8 @@ const ParallaxImage = ({
 export default function FashionShowsPage() {
   const fashionWork = [
     {
-      title: "Audi e-tron Launch",
-      role: "Partner / Curator",
+      title: "Audi E-Tron Launch",
+      role: "Partner",
       date: "26 Sep 2021",
       location: "New Delhi",
       desc: "Fashion integrated automotive launch featuring designers Charu & Arjun Parashar.",
@@ -68,7 +68,7 @@ export default function FashionShowsPage() {
     },
     {
       title: "Dreamers Are Achievers",
-      role: "Producer / Partner",
+      role: "Partner",
       date: "6 Feb 2024",
       location: "Khubani At Andaz Hotel",
       desc: "Haute Services Pvt Ltd was proud to partner with Ex Miss India Sayali Bhagat , Designer Rina Dhaka and Show Director Liza Varma to produce a unique fashion show titled “Dreamers are Achievers” celebrating six women achievers from Nigeria and South Africa , in the stunningly gorgeous Khubani At Andaz Hotel .",
@@ -79,7 +79,7 @@ export default function FashionShowsPage() {
     },
     {
       title: "Maison de Bose Fashion Week – Jury",
-      role: "Jury & Advisory",
+      role: "Audition Jury",
       date: "2025",
       location: "Alliance Française, Delhi",
       desc: "Jury for model selection alongside Maison de Bose team, evaluating talent and runway readiness.",
@@ -89,7 +89,7 @@ export default function FashionShowsPage() {
     },
     {
       title: "DFW Grand Finale – Showstopper",
-      role: "Showstopper / Maison de Bose",
+      role: "Showstopper, Maison de Bose",
       date: "27–28 Dec 2025",
       location: "Mapple Gold, Radisson Blu, Paschim Vihar",
       desc: "Featured as the celebrity showstopper for the Maison de Bose Grand Finale showcase at Designer Fashion Week Edition 5.",
@@ -102,7 +102,7 @@ export default function FashionShowsPage() {
       role: "Award Presenter",
       date: "2024 & 2025",
       location: "Times of India",
-      desc: "Haute Services Founder presented the Power Creator Travel Awards by Times of India for two consecutive years, recognizing excellence in travel and lifestyle content creation.",
+      desc: "Haute Services Founder has been presenting the Power Creator Travel Awards by Times of India since last 2024, recognizing excellence in travel and lifestyle content creation.",
       highlights: "Industry Leadership",
       tag: "Awards",
       image: "/fashion/Toi.png",
@@ -128,18 +128,32 @@ export default function FashionShowsPage() {
     {
       title: "Luxury Brand Launches",
       icon: ArrowUpRight,
-      desc: "Integrated launch events combining fashion, hospitality, and culture.",
+      desc: "Integrated launch events combining lifestyle, hospitality, and culture.",
     },
   ];
 
   const involvementHighlights = [
-    "/extra/arjunparashar.png",
-    "/extra/ashishsoni.png",
+    "/extra/sunisethi.png",
     "/extra/fashionicons.png",
-    "/extra/ToiAwards.png",
-    "/extra/ToiAwards2.png",
     "/extra/ashishsoni2.png",
     "/extra/showstopper.png",
+    "/extra/1.jpeg",
+    "/extra/3.jpeg",
+    "/extra/4.jpeg",
+    "/extra/5.jpeg",
+    "/extra/6.jpeg",
+    "/extra/7.jpeg",
+    "/extra/8.jpeg",
+    "/extra/9.jpeg",
+    "/extra/10.jpeg",
+    "/extra/11.jpeg",
+    "/extra/12.jpeg",
+    "/extra/13.jpeg",
+    "/extra/2.jpeg",
+    "/extra/14.jpeg",
+    "/extra/ToiAwards2.png",
+    "/extra/ToiAwards.png",
+    "/extra/arjunparashar.png",
   ];
 
   return (
@@ -301,9 +315,8 @@ export default function FashionShowsPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <Reveal>
             <div className="mb-20">
-              <h2 className="text-4xl lg:text-7xl font-serif leading-tight">
-                Involvement & <br />
-                <span className="italic">Highlights</span>
+              <h2 className="text-4xl lg:text-7xl text-center font-serif leading-tight">
+                Gallery of Fashionistas
               </h2>
             </div>
           </Reveal>

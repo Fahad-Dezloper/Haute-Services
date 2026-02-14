@@ -108,10 +108,42 @@ const engagements = [
   },
 ];
 
-const involvementHighlights = Array.from(
-  { length: 30 },
-  (_, i) => `/art/imp/${i + 1}.jpeg`,
-);
+const involvementHighlights = [
+  "/art/imp/1.jpeg",
+  "/art/imp/2.jpeg",
+  "/art/imp/3.jpeg",
+  "/art/imp/4.jpeg",
+  "/art/imp/5.jpeg",
+  "/art/imp/6.jpeg",
+  "/art/imp/7.jpeg",
+  "/art/imp/8.jpeg",
+  "/art/imp/9.jpeg",
+  "/art/imp/10.jpeg",
+  "/art/imp/11.jpeg",
+  "/art/imp/12.jpeg",
+  "/art/imp/13.jpeg",
+  "/art/imp/14.jpeg",
+  "/art/imp/15.jpeg",
+  "/art/imp/16.jpeg",
+  "/art/imp/17.jpeg",
+  "/art/imp/18.jpeg",
+  "/art/imp/19.jpeg",
+  // "/art/imp/20.jpeg",
+  "/art/imp/21.jpeg",
+  "/art/imp/22.jpeg",
+  "/art/imp/23.jpeg",
+  "/art/imp/24.jpeg",
+  "/art/imp/25.jpeg",
+  "/art/imp/26.jpeg",
+  "/art/imp/27.jpeg",
+  "/art/imp/28.jpeg",
+  "/art/imp/29.jpeg",
+  "/art/imp/30.jpeg",
+  "/art/imp/31.jpeg",
+  "/art/imp/32.jpeg",
+  "/art/imp/33.jpeg",
+  "/art/imp/34.jpeg",
+];
 
 import { mediaCoverage } from "@/lib/data";
 
@@ -638,6 +670,42 @@ export default function ArtPage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* --- HIGHLIGHT: SH RAZA --- */}
+      <section className="py-20 lg:py-32 px-6 lg:px-12 bg-charcoal border-b border-white/5">
+        <div className="max-w-screen-xl mx-auto text-center">
+          <Reveal>
+            <div className="flex items-center gap-4 mb-12 justify-center">
+              <div className="h-px w-12 bg-white/20" />
+              <span className="text-xs uppercase tracking-[0.4em] font-bold text-white/40">
+                Iconic Moment
+              </span>
+              <div className="h-px w-12 bg-white/20" />
+            </div>
+
+            <div className="relative aspect-video lg:aspect-[21/9] w-full mb-12 rounded-sm overflow-hidden shadow-2xl border border-white/10 group">
+              <Image
+                src="/art/imp/raza.jpeg"
+                alt="Maneesh Baheti with S.H. Raza"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-1000"
+              />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-700" />
+            </div>
+
+            <div className="max-w-4xl mx-auto space-y-4">
+              <p className="text-2xl lg:text-4xl font-serif text-white/90 leading-tight">
+                "With the legendary{" "}
+                <span className="italic text-white">S.H. Raza</span> at his
+                retrospective show, Delhi Art Gallery (2012)."
+              </p>
+              <p className="text-[10px] uppercase tracking-[0.2em] text-white/30 font-bold">
+                Picture Courtesy: Artist Manisha Gera Baswani
+              </p>
+            </div>
+          </Reveal>
         </div>
       </section>
 
