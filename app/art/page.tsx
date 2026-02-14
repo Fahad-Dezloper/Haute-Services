@@ -108,6 +108,11 @@ const engagements = [
   },
 ];
 
+const involvementHighlights = Array.from(
+  { length: 30 },
+  (_, i) => `/art/imp/${i + 1}.jpeg`,
+);
+
 import { mediaCoverage } from "@/lib/data";
 
 const news_cycle = mediaCoverage
@@ -632,6 +637,32 @@ export default function ArtPage() {
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- INVOLVEMENT HIGHLIGHTS --- */}
+      <section className="py-20 lg:py-32 px-6 lg:px-12 bg-charcoal">
+        <div className="max-w-screen-2xl mx-auto">
+          <Reveal>
+            <h2 className="text-4xl md:text-5xl lg:text-7xl font-serif mb-16 lg:mb-24 text-center text-white">
+              Gallery of Artists
+            </h2>
+          </Reveal>
+          <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+            {involvementHighlights.map((item, i) => (
+              <Reveal key={i} delay={(i % 4) * 0.1}>
+                <div className="relative group overflow-hidden bg-white/5 rounded-sm break-inside-avoid shadow-lg hover:shadow-2xl transition-all duration-300">
+                  <img
+                    src={item}
+                    alt={`Event Highlight ${i + 1}`}
+                    className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 pointer-events-none" />
+                </div>
+              </Reveal>
+            ))}
           </div>
         </div>
       </section>

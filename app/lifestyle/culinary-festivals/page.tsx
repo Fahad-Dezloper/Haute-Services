@@ -267,6 +267,36 @@ export default function CulinaryFestivalsPage() {
     },
   ];
 
+  const involvementHighlights = [
+    "/food/imp/25.jpeg",
+    "/food/imp/1.jpeg",
+    "/food/imp/2.jpeg",
+    "/food/imp/23.jpeg",
+    "/food/imp/24.jpeg",
+    "/food/imp/19.jpeg",
+    // "/food/imp/3.jpeg",
+    // "/food/imp/4.jpeg",
+    // "/food/imp/5.jpeg",
+    "/food/imp/26.jpeg",
+    "/food/imp/27.jpeg",
+    "/food/imp/6.jpeg",
+    "/food/imp/7.jpeg",
+    "/food/imp/8.jpeg",
+    "/food/imp/9.jpeg",
+    // "/food/imp/11.jpeg",
+    "/food/imp/12.jpeg",
+    "/food/imp/13.jpeg",
+    "/food/imp/14.jpeg",
+    "/food/imp/15.jpeg",
+    // "/food/imp/16.jpeg",
+    "/food/imp/17.jpeg",
+    // "/food/imp/18.jpeg",
+    "/food/imp/20.jpeg",
+    "/food/imp/10.jpeg",
+    // "/food/imp/21.jpeg",
+    // "/food/imp/22.jpeg",
+  ];
+
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
 
   return (
@@ -344,8 +374,8 @@ export default function CulinaryFestivalsPage() {
       </section>
 
       {/* --- FLAGSHIP: FOOD FOR THOUGHT FEST --- */}
-      <section className="py-24 lg:py-40 px-6 lg:px-12 max-w-screen-2xl mx-auto">
-        <div className="grid md:grid-cols-12 gap-12 lg:gap-16 items-start mb-32">
+      <section className="py-24 lg:py-40 max-w-screen-2xl mx-auto">
+        <div className="px-6 lg:px-12 grid md:grid-cols-12 gap-12 lg:gap-16 items-start mb-32">
           <div className="md:col-span-11 lg:col-span-8">
             <Reveal>
               <span className="text-xs uppercase tracking-[0.4em] font-bold text-charcoal/30 mb-6 block">
@@ -405,33 +435,35 @@ export default function CulinaryFestivalsPage() {
         </div>
 
         {/* Legacy & Reach Cards */}
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 bg-charcoal text-white py-16 px-6 md:p-16 lg:p-24 rounded-sm overflow-hidden relative mb-40">
-          <Reveal>
-            <h3 className="text-2xl md:text-3xl font-serif mb-12">
-              The Impact
-            </h3>
-            <div className="grid grid-cols-2 gap-y-12 md:gap-y-16 gap-x-8 md:gap-x-12">
-              {[
-                { val: "2015", label: "Inaugural Year" },
-                { val: "7+", label: "Editions Across India" },
-                { val: "50+", label: "Master Chefs" },
-                { val: "4x", label: "A.P. Features" },
-              ].map((stat, i) => (
-                <div key={i}>
-                  <span className="block text-4xl md:text-5xl lg:text-7xl font-light mb-3">
-                    {stat.val}
-                  </span>
-                  <span className="text-[9px] md:text-[10px] uppercase tracking-widest text-white/40 font-bold">
-                    {stat.label}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </Reveal>
+        <div className="px-6 lg:px-12">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 bg-charcoal text-white py-16 px-6 md:p-16 lg:p-24 rounded-sm overflow-hidden relative mb-40">
+            <Reveal>
+              <h3 className="text-2xl md:text-3xl font-serif mb-12">
+                The Impact
+              </h3>
+              <div className="grid grid-cols-2 gap-y-12 md:gap-y-16 gap-x-8 md:gap-x-12">
+                {[
+                  { val: "2015", label: "Inaugural Year" },
+                  { val: "7+", label: "Editions Across India" },
+                  { val: "50+", label: "Master Chefs" },
+                  { val: "4x", label: "A.P. Features" },
+                ].map((stat, i) => (
+                  <div key={i}>
+                    <span className="block text-4xl md:text-5xl lg:text-7xl font-light mb-3">
+                      {stat.val}
+                    </span>
+                    <span className="text-[9px] md:text-[10px] uppercase tracking-widest text-white/40 font-bold">
+                      {stat.label}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </Reveal>
+          </div>
         </div>
 
         {/* --- TESTIMONIALS SECTION --- */}
-        <div className="mb-40">
+        <div className="mb-40 px-6 lg:px-12">
           <Reveal>
             <span className="text-xs uppercase tracking-[0.4em] font-bold text-charcoal/30 mb-8 block">
               Voices of Excellence
@@ -528,7 +560,7 @@ export default function CulinaryFestivalsPage() {
                 </div > */}
 
         {/* --- LITERARY & PRESS HIGHLIGHTS --- */}
-        <div className="">
+        <div className="px-6 lg:px-12">
           <Reveal>
             <div className="flex items-baseline justify-between mb-20 border-b border-charcoal/10 pb-8">
               <h2 className="text-4xl lg:text-7xl font-serif leading-tight">
@@ -616,30 +648,58 @@ export default function CulinaryFestivalsPage() {
           </div>
         </section>
 
+        <section className="py-20 lg:py-32 px-6 lg:px-12 bg-charcoal">
+          <div className="max-w-screen-2xl mx-auto">
+            <Reveal>
+              <h2 className="text-4xl md:text-5xl lg:text-7xl font-serif mb-16 lg:mb-24 text-center text-white">
+                Gallery of Culinary Stars
+              </h2>
+            </Reveal>
+            <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+              {involvementHighlights.map((item, i) => (
+                <Reveal key={i} delay={(i % 4) * 0.1}>
+                  <div className="relative group overflow-hidden bg-white/5 rounded-sm break-inside-avoid shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <img
+                      src={item}
+                      alt={`Event Highlight ${i + 1}`}
+                      className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 pointer-events-none" />
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* GLOBAL RECOGNITION SUMMARY */}
-        <div className="grid bg-charcoal text-white py-16 md:py-24 px-8 md:px-16 my-24 md:grid-cols-2 gap-12 lg:gap-16 items-center rounded-sm">
-          <Reveal>
-            <div className="space-y-8">
-              <h3 className="text-3xl lg:text-5xl font-serif leading-tight">
-                Global Impact
-              </h3>
-              <p className="text-lg lg:text-xl text-white/60 font-light leading-relaxed">
-                Food For Thought Fest remains the only South Asian festival
-                featured four times by the Associated Press (A.P.) global wires,
-                solidifying its place as a cultural milestone in the region.
-              </p>
-            </div>
-          </Reveal>
-          <Reveal delay={0.2}>
-            <div className="hidden md:block p-10 lg:p-12 bg-white/5 border border-white/10 rounded-sm italic text-xl lg:text-2xl font-serif text-white/80">
-              "More than just food, it's about the stories, the people, and the
-              shared heritage that connects us all."
-            </div>
-          </Reveal>
+        <div className="px-6 lg:px-12">
+          <div className="grid bg-charcoal text-white py-16 md:py-24 px-8 md:px-16 my-24 md:grid-cols-2 gap-12 lg:gap-16 items-center rounded-sm">
+            <Reveal>
+              <div className="space-y-8">
+                <h3 className="text-3xl lg:text-5xl font-serif leading-tight">
+                  Global Impact
+                </h3>
+                <p className="text-lg lg:text-xl text-white/60 font-light leading-relaxed">
+                  Food For Thought Fest remains the only South Asian festival
+                  featured four times by the Associated Press (A.P.) global
+                  wires, solidifying its place as a cultural milestone in the
+                  region.
+                </p>
+              </div>
+            </Reveal>
+            <Reveal delay={0.2}>
+              <div className="hidden md:block p-10 lg:p-12 bg-white/5 border border-white/10 rounded-sm italic text-xl lg:text-2xl font-serif text-white/80">
+                "More than just food, it's about the stories, the people, and
+                the shared heritage that connects us all."
+              </div>
+            </Reveal>
+          </div>
         </div>
 
         {/* --- NEWS & PRESS COVERAGE --- */}
-        <div className="mb-40">
+        <div className="mb-40 px-6 lg:px-12">
           <Reveal>
             <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8 border-b border-charcoal/10 pb-12">
               <div>
