@@ -70,14 +70,21 @@ export default function CulinaryFestivalsPage() {
       role: "Member of Parliament & Author",
       image: "/food/shashi.png",
       quote:
-        "A magnificent celebration of the diversity and richness of South Asian flavors. FFTF bridges cultures through the universal language of food.",
+        "Food sustains life, encourages thought, nourishes the intellect, and expands your horizons (as well as your waistline!) Above all, good food, tastily made and tastefully presented, is a pleasure to view, consume and reflect upon. We all literally eat to live — in the fullest sense of the word ‘live’.",
     },
     {
       name: "Chef Ranveer Brar",
       role: "Masterchef India Judge & Culinary Artist",
       image: "/food/ranveer.webp",
       quote:
-        "Food For Thought Fest is where the soul of our cuisine finds its voice. It’s a podium that respects tradition while embracing the future.",
+        "For me, Food For Thought Fest allows you to seep into the conversation about food a little deeper, and when this happens, your relationship with food becomes stronger.",
+    },
+    {
+      name: "Mr. Rahul Dravid",
+      role: "Former Indian Cricket Captain",
+      image: "/food/rahul.png",
+      quote:
+        "At the outset, I would like to congratulate the S.A.A.G team for hosting the Food for Thought Fest. This convergence of ideas, flavors and cultures from the South Asian region will bring this part of the world closer.",
     },
   ];
 
@@ -291,6 +298,7 @@ export default function CulinaryFestivalsPage() {
     "/food/imp/33.jpeg",
     "/food/imp/34.jpeg",
     "/food/imp/35.jpeg",
+    "/food/imp/36.jpeg",
     "/food/imp/9.jpeg",
     // "/food/imp/11.jpeg",
     // "/food/imp/13.jpeg",
@@ -299,6 +307,10 @@ export default function CulinaryFestivalsPage() {
     "/food/imp/17.jpeg",
     // "/food/imp/18.jpeg",
     "/food/imp/1.jpeg",
+    "/food/imp/36.jpeg",
+    "/food/imp/38.jpeg",
+    "/food/imp/39.jpeg",
+    "/food/imp/40.jpeg",
     // "/food/imp/21.jpeg",
     // "/food/imp/22.jpeg",
   ];
