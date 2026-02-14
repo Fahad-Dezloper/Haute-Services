@@ -80,12 +80,12 @@ export default function FashionShowsPage() {
     {
       title: "Maison de Bose Fashion Week – Jury",
       role: "Jury & Advisory",
-      date: "2024",
+      date: "2025",
       location: "Alliance Française, Delhi",
       desc: "Jury for model selection alongside Maison de Bose team, evaluating talent and runway readiness.",
       highlights: "Talent Evaluation",
       tag: "Advisory",
-      image: "/fashion/Maison.jpeg",
+      image: "/fashion/Maison2.jpeg",
     },
     {
       title: "DFW Grand Finale – Showstopper",
