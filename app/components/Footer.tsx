@@ -20,16 +20,31 @@ export default function Footer() {
             />
             <p className="text-white/60 max-w-xs lg:max-w-sm leading-relaxed mb-12">
               A boutique consultancy dedicated to creating exceptional
-              experiences in the lifestyle and art sectors.
+              experiences in Gastronomy, Lifestyle Events and Art Segment.
             </p>
             <div className="flex md:flex-row flex-col gap-4 ">
-              {["Instagram", "LinkedIn", "Twitter"].map((social) => (
+              {[
+                {
+                  name: "Instagram",
+                  url: "https://www.instagram.com/haute_services_?igsh=bzZpajZqNTFpc2Jn&utm_source=qr",
+                },
+                {
+                  name: "LinkedIn",
+                  url: "https://www.linkedin.com/company/haute-services/",
+                },
+                {
+                  name: "Facebook",
+                  url: "https://www.facebook.com/share/1DYsLmLdmm/?mibextid=wwXIfr",
+                },
+              ].map((social) => (
                 <a
-                  key={social}
-                  href="#"
+                  key={social.name}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-xs uppercase w-fit tracking-widest border border-white/20 px-4 py-2 hover:bg-white hover:text-charcoal transition-all"
                 >
-                  {social}
+                  {social.name}
                 </a>
               ))}
             </div>

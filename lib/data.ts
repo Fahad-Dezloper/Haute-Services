@@ -48,8 +48,8 @@ export const mediaCoverage: MediaItem[] = [
     {
         source: "Times of India",
         date: "January 13, 2025",
-        title: "AOI’s Starry Night Captures the Energy and Colour of Indian Art",
-        description: "Times of India covered the Art of India exhibition featuring artworks supported and curated by HAUTE Services. The article highlights the vibrancy and cultural significance of contemporary Indian art.",
+        title: "Art of India’s Starry Night Captures the Energy and Colour of Indian Art",
+        description: "Times of India National Edition covered the Art of India exhibition in a half page article on 16th Jan 2025. The article highlights the vibrancy and cultural significance of contemporary Indian art and featured the interview of our Founder.",
         image: "/news/toi.png",
         link: "",
         category: 'Press'
@@ -58,7 +58,7 @@ export const mediaCoverage: MediaItem[] = [
         source: "Outlook India",
         date: "Jan 2024",
         title: "Maneesh Baheti – A Visionary in Lifestyle Consultancy & Gastronomy",
-        description: "Outlook India profiled Manish Baheti’s pioneering role in lifestyle consulting, gastronomy events, and redefining India’s food & art experience landscape.",
+        description: "Outlook India profiled Maneesh Baheti’s pioneering role in lifestyle consulting, gastronomy events, and redefining India’s food & art experience landscape.",
         image: "/news/outlook.png",
         link: "https://www.outlookindia.com/amp/story/hub4business/maneesh-baheti-a-visionary-in-lifestyle-consultancy-gastronomy",
         category: 'Press'
@@ -67,7 +67,7 @@ export const mediaCoverage: MediaItem[] = [
         source: "Multiple News Channels",
         date: "Multiple Appearances",
         title: "Hospitality Expert Featured Across Media",
-        description: "Manish Baheti has appeared seven times in national news as a hospitality expert, offering commentary on industry trends, service excellence, and consumer experience.",
+        description: "Maneesh Baheti has appeared seven times in national news as a hospitality expert, offering commentary on industry trends, service excellence, and consumer experience.",
         image: "/news/covid2.png",
         link: "",
         category: 'Expert Opinion'
@@ -86,13 +86,13 @@ export const mediaCoverage: MediaItem[] = [
         date: "August 7, 2020",
         title: "Street food parks - the time is ripe",
         description: "Maneesh Baheti advocates for the development of street food parks in India, drawing parallels with successful international models to boost tourism and entrepreneurship.",
-        image: "/news/ethospitality.jpeg",
+        image: "/news/streefood.jpeg",
         link: "https://hospitality.economictimes.indiatimes.com/news/speaking-heads/street-food-parks-the-time-is-ripe/77409240",
         category: 'Expert Opinion'
     },
     {
         source: "Newspaper Feature",
-        date: "March 2023",
+        date: "April 2014",
         title: "A Way to Bengal",
         description: "Showcasing regional talent through fine art curation in the national capital, highlighting the depth and diversity of Bengali artistic traditions.",
         image: "/art/news/bengal.png",
@@ -112,7 +112,7 @@ export const mediaCoverage: MediaItem[] = [
         source: "CFO Connect",
         date: "September 2014",
         title: "Medley of Indian Visual Art",
-        description: "A comprehensive journey through the evolution of Indian visual art, from royal patronage to modern and contemporary practices.",
+        description: "Maneesh Baheti writes on a comprehensive journey and traces the evolution of Indian visual art, from royal patronage to modern and contemporary practices.",
         image: "/art/article/medley.jpeg",
         link: "",
         category: 'Expert Opinion'

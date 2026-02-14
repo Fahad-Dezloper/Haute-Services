@@ -60,26 +60,34 @@ const ParallaxImage = ({
 
 export default function AboutPage() {
   const clients = [
-    "Seasons Group",
-    "Tabasko Hospitality",
+    "Ahmedabad Municipal Corporation (A.M.C)",
+    "GMR Group",
+    "Seasons Catering",
+    "Shantanu & Nikhil",
+    "Travel + Leisure Magazine",
     "Delhi Art Gallery",
-    "Four Seasons Damascus",
-    "Destination Hotel Kandaghat",
+    "Taj Palace, New Delhi",
+    "India Habitat Center, New Delhi",
+    "Global Spa Magazine",
+    "Peaklife Magazine",
     "Usha- Lexus Hotels and Resorts",
-    "Shantanu and Nikhil",
     "Sanspareils Greenlands",
-    "Penguin books",
     "Wrap art & Design Pvt. Ltd.",
-    "Urban Pind",
-    "Shantie Shakhti Goa",
-    "Sinclairs Hotels Andaman",
+    "The Roseate, New Delhi",
+    "JW Marriott, New Delhi",
+    "Marriott Hotels",
+    "The Claridges, New Delhi",
+    "Sinclairs Hotels & Resorts",
     "South Asian Association for Gastronomy",
     "Embassy of Sri Lanka",
     "Embassy of Indonesia",
     "Anglow, Delhi",
-    "Crowne Plaza - G. Noida",
-    "GMR Delhi Airport",
-    "Art for Concern",
+    "Embassy of Hungary",
+    "Concern India Foundation",
+    "Pernod Ricard India",
+    "NDTV Good Times",
+    "NewsX Channel",
+    "92.7 Big FM",
   ];
 
   return (
@@ -119,20 +127,19 @@ export default function AboutPage() {
                 <div className="h-px w-8 bg-charcoal/20" /> Our Heritage
               </h2>
               <p className="text-3xl lg:text-5xl font-serif text-charcoal leading-tight mb-16">
-                We bridge the gap between{" "}
+                We craft cultural narratives through{" "}
                 <span className="italic underline decoration-charcoal/10">
-                  luxury operations
-                </span>{" "}
-                and cultural storytelling.
+                  food, art, and bespoke experiences.
+                </span>
               </p>
             </Reveal>
             <Reveal delay={0.2}>
               <div className="prose prose-xl text-charcoal/70 font-light leading-relaxed">
                 <p>
-                  Haute Services is a unique multi-vertical consultancy. We
-                  operate at the intersection of Art Advisory and Lifestyle
-                  Events, leveraging a specialized background in high-end hotel
-                  management and marketing.
+                  Haute Services is a boutique consultancy shaped by a legacy in
+                  luxury hospitality, creating immersive brands and curating
+                  experiences where food, culture, and art intersect with
+                  purpose.
                 </p>
               </div>
             </Reveal>
@@ -154,52 +161,31 @@ export default function AboutPage() {
                 </h2>
                 <div className="space-y-6 text-lg text-charcoal/70 font-light leading-relaxed mb-12">
                   <p>
-                    Maneesh is a career hotelier whose expertise is built on the
-                    foundations of <strong>The Oberoi Group</strong>. As a
-                    management trainee, he mastered every facet of hotel
-                    operations—from Housekeeping to Food & Beverage—later
-                    serving as the General Manager responsible for the
-                    successful turnaround of Trident Hilton Bhubaneswar.
+                    Maneesh is a career hotelier whose work experience includes
+                    leadership roles in The Oberoi Group and Hyatt
+                    International. As a Management Trainee at The Oberoi School
+                    of Hotel Management (O.C.L.D), He mastered every facet of
+                    hotel operations later serving as the General Manager
+                    responsible for the successful turnaround of Trident Hilton
+                    Bhubaneswar 2005.
                   </p>
                   <p>
                     His strategic lens was further sharpened as the Director of
-                    Marketing for <strong>Hyatt Regency Delhi</strong>. Beyond
-                    operations, Maneesh is a dedicated educator, having taught
-                    CRM at NIFT Delhi and Entrepreneurial Management at FHRAI
-                    Institute.
+                    Marketing for <strong>Hyatt Regency Delhi,</strong> where he
+                    successfully stered the Hotel through the tough phase of
+                    SARS in 2002. Beyond operations, Maneesh is a dedicated
+                    educator, having taught CRM at NIFT Delhi and
+                    Entrepreneurial Management at FHRAI Institute of Hotel
+                    Management.
                   </p>
                   <p>
                     As the Founder Director of the{" "}
                     <strong>
-                      South Asian Association for Gastronomy (SAAG)
+                      South Asian Association for Gastronomy (S.A.A.G)
                     </strong>
                     , he has created a common platform for the subcontinent's
                     culinary legacy.
                   </p>
-                </div>
-                <div className="grid grid-cols-2 gap-8 pt-8 border-t border-charcoal/5">
-                  <div className="flex items-start gap-4">
-                    {/* <Building2 className="w-5 h-5 text-charcoal/30 mt-1" /> */}
-                    <div>
-                      <span className="block text-xs font-bold uppercase tracking-widest text-charcoal mb-1">
-                        Oberoi Group
-                      </span>
-                      <span className="text-sm text-charcoal/50">
-                        Management Trainee
-                      </span>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    {/* <GraduationCap className="w-5 h-5 text-charcoal/30 mt-1" /> */}
-                    <div>
-                      <span className="block text-xs font-bold uppercase tracking-widest text-charcoal mb-1">
-                        MBA
-                      </span>
-                      <span className="text-sm text-charcoal/50">
-                        Dual D.H.M Diplomas
-                      </span>
-                    </div>
-                  </div>
                 </div>
               </Reveal>
             </div>
@@ -208,8 +194,8 @@ export default function AboutPage() {
                 <div className="relative aspect-3/4 bg-charcoal/5 rounded-sm overflow-hidden shadow-2xl">
                   {/* Asset Space for Maneesh Portrait */}
                   <Image
-                    src="/founder/Manish.jpeg"
-                    alt="Manish Baheti"
+                    src="/founder/Maneesh.jpeg"
+                    alt="Maneesh Baheti"
                     fill
                     className="object-cover"
                   />
@@ -246,9 +232,9 @@ export default function AboutPage() {
                   <p>
                     With dual international master's degrees from{" "}
                     <strong>Bournemouth University (UK)</strong> and{" "}
-                    <strong>Euromed Marseille (France)</strong>, she possesses a
-                    rare blend of tourism governance and NGO management
-                    expertise.
+                    <strong>Euromed Marseille (Kedge University France)</strong>
+                    , she possesses a rare blend of tourism governance and NGO
+                    management expertise.
                   </p>
                   <p>
                     Her diverse experience includes serving as Country Sales
@@ -256,30 +242,6 @@ export default function AboutPage() {
                     <strong>FCS Computer Systems</strong> and acting as a
                     consultant for the <strong>United Nations</strong>.
                   </p>
-                </div>
-                <div className="grid grid-cols-2 gap-8 pt-8 border-t border-charcoal/5">
-                  <div className="flex items-start gap-4">
-                    {/* <Globe className="w-5 h-5 text-charcoal/30 mt-1" /> */}
-                    <div>
-                      <span className="block text-xs font-bold uppercase tracking-widest text-charcoal mb-1">
-                        Global Governance
-                      </span>
-                      <span className="text-sm text-charcoal/50">
-                        United Nations Consultant
-                      </span>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    {/* <GraduationCap className="w-5 h-5 text-charcoal/30 mt-1" /> */}
-                    <div>
-                      <span className="block text-xs font-bold uppercase tracking-widest text-charcoal mb-1">
-                        M.Sc & M.A
-                      </span>
-                      <span className="text-sm text-charcoal/50">
-                        UK & France Degrees
-                      </span>
-                    </div>
-                  </div>
                 </div>
               </Reveal>
             </div>
@@ -289,7 +251,7 @@ export default function AboutPage() {
                   {/* Asset Space for Sonali Portrait */}
                   <Image
                     src="/founder/Sonali3.jpg"
-                    alt="Manish Baheti"
+                    alt="Maneesh Baheti"
                     fill
                     className="object-cover"
                   />

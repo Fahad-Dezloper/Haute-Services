@@ -147,7 +147,7 @@ export default function MediaClient({
               <div className="flex items-center gap-6">
                 <div className="w-16 h-16 rounded-full overflow-hidden relative border-2 border-white/20">
                   <Image
-                    src="/founder/Manish.jpeg"
+                    src="/founder/Maneesh.jpeg"
                     alt="Maneesh Baheti"
                     fill
                     className="object-cover"
@@ -195,7 +195,7 @@ export default function MediaClient({
             href="mailto:info@hauteservices.in"
             className="inline-block bg-charcoal text-white px-12 py-6 hover:bg-charcoal/80 transition-colors font-serif italic text-xl"
           >
-            news@hauteservices.in
+            info@hauteservices.in
           </a>
         </Reveal>
       </section>

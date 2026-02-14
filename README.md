@@ -9,6 +9,7 @@ Whether creating immersive culinary festivals or curating investment-grade art p
 What We Do
 
 ### ART ADVISORY
+
 Haute Services offers comprehensive art advisory services for collectors, investors, corporates, and interior designers. We bring decades of art-collecting heritage and market insight to support clients across the art ecosystem.
 
 Services:
@@ -31,60 +32,56 @@ Corporate Headquarters
 Hotels & Hospitality Spaces
 Galleries and Public Installations
 
-
 Cheif guest and guest of hounour
+
 1. Event Poster • Oct 5, 2024
-New Wave Art Initiative – Inaugural Show
-Maneesh Baheti co-hosted the launch of the 'New Wave Art Initiative' with VEVA Art, spotlighting emerging artists from the defense and civil services at The Park Hotel, Delhi
+   New Wave Art Initiative – Inaugural Show
+   Maneesh Baheti co-hosted the launch of the 'New Wave Art Initiative' with VEVA Art, spotlighting emerging artists from the defense and civil services at The Park Hotel, Delhi
 
 2. ICAC / CCA Gallery • March 11, 2024
-Present Future – A Legacy of Masters
-Maneesh Baheti was a Guest of Honour at the ICAC exhibition at Bikaner House, showcasing legendary works by Indian masters and curated by Ravindra Mardia.
+   Present Future – A Legacy of Masters
+   Maneesh Baheti was a Guest of Honour at the ICAC exhibition at Bikaner House, showcasing legendary works by Indian masters and curated by Ravindra Mardia.
 
 3. Press Corridor • Feb 13, 2023
-AWADH ART FESTIVAL – The 5th Edition at Visual Arts Gallery, Delhi
-Maneesh Baheti was a guest at the 5th Awadh Art Festival, held at India Habitat Centre. The event featured artists from India and Bangladesh and recognized Maneesh for his contributions to the art community through Haute Services.
+   AWADH ART FESTIVAL – The 5th Edition at Visual Arts Gallery, Delhi
+   Maneesh Baheti was a guest at the 5th Awadh Art Festival, held at India Habitat Centre. The event featured artists from India and Bangladesh and recognized Maneesh for his contributions to the art community through Haute Services.
 
 4. Art Magnum Gallery • Oct 20, 2023
-Atypical Corollaries – Guest of Honour
-Art Magnum hosted this curated show featuring artists from Baroda. Maneesh Baheti was invited as Guest of Honour for his continued patronage and leadership in art advisory.
+   Atypical Corollaries – Guest of Honour
+   Art Magnum hosted this curated show featuring artists from Baroda. Maneesh Baheti was invited as Guest of Honour for his continued patronage and leadership in art advisory.
 
 5. Le Meridien Gurgaon • July 17, 2019
-Art for Concern – Annual Show with Maneesh Baheti
-Promoted by Haute Services and Secure Giving, this annual exhibition brought together emerging and mid-career artists. The event featured a preview cocktail evening.
-
+   Art for Concern – Annual Show with Maneesh Baheti
+   Promoted by Haute Services and Secure Giving, this annual exhibition brought together emerging and mid-career artists. The event featured a preview cocktail evening.
 
 Media coverage:
+
 1. Youtube • Nov 28, 2009
-Art as an Investment
-Manish K Baheti - Zee Business News feature
+   Art as an Investment
+   Maneesh K Baheti - Zee Business News feature
 
 2. CFB Connect Magazine • Sept 2014
-Medley of Indian Visual Art
-In this article, Maneesh Baheti explores the evolution and patronage of modern Indian art across centuries, tracing its institutional, royal, and regional roots.
+   Medley of Indian Visual Art
+   In this article, Maneesh Baheti explores the evolution and patronage of modern Indian art across centuries, tracing its institutional, royal, and regional roots.
 
 3. Newspaper Feature • March 22, 2023
-A Way to Bengal – Bengal Contemporary Art Exhibition
-This show, supported by Haute Services, brought Bengal's finest contemporary artists to the capital. It highlighted Kalighat-inspired techniques and affordable modern art.
+   A Way to Bengal – Bengal Contemporary Art Exhibition
+   This show, supported by Haute Services, brought Bengal's finest contemporary artists to the capital. It highlighted Kalighat-inspired techniques and affordable modern art.
 
-4. attended the annual Art of India show . It was beautifully curated by Dr Alka Pande in collaboration with Art Magnum , with 6 sections that cover all genres , each with some rare and exceptional works . 
-
-
-
-
+4. attended the annual Art of India show . It was beautifully curated by Dr Alka Pande in collaboration with Art Magnum , with 6 sections that cover all genres , each with some rare and exceptional works .
 
 ### LIFESTYLE EVENTS
+
 Haute Services designs and manages exceptional lifestyle and gastronomy-focused experiences.
 
 Two sub sections under lifestyle events:
 
 1. Book Launches
--- we have launched books of very famous authors
-Rohini Rana
-abhijit saha
-vicky ratnani
-asma khan
-
+   -- we have launched books of very famous authors
+   Rohini Rana
+   abhijit saha
+   vicky ratnani
+   asma khan
 
 2. Food For Thought Fest
 
@@ -123,7 +120,7 @@ Support collectors and investors in navigating the growing Indian art market
 We don’t just offer services—we build ecosystems around ideas, heritage, and value.
 
 Leadership
-Maneesh (Manish) Kumar Baheti
+Maneesh (Maneesh) Kumar Baheti
 
 Managing Director & Co-Founder
 
@@ -169,46 +166,41 @@ Instagram: @the_foodforthoughtfest
 
 LinkedIn: Haute Services
 
-
-
 Media coverage:
+
 1. Youtube • Nov 28, 2009
-Art as an Investment
-Manish K Baheti - Zee Business News feature
-image: zeebusinessnews.jpeg
+   Art as an Investment
+   Maneesh K Baheti - Zee Business News feature
+   image: zeebusinessnews.jpeg
 
 2. CFB Connect Magazine • Sept 2014
-Medley of Indian Visual Art
-In this article, Maneesh Baheti explores the evolution and patronage of modern Indian art across centuries, tracing its institutional, royal, and regional roots.
-image: cfbconnectmagazine.jpeg
+   Medley of Indian Visual Art
+   In this article, Maneesh Baheti explores the evolution and patronage of modern Indian art across centuries, tracing its institutional, royal, and regional roots.
+   image: cfbconnectmagazine.jpeg
 
 3. Newspaper Feature • March 22, 2023
-A Way to Bengal – Bengal Contemporary Art Exhibition
-This show, supported by Haute Services, brought Bengal's finest contemporary artists to the capital. It highlighted Kalighat-inspired techniques and affordable modern art.
-image: newspaperfeature.jpg
+   A Way to Bengal – Bengal Contemporary Art Exhibition
+   This show, supported by Haute Services, brought Bengal's finest contemporary artists to the capital. It highlighted Kalighat-inspired techniques and affordable modern art.
+   image: newspaperfeature.jpg
 
 4. attended the annual Art of India show . It was beautifully curated by Dr Alka Pande in collaboration with Art Magnum , with 6 sections that cover all genres , each with some rare and exceptional works .
-image: artofindia.jpg
+   image: artofindia.jpg
 
 5. Food For Thought gets recognised as THE Gastronomy Event of 2025 at the glittering Peak Life Gourmet Awards in the presence of the OG Chef Vikas Khanna !
-image: peaklife.jpg
+   image: peaklife.jpg
 
 6. Haute Services Founder Maneesh Baheti invited to speak at WORDS COUNT fest, part of Delhi International Arts Festival at the India Habitat Centre, New Delhi .
-image: wordscount.jpeg
+   image: wordscount.jpeg
 
-7. Honoured to having been invited as a hospitality industry speaker at the opening ceremony of Spotlight Singapore Delhi in Sep 2019 . 
-Spotlight Singapore is a cultural diplomacy platform that serves as an avenue for Singaporeans to travel and connect in the fields of the arts, business and education . The itineraries are crafted to nurture mutual understanding and engagement between Singapore and the rest of the world. 
-Spotlight Singapore has been held in Hong Kong, Tokyo, Moscow, Cape Town, Bratislava, Prague and in Mexico . 
-Our company - Haute Services, prepared the itinerary for Delhi and Maneesh Baheti led the delegation in their interaction with Restauranteur Shivkaran Singh and Couturiers Raghavendra Rathore and Manav Gangwani on 18th Sep 2019.
-image: spotlightsingapore.jpeg
+7. Honoured to having been invited as a hospitality industry speaker at the opening ceremony of Spotlight Singapore Delhi in Sep 2019 .
+   Spotlight Singapore is a cultural diplomacy platform that serves as an avenue for Singaporeans to travel and connect in the fields of the arts, business and education . The itineraries are crafted to nurture mutual understanding and engagement between Singapore and the rest of the world.
+   Spotlight Singapore has been held in Hong Kong, Tokyo, Moscow, Cape Town, Bratislava, Prague and in Mexico .
+   Our company - Haute Services, prepared the itinerary for Delhi and Maneesh Baheti led the delegation in their interaction with Restauranteur Shivkaran Singh and Couturiers Raghavendra Rathore and Manav Gangwani on 18th Sep 2019.
+   image: spotlightsingapore.jpeg
 
-8. Throwback to 2021, the Anniversary issue of SPIRITZ Magazine that featured an authored article by Maneesh Baheti that accurately predicted the rise of domestic tourism in India . 
-This was the first article in any magazine that carried the photograph of the Six Senses Fort Barwara , that became famous later with the Katrina- Vicky Kaushal Wedding .
-image: spiritz.jpeg
+8. Throwback to 2021, the Anniversary issue of SPIRITZ Magazine that featured an authored article by Maneesh Baheti that accurately predicted the rise of domestic tourism in India .
+   This was the first article in any magazine that carried the photograph of the Six Senses Fort Barwara , that became famous later with the Katrina- Vicky Kaushal Wedding .
+   image: spiritz.jpeg
 
-9. In 2019 , Haute Services had curated a Pan Asian Table D’Hote menu for the three cuisines on offer at OKO Restaurant at The Lalit New Delhi , the menu was paired with a delicious selection of wines chosen by their Resident Wine Sommeleier Donnadieu Charles . 
-image: oko.jpeg
-
-
-
-
+9. In 2019 , Haute Services had curated a Pan Asian Table D’Hote menu for the three cuisines on offer at OKO Restaurant at The Lalit New Delhi , the menu was paired with a delicious selection of wines chosen by their Resident Wine Sommeleier Donnadieu Charles .
+   image: oko.jpeg

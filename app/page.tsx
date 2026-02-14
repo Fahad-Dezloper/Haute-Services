@@ -146,9 +146,9 @@ export default function HomePage() {
                 <Reveal delay={0.3}>
                   <div className="flex flex-col items-start gap-8">
                     <p className="text-sm sm:text-base text-charcoal/70 leading-relaxed max-w-xs">
-                      Specializing in international gastronomy, turnkey art
-                      advisory services, and bespoke brand strategy for
-                      discerning clients.
+                      The portfolio of services include hospitality consultancy,
+                      lifestyle events and art advisory services with a focus on
+                      strategic advice.
                     </p>
                     <Link
                       href="/about"
@@ -205,10 +205,10 @@ export default function HomePage() {
               <div className="grid md:grid-cols-2 gap-8 lg:gap-12 text-base lg:text-lg text-charcoal/70 leading-relaxed">
                 <div>
                   <p className="mb-6">
-                    Haute Services is a boutique consultancy firm specializing
-                    in lifestyle events and art advisory. With over a decade of
-                    experience, we operate in two distinct but culturally rich
-                    verticals-Gastronomy and Art.
+                    Haute Services is a boutique consultancy with over three
+                    decades of experience, we operate in three distinct
+                    verticals-Hospitality Consulting, Lifestyle Events and Art
+                    Advisory.
                   </p>
                   <p>
                     We are the Founders of S.A.A.G – South Asian Association for

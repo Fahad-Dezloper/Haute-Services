@@ -332,7 +332,7 @@ export default function ArtPage() {
                 <Reveal delay={0.2}>
                   <div className="relative aspect-4/5 w-full rounded-sm overflow-hidden group shadow-[0_32px_64px_-16px_rgba(0,0,0,0.15)]">
                     <ParallaxImage
-                      src="/founder/Manish2.jpg"
+                      src="/founder/Maneesh2.jpg"
                       alt="Art Restoration and Curation"
                       className="w-full h-full group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1500 ease-out"
                     />
