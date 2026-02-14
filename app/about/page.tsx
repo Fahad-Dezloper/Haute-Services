@@ -107,7 +107,7 @@ export default function AboutPage() {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-white mb-6 leading-tight tracking-tighter">
               About{" "}
               <span className="italic font-light text-white/90 ml-2">
-                Haute
+                Haute Services
               </span>
             </h1>
             <p className="text-base md:text-lg text-white/70 max-w-xl font-light leading-relaxed border-l border-white/20 pl-6 uppercase tracking-widest text-[10px]">
