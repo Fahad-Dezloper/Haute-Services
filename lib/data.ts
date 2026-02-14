@@ -67,7 +67,7 @@ export const mediaCoverage: MediaItem[] = [
         source: "Multiple News Channels",
         date: "Multiple Appearances",
         title: "Hospitality Expert Featured Across Media",
-        description: "Maneesh Baheti has appeared seven times in national news as a hospitality expert, offering commentary on industry trends, service excellence, and consumer experience.",
+        description: "Maneesh Baheti has appeared several times in national news as a hospitality expert, offering commentary on industry trends, service excellence, and consumer experience.",
         image: "/news/covid2.png",
         link: "",
         category: 'Expert Opinion'
