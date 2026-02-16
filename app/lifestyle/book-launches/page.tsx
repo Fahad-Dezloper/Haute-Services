@@ -102,7 +102,7 @@ export default function BookLaunchesPage() {
   return (
     <main className="bg-cream min-h-screen text-charcoal font-sans selection:bg-charcoal selection:text-white overflow-hidden pb-12">
       {/* --- HERO SECTION --- */}
-      <section className="relative min-h-[40vh] h-fit flex flex-col justify-end pb-12 px-6 lg:px-12 bg-charcoal overflow-hidden pt-12">
+      <section className="relative min-h-[40vh] lg:min-h-[60vh] h-fit flex flex-col justify-end pb-12 px-6 lg:px-12 bg-charcoal overflow-hidden pt-12">
         <div className="absolute inset-0 opacity-30">
           <ParallaxImage
             src="/book/banner.jpeg"
@@ -183,7 +183,7 @@ export default function BookLaunchesPage() {
                       alt={item.author}
                       width={400}
                       height={400}
-                      className="absolute bottom-0 right-0 w-[40vw] h-[20vh] object-cover"
+                      className="absolute bottom-0 right-0 w-[40vw] lg:w-[15vw] h-[20vh] lg:h-[30vh] object-cover"
                     />
                   )}
                 </div>

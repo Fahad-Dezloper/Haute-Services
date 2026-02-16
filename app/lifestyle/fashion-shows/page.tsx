@@ -33,10 +33,12 @@ const ParallaxImage = ({
   src,
   alt,
   className,
+  objectFit = "cover",
 }: {
   src: string;
   alt: string;
   className?: string;
+  objectFit?: "cover" | "contain";
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -48,7 +50,7 @@ const ParallaxImage = ({
   return (
     <div ref={ref} className={`overflow-hidden ${className}`}>
       <motion.div style={{ y }} className="w-full h-[120%] -mt-[10%]">
-        <img src={src} alt={alt} className="w-full h-full object-cover" />
+        <img src={src} alt={alt} className={`w-full h-full object-${objectFit}`} />
       </motion.div>
     </div>
   );
@@ -172,13 +174,21 @@ export default function FashionShowsPage() {
   return (
     <main className="bg-cream min-h-screen text-charcoal font-sans selection:bg-charcoal selection:text-white overflow-hidden pb-12">
       {/* --- HERO SECTION --- */}
-      <section className="relative min-h-[40vh] h-fit flex flex-col justify-end pb-12 px-6 lg:px-12 bg-charcoal overflow-hidden pt-12">
+      <section className="relative min-h-[40vh] lg:h-[30vh] h-fit flex flex-col justify-end pb-12 px-6 lg:px-12 bg-charcoal overflow-hidden pt-12">
         <div className="absolute inset-0 opacity-30">
+          {/* Image for small screens */}
           <ParallaxImage
             src="/fashion/banner.jpeg"
             alt="High Fashion Atmosphere"
-            className="w-full h-full"
+            className="w-full h-full md:hidden"
           />
+          {/* Image for large screens */}
+          {/* <ParallaxImage
+            src="/extra/30.jpeg"
+            alt="High Fashion Atmosphere"
+            className="w-full h-full hidden md:block"
+            objectFit="contain"
+          /> */}
           <div className="absolute inset-0 bg-linear-to-b from-transparent via-charcoal/40 to-charcoal" />
         </div>
 

@@ -58,10 +58,10 @@ const ParallaxImage = ({
 export default function FilmFestivalPage() {
   return (
     <main className="bg-cream min-h-screen text-charcoal font-sans selection:bg-charcoal selection:text-white overflow-hidden pb-12">
-      <section className="relative min-h-[40vh] h-fit flex flex-col justify-end pb-12 px-6 lg:px-12 bg-charcoal overflow-hidden pt-12">
+      <section className="relative min-h-[40vh] lg:min-h-[60vh] h-fit flex flex-col justify-end pb-12 px-6 lg:px-12 bg-charcoal overflow-hidden pt-12">
         <div className="absolute inset-0 opacity-30">
           <ParallaxImage
-            src="/images/lifestyle.png"
+            src="/SAFACH.jpg"
             alt="Cinematography and Heritage"
             className="w-full h-full"
           />

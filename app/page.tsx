@@ -235,6 +235,41 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* --- CORPORATE FILM --- */}
+      <section className="py-20 lg:py-40 px-6 lg:px-12 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <Reveal>
+            <div className="text-center mb-12 lg:mb-16">
+              <div className="flex items-center justify-center gap-4 mb-6">
+                <div className="h-px w-12 bg-charcoal/20" />
+                <span className="text-charcoal/60 uppercase tracking-[0.3em] text-[10px] lg:text-xs font-bold">
+                  Our Story
+                </span>
+                <div className="h-px w-12 bg-charcoal/20" />
+              </div>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-serif text-charcoal mb-4 leading-tight">
+                Haute Services
+                <span className="italic font-light"> Corporate Film</span>
+              </h2>
+              <p className="text-base lg:text-lg text-charcoal/60 font-light max-w-2xl mx-auto">
+                Discover our journey, values, and vision through our corporate narrative.
+              </p>
+            </div>
+          </Reveal>
+          <Reveal delay={0.2}>
+            <div className="relative aspect-video w-full bg-charcoal/5 rounded-sm overflow-hidden shadow-2xl group">
+              <iframe
+                src="https://www.youtube.com/embed/TYLm4aYFtSo"
+                title="Haute Services Corporate Film"
+                allow="autoplay; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full"
+              />
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* --- CORE VALUES --- */}
       <section className="bg-charcoal text-white py-20 lg:py-40">
         <div className="container mx-auto px-6 lg:px-12">

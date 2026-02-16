@@ -298,7 +298,7 @@ export default function CulinaryFestivalsPage() {
     "/food/imp/33.jpeg",
     "/food/imp/34.jpeg",
     "/food/imp/35.jpeg",
-    "/food/imp/36.jpeg",
+    // "/food/imp/36.jpeg",
     "/food/imp/9.jpeg",
     // "/food/imp/11.jpeg",
     // "/food/imp/13.jpeg",
@@ -308,7 +308,7 @@ export default function CulinaryFestivalsPage() {
     // "/food/imp/18.jpeg",
     "/food/imp/1.jpeg",
     "/food/imp/36.jpeg",
-    "/food/imp/38.jpeg",
+    // "/food/imp/38.jpeg",
     "/food/imp/39.jpeg",
     "/food/imp/40.jpeg",
     // "/food/imp/21.jpeg",
@@ -356,10 +356,10 @@ export default function CulinaryFestivalsPage() {
         )}
       </AnimatePresence>
 
-      <section className="relative min-h-[40vh] h-fit flex flex-col justify-end pb-12 px-6 lg:px-12 bg-charcoal overflow-hidden pt-12">
+      <section className="relative min-h-[40vh] lg:min-h-[60vh] h-fit flex flex-col justify-end pb-12 px-6 lg:px-12 bg-charcoal overflow-hidden pt-12">
         <div className="absolute inset-0 opacity-30">
           <ParallaxImage
-            src="/images/lifestyle.png"
+            src="/banner/food.png"
             alt="Culinary Festival Atmosphere"
             className="w-full h-full"
           />

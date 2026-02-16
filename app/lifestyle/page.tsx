@@ -70,7 +70,7 @@ export default function LifestylePage() {
       subtitle: "Luxury Excellence",
       desc: "Organizing luxury events and brand standard excellence projects for elite couture brands.",
       href: "/banner/fashion.png",
-      img: "https://static.wixstatic.com/media/e86273_57cdee80347a45fa8d0d12a449a0768b~mv2.png?originWidth=1152&originHeight=832",
+      img: "/banner/fashion.png",
     },
     {
       title: "Film Festival",
@@ -83,10 +83,10 @@ export default function LifestylePage() {
 
   return (
     <main className="bg-cream min-h-screen text-charcoal font-sans selection:bg-charcoal selection:text-white overflow-hidden pb-12">
-      <section className="relative min-h-[40vh] h-fit flex flex-col justify-end pb-12 px-6 lg:px-12 bg-charcoal overflow-hidden pt-12">
+      <section className="relative min-h-[40vh] lg:min-h-[70vh] h-fit flex flex-col justify-end pb-12 px-6 lg:px-12 bg-charcoal overflow-hidden pt-12">
         <div className="absolute inset-0 opacity-40">
           <ParallaxImage
-            src="/images/lifestyle.png"
+            src="/banner/food.png"
             alt="Stunning Lifestyle Event"
             className="w-full h-full"
           />

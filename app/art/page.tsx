@@ -45,7 +45,7 @@ const arts = [
 const artspaces = [
   {
     title: "Luxury Residences",
-    img: "/art/luxury.jpg",
+    img: "/art/luxury2.png",
   },
   {
     title: "Corporate Headquarters",
@@ -109,6 +109,14 @@ const engagements = [
     desc: "Spotlight Singapore is the initiative of Singapore Chamber of Commerce and their motto is Business with a cultural handshake . It comprises of a group of entrepreneurs , professionals and artists who focus on emerging markets with an aim to identify sunrise sectors for investment opportunities and a simultaneous cultural exchange. Maneesh Baheti was invited as a speaker to represent the Hospitality and Luxury Industries in this landmark event in 2019 at the Shangrila Hotel New Delhi",
     icon: Globe,
     img: "/Singa.png",
+  },
+  {
+    title: "The Still-Life Art Project",
+    type: "Curatorial Initiative",
+    location: "Food For Thought Fest 2015",
+    desc: "Supported by DAG Modern, the world's largest modern Indian art gallery, this groundbreaking project aimed to create the largest still-life work in the world. Guests were invited to create their own compositions at FOOD for THOUGHT FEST 2015, with canvas, paints, pastels, and pens provided on-site. Both amateur painters and senior artists participated, with senior artists serving as mentors, celebrating the genre of still-life painting introduced to India from Europe.",
+    icon: Sparkles,
+    img: "/art/FFTFDAG.png",
   },
 ];
 
@@ -250,7 +258,7 @@ const ParallaxImage = ({
 export default function ArtPage() {
   return (
     <main className="bg-cream min-h-screen text-charcoal font-sans selection:bg-charcoal selection:text-white overflow-hidden">
-      <section className="relative min-h-[40vh] h-fit flex flex-col justify-end pb-12 px-6 lg:px-12 bg-charcoal overflow-hidden pt-12">
+      <section className="relative min-h-[40vh] lg:min-h-[60vh] h-fit flex flex-col justify-end pb-12 px-6 lg:px-12 bg-charcoal overflow-hidden pt-12">
         <div className="absolute inset-0 opacity-40">
           <ParallaxImage
             src="/hero/big.jpeg"
@@ -754,12 +762,13 @@ export default function ArtPage() {
             {engagements.map((item, index) => (
               <Reveal key={index} delay={index * 0.1}>
                 <div className="h-full bg-white border border-charcoal/5 group hover:border-charcoal/20 transition-all duration-500 flex flex-col overflow-hidden shadow-sm hover:shadow-xl">
-                  <div className="relative aspect-3/4 lg:h-[46vh] w-full overflow-hidden">
+                  <div className={`relative h-fit lg:h-[46vh] w-full overflow-hidden`}>
                     <Image
                       src={item.img || "/images/art.png"}
                       alt={item.title}
-                      fill
-                      style={{ objectFit: "cover" }}
+                      width={400}
+                      height={400}
+                      // style={{ objectFit: "contain" }}
                       className="grayscale-20 group-hover:grayscale-0 object-cover group-hover:scale-105 transition-all duration-1000"
                     />
                   </div>
@@ -827,9 +836,9 @@ export default function ArtPage() {
                     </p>
                   </div>
                   <div className="mt-6 lg:mt-8 pt-6 lg:pt-8 border-t border-charcoal/5 group-hover:pl-4 transition-all duration-500">
-                    <span className="inline-flex items-center gap-4 text-[10px] uppercase tracking-widest font-bold text-charcoal group-hover:gap-6 transition-all">
+                    {/* <span className="inline-flex items-center gap-4 text-[10px] uppercase tracking-widest font-bold text-charcoal group-hover:gap-6 transition-all">
                       Read Full Article <ArrowRight className="w-4 h-4" />
-                    </span>
+                    </span> */}
                   </div>
                 </div>
               </Reveal>
@@ -852,12 +861,16 @@ export default function ArtPage() {
             </div>
           </Reveal>
 
-          <div className="grid grid-cols-1 gap-6 lg:gap-8">
+          <div className="grid grid-cols-2 gap-6 lg:gap-8">
             {[
               {
                 id: "PPOVoy9Y1Lo",
                 url: "https://youtube.com/shorts/PPOVoy9Y1Lo?si=r3t25lV2IWIwM95A",
               },
+              {
+                id: "T9GHR-ET2jw",
+                url: "https://youtube.com/shorts/T9GHR-ET2jw?si=XYlQ3r6z6peQvwZV"
+              }
             ].map((short, index) => (
               <Reveal key={short.id} delay={index * 0.15}>
                 <div className="group relative">

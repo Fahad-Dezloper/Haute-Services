@@ -3,6 +3,7 @@ import { Playfair_Display, Lato } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import WhatsAppWidget from "./components/WhatsAppWidget";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -77,6 +78,7 @@ export default function RootLayout({
           {children}
         </div>
         <Footer />
+        <WhatsAppWidget />
       </body>
     </html>
   );
