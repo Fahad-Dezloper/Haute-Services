@@ -172,7 +172,7 @@ export default function AboutPage() {
                   <p>
                     His strategic lens was further sharpened as the Director of
                     Marketing for <strong>Hyatt Regency Delhi,</strong> where he
-                    successfully stered the Hotel through the tough phase of
+                    successfully steered the Hotel through the tough phase of
                     SARS in 2002. Beyond operations, Maneesh is a dedicated
                     educator, having taught CRM at NIFT Delhi and
                     Entrepreneurial Management at FHRAI Institute of Hotel

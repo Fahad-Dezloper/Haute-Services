@@ -753,7 +753,7 @@ export default function CulinaryFestivalsPage() {
           <Reveal>
             <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8 border-b border-charcoal/10 pb-12">
               <div>
-                <h2 className="text-3xl lg:text-7xl whitespace-nowrap font-serif leading-tight text-charcoal">
+                <h2 className="text-3xl lg:text-7xl font-serif leading-tight text-charcoal">
                   Broadcast
                   <span className="italic"> Excellence</span>
                 </h2>

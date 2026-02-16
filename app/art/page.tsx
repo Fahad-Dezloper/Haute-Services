@@ -23,19 +23,23 @@ import {
 const arts = [
   {
     title: "Modern Indian Art",
-    img: "/art/modern.jpg",
+    img: "/art/banner/Modern.png",
   },
   {
     title: "Contemporary Art",
-    img: "/art/contemparary.avif",
+    img: "/art/banner/Contemporary.png",
   },
   {
     title: "Photography & Print Art",
-    img: "/art/Photography.jpg",
+    img: "/art/banner/Photo.png",
+  },
+  {
+    title: "Digital Art",
+    img: "/art/banner/Digital.png",
   },
   {
     title: "Sculptures & Installations",
-    img: "/art/sculpture.jpg",
+    img: "/art/banner/Sculptures.png",
   },
 ];
 const artspaces = [
@@ -53,7 +57,7 @@ const artspaces = [
   },
   {
     title: "Public Art Installations",
-    img: "/art/publicart.jpeg",
+    img: "/art/banner/PublicSculp.png",
   },
 ];
 
@@ -82,14 +86,14 @@ const engagements = [
     icon: Mic,
     img: "/art/guest/wordcount.jpeg",
   },
-  {
-    title: "Art for a Cause – Concern India",
-    type: "Sponsor & Collaborator",
-    location: "Alliance Francaise De Delhi",
-    desc: "A charitable collaboration with Concern India Foundation to raise funds with a contemporary art show, demonstrating our commitment to art as a catalyst for social change.",
-    icon: Heart,
-    img: "/art/guest/alliance.jpeg",
-  },
+  // {
+  //   title: "Art for a Cause – Concern India",
+  //   type: "Sponsor & Collaborator",
+  //   location: "Alliance Francaise De Delhi",
+  //   desc: "A charitable collaboration with Concern India Foundation to raise funds with a contemporary art show, demonstrating our commitment to art as a catalyst for social change.",
+  //   icon: Heart,
+  //   img: "/art/guest/alliance.jpeg",
+  // },
   {
     title: "Contemporary Art Showcase",
     type: "Strategic Collaborator",
@@ -102,9 +106,9 @@ const engagements = [
     title: "Spotlight Singapore",
     type: "Cultural Representative – India",
     location: "Singapore",
-    desc: "Represented India at an international cultural platform showcasing South Asian perspectives on art, design, and lifestyle, emphasizing cultural diplomacy on a global stage.",
+    desc: "Spotlight Singapore is the initiative of Singapore Chamber of Commerce and their motto is Business with a cultural handshake . It comprises of a group of entrepreneurs , professionals and artists who focus on emerging markets with an aim to identify sunrise sectors for investment opportunities and a simultaneous cultural exchange. Maneesh Baheti was invited as a speaker to represent the Hospitality and Luxury Industries in this landmark event in 2019 at the Shangrila Hotel New Delhi",
     icon: Globe,
-    img: "/spotlightsingapore.jpeg",
+    img: "/Singa.png",
   },
 ];
 
@@ -249,7 +253,7 @@ export default function ArtPage() {
       <section className="relative min-h-[40vh] h-fit flex flex-col justify-end pb-12 px-6 lg:px-12 bg-charcoal overflow-hidden pt-12">
         <div className="absolute inset-0 opacity-40">
           <ParallaxImage
-            src="/work/bigArt.jpg"
+            src="/hero/big.jpeg"
             alt="Fine Art Detail"
             className="w-full h-full"
           />
@@ -369,7 +373,7 @@ export default function ArtPage() {
                 <Reveal delay={0.2}>
                   <div className="relative aspect-4/5 w-full rounded-sm overflow-hidden group shadow-[0_32px_64px_-16px_rgba(0,0,0,0.15)]">
                     <ParallaxImage
-                      src="/founder/Maneesh2.jpg"
+                      src="/founder/Manish2.jpg"
                       alt="Art Restoration and Curation"
                       className="w-full h-full group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1500 ease-out"
                     />
@@ -446,7 +450,7 @@ export default function ArtPage() {
               {artspaces.map((item, i) => (
                 <Reveal key={i} delay={i * 0.1}>
                   <div className="group cursor-pointer">
-                    <div className="relative aspect-16/10 w-full bg-charcoal/5 overflow-hidden mb-6 lg:mb-8 rounded-sm shadow-sm group-hover:shadow-xl transition-all duration-700">
+                    <div className="relative h-[40vh] w-full bg-charcoal/5 overflow-hidden mb-6 lg:mb-8 rounded-sm shadow-sm group-hover:shadow-xl transition-all duration-700">
                       <Image
                         src={item.img}
                         alt={item.title}
@@ -560,7 +564,7 @@ export default function ArtPage() {
           </div>
 
           {/* Renowned Artists Section */}
-          <div className="grid lg:grid-cols-12 gap-16 items-center mb-32 border-t border-charcoal/10 pt-24">
+          {/* <div className="grid lg:grid-cols-12 gap-16 items-center mb-32 border-t border-charcoal/10 pt-24">
             <div className="lg:col-span-6 order-2 lg:order-1">
               <Reveal>
                 <div className="relative aspect-4/3 mb-12 rounded-sm overflow-hidden shadow-2xl">
@@ -571,7 +575,6 @@ export default function ArtPage() {
                     className="object-cover"
                   />
                 </div>
-                {/* Mobile Only Artists List */}
                 <div className="lg:hidden space-y-6">
                   <p className="text-sm text-charcoal/60 italic leading-relaxed">
                     A convergence of contemporary masters including Om Soorya,
@@ -613,7 +616,7 @@ export default function ArtPage() {
                 </h3>
               </Reveal>
             </div>
-          </div>
+          </div> */}
 
           {/* Performance Section */}
           <div className="bg-charcoal text-white rounded-sm overflow-hidden">

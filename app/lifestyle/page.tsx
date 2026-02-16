@@ -56,20 +56,20 @@ export default function LifestylePage() {
       subtitle: "Food For Thought Fest",
       desc: "South Asia's definitive platform for gastronomy, recognized four times by the Associated Press.",
       href: "/lifestyle/culinary-festivals",
-      img: "/images/lifestyle.png",
+      img: "/banner/food.png",
     },
     {
       title: "Book Launches",
       subtitle: "Strategic Literary Curation",
       desc: "Launching the narratives of global culinary masters, from Netflix stars to royal historians.",
       href: "/lifestyle/book-launches",
-      img: "/work/bigArt.jpg",
+      img: "/book/banner.jpeg",
     },
     {
       title: "Fashion Shows",
       subtitle: "Luxury Excellence",
       desc: "Organizing luxury events and brand standard excellence projects for elite couture brands.",
-      href: "/lifestyle/fashion-shows",
+      href: "/banner/fashion.png",
       img: "https://static.wixstatic.com/media/e86273_57cdee80347a45fa8d0d12a449a0768b~mv2.png?originWidth=1152&originHeight=832",
     },
     {
@@ -77,7 +77,7 @@ export default function LifestylePage() {
       subtitle: "Cultural Storytelling",
       desc: "Advising at SAFACH to shape the future of South Asian culinary cinema and heritage through film.",
       href: "/lifestyle/film-festival",
-      img: "/images/about.png",
+      img: "/SAFACH.jpg",
     },
   ];
 
@@ -115,24 +115,24 @@ export default function LifestylePage() {
           {categories.map((cat, i) => (
             <Reveal key={i} delay={i * 0.1}>
               <Link href={cat.href} className="group block">
-                <div className="relative aspect-16/10 overflow-hidden mb-10 bg-charcoal/5 rounded-sm shadow-xl">
-                  <div className="absolute inset-0 bg-charcoal/40 group-hover:bg-transparent transition-all duration-700 z-10" />
+                <div className="relative aspect-16/10 overflow-hidden mb-10 rounded-sm shadow-xl">
+                  {/* <div className="absolute inset-0 group-hover:bg-transparent transition-all duration-700 z-10" /> */}
                   <Image
                     src={cat.img}
                     alt={cat.title}
                     fill
-                    className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000"
+                    className="object-cover transition-all duration-1000"
                   />
                   <div className="absolute top-4 right-4 sm:top-6 sm:right-6 z-20">
                     <div className="w-10 h-10 sm:w-14 sm:h-14 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center shadow-lg transform group-hover:rotate-45 transition-transform duration-500">
                       <ArrowUpRight className="w-4 h-4 sm:w-6 sm:h-6 text-charcoal" />
                     </div>
                   </div>
-                  <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 z-20">
+                  {/* <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 z-20">
                     <div className="px-4 py-2 bg-white/95 backdrop-blur-md text-[10px] sm:text-xs uppercase tracking-[0.2em] font-bold text-charcoal shadow-sm">
                       0{i + 1}
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="space-y-6">
                   <div className="flex items-center justify-between border-b border-charcoal/5 pb-6">
