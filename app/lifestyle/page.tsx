@@ -115,13 +115,14 @@ export default function LifestylePage() {
           {categories.map((cat, i) => (
             <Reveal key={i} delay={i * 0.1}>
               <Link href={cat.href} className="group block">
-                <div className="relative aspect-16/10 overflow-hidden mb-10 rounded-sm shadow-xl">
+                <div className="relative h-full overflow-hidden mb-10 rounded-sm shadow-xl">
                   {/* <div className="absolute inset-0 group-hover:bg-transparent transition-all duration-700 z-10" /> */}
                   <Image
                     src={cat.img}
                     alt={cat.title}
-                    fill
-                    className="object-cover transition-all duration-1000"
+                    width={400}
+                    height={400}
+                    className="w-full h-fulltransition-all duration-1000"
                   />
                   <div className="absolute top-4 right-4 sm:top-6 sm:right-6 z-20">
                     <div className="w-10 h-10 sm:w-14 sm:h-14 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center shadow-lg transform group-hover:rotate-45 transition-transform duration-500">
