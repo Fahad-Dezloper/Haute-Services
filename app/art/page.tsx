@@ -262,7 +262,7 @@ export default function ArtPage() {
         <div className="absolute inset-0 opacity-40">
           <ParallaxImage
             src="/hero/big.jpeg"
-            alt="Fine Art Detail"
+            alt="Fine art and curatorial expertise backdrop for Haute Services Art Advisory"
             className="w-full h-full"
           />
           <div className="absolute inset-0 bg-linear-to-b from-transparent via-charcoal/40 to-charcoal" />
@@ -382,7 +382,7 @@ export default function ArtPage() {
                   <div className="relative aspect-4/5 w-full rounded-sm overflow-hidden group shadow-[0_32px_64px_-16px_rgba(0,0,0,0.15)]">
                     <ParallaxImage
                       src="/founder/Manish2.jpg"
-                      alt="Art Restoration and Curation"
+                      alt="Maneesh Baheti, Haute Services founder, art restoration and curation expert"
                       className="w-full h-full group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1500 ease-out"
                     />
                   </div>
@@ -519,7 +519,7 @@ export default function ArtPage() {
                 <div className="relative aspect-3/4 w-full bg-charcoal/5 rounded-sm overflow-hidden shadow-xl mb-8">
                   <Image
                     src="/news/iaf.png"
-                    alt="IAF Parallel Event Poster"
+                    alt="India Art Fair Parallel Event poster, Borrowed Identities exhibition co-curated by Haute Services and SANDARBH"
                     fill
                     className="object-contain"
                   />
@@ -556,7 +556,7 @@ export default function ArtPage() {
                     >
                       <Image
                         src={`/iaf/${num}.jpeg`}
-                        alt={`IAF Exhibition ${num}`}
+                        alt="Borrowed Identities exhibition at India Art Fair, Hungarian Culture Centre New Delhi"
                         fill
                         className="object-cover hover:scale-105 transition-transform duration-700"
                       />
@@ -578,7 +578,7 @@ export default function ArtPage() {
                 <div className="relative aspect-4/3 mb-12 rounded-sm overflow-hidden shadow-2xl">
                   <Image
                     src="/iaf/3.jpeg"
-                    alt="Founder with Renowned Artists"
+                    alt="Haute Services founder with renowned artists at India Art Fair"
                     fill
                     className="object-cover"
                   />
@@ -699,7 +699,7 @@ export default function ArtPage() {
             <div className="relative aspect-video lg:aspect-[21/9] w-full mb-12 rounded-sm overflow-hidden shadow-2xl border border-white/10 group">
               <Image
                 src="/art/imp/raza.jpeg"
-                alt="Maneesh Baheti with S.H. Raza"
+                alt="Haute Services founder Maneesh Baheti with legendary artist S.H. Raza at Delhi Art Gallery retrospective 2012"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-1000"
               />
@@ -734,7 +734,7 @@ export default function ArtPage() {
                 <div className="relative group overflow-hidden bg-white/5 rounded-sm break-inside-avoid shadow-lg hover:shadow-2xl transition-all duration-300">
                   <img
                     src={item}
-                    alt={`Event Highlight ${i + 1}`}
+                    alt="Haute Services art advisory event with artists, collectors and dignitaries"
                     className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
                     loading="lazy"
                   />
@@ -765,7 +765,7 @@ export default function ArtPage() {
                   <div className={`relative h-fit lg:h-[46vh] w-full overflow-hidden`}>
                     <Image
                       src={item.img || "/images/art.png"}
-                      alt={item.title}
+                      alt={`${item.title} - ${item.type} at ${item.location}, Haute Services curatorial footprint`}
                       width={400}
                       height={400}
                       // style={{ objectFit: "contain" }}
@@ -814,7 +814,7 @@ export default function ArtPage() {
                   <div className="relative aspect-video w-full overflow-hidden mb-6 lg:mb-8 rounded-sm transition-all duration-700 bg-charcoal/5">
                     <Image
                       src={item.image}
-                      alt={item.title}
+                      alt={`${item.title} - ${item.publication} ${item.section} ${item.date}, Haute Services art advisory thought leadership`}
                       fill
                       className="group-hover:scale-105 object-contain transition-transform duration-1000"
                     />
@@ -911,14 +911,14 @@ export default function ArtPage() {
                   <div className="relative h-fit lg:h-[40vh] w-full bg-charcoal/5 rounded-sm overflow-hidden mb-6 shadow-md lg:shadow-lg transition-all duration-700">
                     <img
                       src={item.image}
-                      alt={item.title}
+                      alt={`${item.title} - ${item.source} ${item.date}, Haute Services media and press coverage`}
                       className="w-full h-full object-contain grayscale-20 group-hover:grayscale-0 transition-all duration-700"
                     />
                     {item.image === "/art/news/toi1.jpeg" && (
                       <span className="absolute bottom-0 right-0 w-32 h-36 lg:w-44 lg:h-48 shadow-[0_20px_50px_rgba(0,0,0,0.3)] border-2 border-white overflow-hidden group-hover:scale-105 transition-transform duration-700">
                         <Image
                           src="/art/news/toi2.jpeg"
-                          alt="times of india recognition"
+                          alt="Times of India recognition for Haute Services art advisory and cultural footprint"
                           width={200}
                           height={200}
                           className="w-full h-full object-cover brightness-110 contrast-105"

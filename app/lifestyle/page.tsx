@@ -87,7 +87,7 @@ export default function LifestylePage() {
         <div className="absolute inset-0 opacity-40">
           <ParallaxImage
             src="/banner/food.png"
-            alt="Stunning Lifestyle Event"
+            alt="Haute Services lifestyle events, culinary festivals and cultural experiences"
             className="w-full h-full"
           />
           <div className="absolute inset-0 bg-linear-to-b from-transparent via-charcoal/40 to-charcoal" />
@@ -119,7 +119,7 @@ export default function LifestylePage() {
                   {/* <div className="absolute inset-0 group-hover:bg-transparent transition-all duration-700 z-10" /> */}
                   <Image
                     src={cat.img}
-                    alt={cat.title}
+                    alt={`${cat.title} - Haute Services lifestyle events`}
                     width={400}
                     height={400}
                     className="w-full h-fulltransition-all duration-1000"

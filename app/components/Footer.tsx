@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="lg:col-span-6">
             <Image
               src="/logo/MainLogo.jpeg"
-              alt="Logo"
+              alt="Haute Services logo"
               width={200}
               height={200}
               className="mb-12 bg-white"

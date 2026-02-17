@@ -96,13 +96,13 @@ export default function HomePage() {
             {/* Vertical image for small screens */}
             <ParallaxImage
               src="/hero/big2.jpeg"
-              alt="Elegant lifestyle event setting"
+              alt="Haute Services luxury hospitality and lifestyle event setting, boutique consultancy"
               className="w-full h-full object-cover grayscale-20 hover:grayscale-0 transition-all duration-1000 md:hidden"
             />
             {/* Horizontal image for medium and large screens */}
             <ParallaxImage
               src="/hero/big.jpeg"
-              alt="Elegant lifestyle event setting"
+              alt="Haute Services luxury hospitality and lifestyle event setting, boutique consultancy"
               className="w-full h-full object-cover grayscale-20 hover:grayscale-0 transition-all duration-1000 hidden md:block"
             />
             {/* <div className="absolute inset-0 bg-linear-to-t from-cream/20 to-transparent pointer-events-none" /> */}
@@ -112,7 +112,7 @@ export default function HomePage() {
             <div className="w-full h-full bg-white  overflow-hidden shadow-lg">
               <Image
                 src="/hero/small2.jpeg"
-                alt="Artistic detail"
+                alt="Haute Services art advisory and lifestyle curation"
                 fill
                 className="object-cover md:object-contain grayscale-10 border-8"
               />
@@ -363,7 +363,7 @@ export default function HomePage() {
                   <div className="relative aspect-square w-full bg-charcoal/5 rounded-sm overflow-hidden shadow-2xl">
                     <ParallaxImage2
                       src="/services/art.jpg"
-                      alt="Art Advisory"
+                      alt="Haute Services Art Advisory, curation and collection management for collectors and corporations"
                       className="w-full h-full grayscale-20 transition-all duration-1000"
                     />
                   </div>
@@ -419,7 +419,7 @@ export default function HomePage() {
                   <div className="relative h-[250px] w-full bg-charcoal/5 rounded-sm overflow-hidden shadow-2xl">
                     <ParallaxImage
                       src="/lifestyle.avif"
-                      alt="Lifestyle Events"
+                      alt="Haute Services Lifestyle Events, culinary festivals and cultural experiences"
                       className="w-full h-full grayscale-20 hover:grayscale-0 transition-all duration-1000"
                     />
                   </div>
@@ -446,7 +446,7 @@ export default function HomePage() {
                   {/* Image Placeholder - User mentioned they will add links later */}
                   <Image
                     src={item.image}
-                    alt={item.title}
+                    alt={`${item.title} - ${item.source} ${item.date}, Haute Services media coverage`}
                     width={400}
                     height={400}
                     className="w-full h-full object-fill"

@@ -62,7 +62,7 @@ export default function FilmFestivalPage() {
         <div className="absolute inset-0 opacity-30">
           <ParallaxImage
             src="/SAFACH.jpg"
-            alt="Cinematography and Heritage"
+            alt="SAFACH South Asia Forum for Art and Creative Heritage, cinematography and cultural storytelling"
             className="w-full h-full"
           />
           <div className="absolute inset-0 bg-linear-to-b from-transparent via-charcoal/40 to-charcoal" />
@@ -123,7 +123,7 @@ export default function FilmFestivalPage() {
             <Reveal>
               <Image
                 src="/film/safach.png"
-                alt="SAFACH"
+                alt="SAFACH South Asia Forum for Art and Creative Heritage, culinary cinema and cultural heritage advisory"
                 width={500}
                 height={500}
                 className="w-full h-full  mb-12 object-cover"

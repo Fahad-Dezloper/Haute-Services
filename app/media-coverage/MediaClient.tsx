@@ -84,7 +84,7 @@ export default function MediaClient({
                 <div className="relative h-full w-full bg-charcoal/5 overflow-hidden mb-8 rounded-sm">
                   <Image
                     src={item.image || "/placeholder.jpg"}
-                    alt={item.title}
+                    alt={`${item.title} - ${item.source} ${item.date}, Haute Services media coverage`}
                     width={500}
                     height={500}
                     className="object-cover h-full transition-all duration-700"
@@ -148,7 +148,7 @@ export default function MediaClient({
                 <div className="w-16 h-16 rounded-full overflow-hidden relative border-2 border-white/20">
                   <Image
                     src="/founder/Maneesh.jpeg"
-                    alt="Maneesh Baheti"
+                    alt="Maneesh Baheti, Founder Haute Services"
                     fill
                     className="object-cover"
                   />

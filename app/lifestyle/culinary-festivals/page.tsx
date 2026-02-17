@@ -360,7 +360,7 @@ export default function CulinaryFestivalsPage() {
         <div className="absolute inset-0 opacity-30">
           <ParallaxImage
             src="/banner/food.png"
-            alt="Culinary Festival Atmosphere"
+            alt="Food For Thought Fest and South Asian gastronomy platform by Haute Services and SAAG"
             className="w-full h-full"
           />
           <div className="absolute inset-0 bg-linear-to-b from-transparent via-charcoal/40 to-charcoal" />
@@ -420,7 +420,7 @@ export default function CulinaryFestivalsPage() {
                 <div className="py-12 bg-white flex flex-col items-center justify-center border border-charcoal/5 shadow-sm my-12 md:my-16 relative overflow-hidden group max-w-md mx-auto lg:mx-0">
                   <Image
                     src="/food/SAAGAWARD.avif"
-                    alt="SAAG Award"
+                    alt="SAAG Food Festival of the Year 2019 award, National Gastronomy Recognition"
                     height={240}
                     width={240}
                     className="w-40 md:w-52 h-40 md:h-52 text-charcoal/20 mb-6 group-hover:scale-105 transition-transform duration-700"
@@ -497,7 +497,7 @@ export default function CulinaryFestivalsPage() {
                   <div className="absolute -top-12 left-0 w-20 md:w-24 h-20 md:h-24 rounded-full overflow-hidden border-4 border-white shadow-xl">
                     <Image
                       src={t.image}
-                      alt={t.name}
+                      alt={`${t.name}, ${t.role}, testimonial for Food For Thought Fest`}
                       fill
                       className="object-cover"
                     />
@@ -593,7 +593,7 @@ export default function CulinaryFestivalsPage() {
                   <div className="relative aspect-10/10 overflow-hidden rounded-sm shadow-lg sm:shadow-xl">
                     <Image
                       src={mag.img}
-                      alt={mag.title}
+                      alt={`${mag.title} - ${mag.ref} ${mag.year}, Food For Thought Fest literary feature`}
                       fill
                       className="object-cover transition-all duration-150 group-hover:scale-105 hover:opacity-100"
                     />
@@ -681,7 +681,7 @@ export default function CulinaryFestivalsPage() {
               <div className="relative h-[40vh]  w-full mb-12 rounded-sm overflow-hidden shadow-2xl border border-white/10 group">
                 <Image
                   src="/food/imp/25.jpeg"
-                  alt="Maneesh Baheti with Chef Vikas Khanna"
+                  alt="Haute Services founder Maneesh Baheti with celebrity chef Vikas Khanna at Food For Thought Fest"
                   fill
                   className="h-full group-hover:scale-105 transition-transform duration-1000"
                 />
@@ -711,7 +711,7 @@ export default function CulinaryFestivalsPage() {
                   <div className="relative group overflow-hidden bg-white/5 rounded-sm break-inside-avoid shadow-lg hover:shadow-2xl transition-all duration-300">
                     <img
                       src={item}
-                      alt={`Event Highlight ${i + 1}`}
+                      alt="Food For Thought Fest culinary festival moment with chefs and dignitaries"
                       className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
                       loading="lazy"
                     />
@@ -793,7 +793,7 @@ export default function CulinaryFestivalsPage() {
                         <div className="relative aspect-video overflow-hidden bg-charcoal rounded-sm shadow-inner transition-all duration-700">
                           <Image
                             src={`https://i.ytimg.com/vi/${vid.id}/hqdefault.jpg`}
-                            alt={vid.title}
+                            alt={`${vid.title} - ${vid.channel} broadcast coverage of Food For Thought Fest`}
                             fill
                             className="object-cover group-hover:scale-105 transition-transform duration-1000"
                           />

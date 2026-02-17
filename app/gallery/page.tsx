@@ -249,7 +249,7 @@ export default function GalleryPage() {
             >
               <img
                 src={src}
-                alt=""
+                alt="Haute Services gallery archive, press clippings and cultural moments"
                 className="absolute inset-0 w-full h-full object-cover opacity-85"
                 loading="eager"
                 decoding="async"

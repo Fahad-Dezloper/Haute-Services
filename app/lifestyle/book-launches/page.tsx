@@ -106,7 +106,7 @@ export default function BookLaunchesPage() {
         <div className="absolute inset-0 opacity-30">
           <ParallaxImage
             src="/book/banner.jpeg"
-            alt="Literary Event Atmosphere"
+            alt="Book launch and literary event curation by Haute Services for culinary and cultural authors"
             className="w-full h-full"
           />
           <div className="absolute inset-0 bg-linear-to-b from-transparent via-charcoal/40 to-charcoal" />
@@ -173,14 +173,14 @@ export default function BookLaunchesPage() {
                   </div>
                   <Image
                     src={item.image}
-                    alt={item.author}
+                    alt={`${item.author}, ${item.tag}, at Haute Services curated book launch for "${item.book}"`}
                     fill
                     className="object-cover"
                   />
                   {item.image == "/book/chris.png" && (
                     <Image
                       src="/book/chris2.jpg"
-                      alt={item.author}
+                      alt={`${item.author}, ${item.tag}, at Haute Services curated book launch for "${item.book}"`}
                       width={400}
                       height={400}
                       className="absolute bottom-0 right-0 w-[40vw] lg:w-[15vw] h-[20vh] lg:h-[30vh] object-cover"

@@ -96,7 +96,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 opacity-40">
           <ParallaxImage
             src="/images/about.png"
-            alt="Antique Architectural Detail"
+            alt="Haute Services about, boutique consultancy heritage and team"
             className="w-full h-full"
           />
           <div className="absolute inset-0 bg-linear-to-b from-transparent via-charcoal/40 to-charcoal" />
@@ -195,7 +195,7 @@ export default function AboutPage() {
                   {/* Asset Space for Maneesh Portrait */}
                   <Image
                     src="/founder/Manish.jpeg"
-                    alt="Maneesh Baheti"
+                    alt="Maneesh Baheti, Founder Haute Services"
                     fill
                     className="object-cover"
                   />
@@ -251,7 +251,7 @@ export default function AboutPage() {
                   {/* Asset Space for Sonali Portrait */}
                   <Image
                     src="/founder/Sonali3.jpg"
-                    alt="Maneesh Baheti"
+                    alt="Sonali Anand, Strategy & Sales, Haute Services"
                     fill
                     className="object-cover"
                   />

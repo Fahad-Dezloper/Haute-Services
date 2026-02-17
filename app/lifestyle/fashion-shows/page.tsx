@@ -179,13 +179,13 @@ export default function FashionShowsPage() {
           {/* Image for small screens */}
           <ParallaxImage
             src="/fashion/banner.jpeg"
-            alt="High Fashion Atmosphere"
+            alt="Haute Services fashion and lifestyle showcase, luxury brand launches and runway events"
             className="w-full h-full md:hidden"
           />
           {/* Image for large screens */}
           {/* <ParallaxImage
             src="/extra/30.jpeg"
-            alt="High Fashion Atmosphere"
+            alt="Haute Services fashion and lifestyle showcase, luxury brand launches and runway events"
             className="w-full h-full hidden md:block"
             objectFit="contain"
           /> */}
@@ -246,7 +246,7 @@ export default function FashionShowsPage() {
 
                   <Image
                     src={work.image}
-                    alt={work.title}
+                    alt={`${work.title} - ${work.role} ${work.location} ${work.date}, Haute Services fashion and lifestyle`}
                     width={400}
                     height={400}
                     className="w-full h-full object-cover"
@@ -254,7 +254,7 @@ export default function FashionShowsPage() {
                   {work.image == "/fashion/Dfw2.png" && (
                     <Image
                       src="/fashion/Dfw.png"
-                      alt={work.title}
+                      alt="Designer Fashion Week Grand Finale, Maison de Bose showstopper"
                       width={400}
                       height={400}
                       className="absolute bottom-0 right-0 w-[40vw] h-[20vh] object-cover"
@@ -264,7 +264,7 @@ export default function FashionShowsPage() {
                     "https://ox35safakaidjuzg.public.blob.vercel-storage.com/telegram-cloud-photo-size-5-6336883117930516241-y" && (
                     <Image
                       src="/fashion/Khubani.png"
-                      alt={work.title}
+                      alt="Khubani At Andaz Hotel, Dreamers Are Achievers fashion show"
                       width={400}
                       height={400}
                       className="absolute bottom-0 right-0 w-[25vw] h-[15vh] object-cover"
@@ -355,7 +355,7 @@ export default function FashionShowsPage() {
                                     </div> */}
                   <Image
                     src={item}
-                    alt=""
+                    alt="Haute Services fashion and lifestyle event with designers and industry leaders"
                     width={400}
                     height={400}
                     className="w-full h-full object-cover"

@@ -17,10 +17,13 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "Haute Services | Boutique Consultancy for Lifestyle & Art Advisory",
-  description: "Haute Services is a premier boutique consultancy specializing in international gastronomy, turnkey art advisory, and bespoke brand strategy since 2014. Based in New Delhi, we bridge the gap between cultural heritage and modern excellence.",
-  keywords: ["Haute Services", "Art Advisory", "Lifestyle Events", "Gastronomy Consultancy", "Food For Thought Fest", "SAAG", "Maneesh Baheti", "Sonali Anand", "Luxury Brand Strategy", "Art Curation Delhi"],
-  authors: [{ name: "Maneesh Baheti" }, { name: "Sonali Anand" }],
+  title: {
+    default: "Haute Services | Boutique Consultancy for Lifestyle, Art Advisory & Gastronomy",
+    template: "%s | Haute Services",
+  },
+  description: "Haute Services is a premier boutique consultancy since 2009, with over three decades of experience in hospitality consulting, lifestyle events, and art advisory. Founders of S.A.A.G and Food For Thought Fest. Based in New Delhi.",
+  keywords: ["Haute Services", "Art Advisory India", "Lifestyle Events Delhi", "Gastronomy Consultancy", "Food For Thought Fest", "SAAG", "Maneesh Baheti", "Sonali Anand", "Luxury Hospitality Consultancy", "Art Curation Delhi", "Culinary Festivals", "Boutique Consultancy New Delhi"],
+  authors: [{ name: "Maneesh Baheti", url: "https://hauteservices.in/about" }, { name: "Sonali Anand", url: "https://hauteservices.in/about" }],
   icons: {
     icon: [
       { url: "/favicon_io/favicon-32x32.png", sizes: "32x32", type: "image/png" },
@@ -33,16 +36,16 @@ export const metadata: Metadata = {
   },
   manifest: "/favicon_io/site.webmanifest",
   openGraph: {
-    title: "Haute Services | Lifestyle & Art Advisory",
-    description: "Boutique consultancy specializing in international gastronomy, turnkey art advisory, and bespoke brand strategy.",
+    title: "Haute Services | Boutique Consultancy for Lifestyle, Art Advisory & Gastronomy",
+    description: "Premier boutique consultancy since 2009. Hospitality consulting, lifestyle events, and art advisory. Founders of Food For Thought Fest. New Delhi.",
     url: "https://hauteservices.in",
     siteName: "Haute Services",
     images: [
       {
-        url: "/og/image.png",
+        url: "https://hauteservices.in/og/image.png",
         width: 1200,
         height: 630,
-        alt: "Haute Services Logo and Banner",
+        alt: "Haute Services – Boutique Consultancy for Lifestyle, Art Advisory and Gastronomy",
       },
     ],
     locale: "en_IN",
@@ -50,9 +53,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Haute Services | Lifestyle & Art Advisory",
-    description: "Boutique consultancy specializing in international gastronomy, turnkey art advisory, and bespoke brand strategy.",
-    images: ["/og/image.png"],
+    title: "Haute Services | Boutique Consultancy for Lifestyle, Art Advisory & Gastronomy",
+    description: "Premier boutique consultancy since 2009. Hospitality, lifestyle events, art advisory. Founders of Food For Thought Fest.",
+    images: ["https://hauteservices.in/og/image.png"],
   },
   alternates: {
     canonical: "https://hauteservices.in",
@@ -61,6 +64,22 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Haute Services",
+  url: "https://hauteservices.in",
+  logo: "https://hauteservices.in/logo/MainLogo.jpeg",
+  description: "Boutique consultancy specializing in hospitality consulting, lifestyle events, and art advisory. Founders of S.A.A.G and Food For Thought Fest.",
+  foundingDate: "2009",
+  founders: [
+    { "@type": "Person", name: "Maneesh Baheti" },
+    { "@type": "Person", name: "Sonali Anand" },
+  ],
+  address: { "@type": "PostalAddress", addressLocality: "New Delhi", addressCountry: "IN" },
+  sameAs: [],
 };
 
 export default function RootLayout({
@@ -73,6 +92,10 @@ export default function RootLayout({
       <body
         className={`${playfair.variable} ${lato.variable} md:mx-8 antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
         <Header />
         <div className="min-h-screen">
           {children}

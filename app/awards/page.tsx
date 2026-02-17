@@ -107,7 +107,7 @@ export default function AwardsPage() {
                     {/* Once images are ready, use: <Image src={award.image} alt={award.title} fill className="object-cover transition-transform duration-700 group-hover:scale-105" /> */}
                     <Image
                       src={award.image}
-                      alt={award.title}
+                      alt={`${award.title} - ${award.organization} ${award.year || ""} award and recognition, Haute Services`}
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
                     />

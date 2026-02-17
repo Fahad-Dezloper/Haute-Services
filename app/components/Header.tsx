@@ -40,7 +40,7 @@ export default function Header() {
           <Link href="/" className="group flex items-baseline gap-1">
             <Image
               src="/logo/MainLogo.jpeg"
-              alt="Logo"
+              alt="Haute Services logo"
               width={180}
               height={180}
               className="w-[140px] lg:w-[180px] h-auto"
