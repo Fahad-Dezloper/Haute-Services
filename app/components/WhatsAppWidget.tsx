@@ -46,9 +46,9 @@ export default function WhatsAppWidget() {
         aria-label="Open WhatsApp chat"
       >
         <MessageCircle className="w-7 h-7 text-white" />
-        {!isOpen && (
+        {/* {!isOpen && (
           <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full border-2 border-white animate-pulse" />
-        )}
+        )} */}
       </button>
 
       {/* Chat Widget */}

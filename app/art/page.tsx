@@ -277,7 +277,7 @@ export default function ArtPage() {
               </span>
             </h1>
             <p className="text-base md:text-lg text-white/70 max-w-xl font-light leading-relaxed border-l border-white/20 pl-6 uppercase tracking-widest text-[10px]">
-              Over a decade of curatorial expertise, bridging the gap between
+              <span className="text-white font-semibold normal-case tracking-normal">Thirty years</span> of curatorial expertise, bridging the gap between
               historical heritage and contemporary art.
             </p>
           </Reveal>
@@ -309,7 +309,7 @@ export default function ArtPage() {
                     of identity.
                   </p>
                   <p>
-                    With over a decade of experience in our culturally rich
+                    With <span className="font-semibold text-charcoal underline decoration-charcoal/30 decoration-2 underline-offset-2">thirty years of experience</span> in our culturally rich
                     verticals, we operate as boutique advisors for discerning
                     private collectors and corporate headquarters.
                   </p>

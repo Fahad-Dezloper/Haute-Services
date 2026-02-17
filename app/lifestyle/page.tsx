@@ -63,7 +63,7 @@ export default function LifestylePage() {
       subtitle: "Strategic Literary Curation",
       desc: "Launching the narratives of global culinary masters, from Netflix stars to royal historians.",
       href: "/lifestyle/book-launches",
-      img: "/book/banner.jpeg",
+      img: "/banner/book.jpeg",
     },
     {
       title: "Fashion Shows",
