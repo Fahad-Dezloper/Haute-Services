@@ -36,6 +36,14 @@ const galleryImages = {
       alt: "Press coverage of Haute Services founder Maneesh Baheti and Food For Thought Fest",
     },
     {
+      src: "/gallery/newspaper/37.png",
+      alt: "Hindustan Times Careers newspaper clipping from July 18, 2002 featuring Haute Services founder Maneesh Baheti as Director of Marketing at Hyatt Regency Delhi, discussing organizational success in the Expert Corner column",
+    },
+    {
+      src: "/gallery/newspaper/38.png",
+      alt: "Travel Trends Today magazine article from April 2002 featuring Haute Services founder Maneesh Baheti discussing marketing strategies and occupancy targets for Hyatt Regency Delhi",
+    },
+    {
       src: "/gallery/newspaper/31.jpeg",
       alt: "Newspaper coverage of Haute Services lifestyle events and cultural milestones",
     },
@@ -146,6 +154,10 @@ const galleryImages = {
   ] as GalleryImage[],
   podcast: [
     // 2020 - Chronological order (oldest to newest)
+    {
+      src: "/gallery/podcast/9.png",
+      alt: "Editorial coverage of Haute Services Food For Thought Fest and South Asian gastronomy",
+    },
     {
       src: "/gallery/newspaper/15.jpeg",
       alt: "Editorial coverage of Haute Services Food For Thought Fest and South Asian gastronomy",
@@ -309,6 +321,14 @@ const galleryImages = {
     {
       src: "/gallery/celebs/29.jpeg",
       alt: "Haute Services founder Maneesh Baheti awadh",
+    },
+    {
+      src: "/gallery/celebs/30.jpeg",
+      alt: "Sakti Burman art work for founder Maneesh Baheti",
+    },
+    {
+      src: "/gallery/celebs/31.jpeg",
+      alt: "Immunity too begins at home",
     },
   ] as GalleryImage[],
 };
