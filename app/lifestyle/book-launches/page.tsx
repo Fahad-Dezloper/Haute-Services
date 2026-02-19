@@ -228,6 +228,71 @@ export default function BookLaunchesPage() {
         </div>
       </section>
 
+      {/* --- INVOLVEMENT HIGHLIGHTS --- */}
+      <section className="py-24 lg:py-40 bg-cream/30 border-y border-charcoal/5">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          <Reveal>
+            <div className="mb-16 lg:mb-24">
+              <span className="text-xs uppercase tracking-[0.4em] font-bold text-charcoal/30 mb-4 block">
+                Portfolio
+              </span>
+              <h2 className="text-4xl lg:text-6xl font-serif text-charcoal">
+                Involvement <span className="italic">Highlights</span>
+              </h2>
+            </div>
+          </Reveal>
+
+          <Reveal>
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+              <div className="relative aspect-[4/5] overflow-hidden rounded-sm shadow-2xl">
+                <Image
+                  src="/gallery/celebs/34.jpeg"
+                  alt="the launch of The Guilt Free Vegan Cookbook by Mala Barua with Mrs Maneka Gandhi as chief guest"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+              <div className="max-w-xl">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="h-px w-8 bg-charcoal/20" />
+                  <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-charcoal/40">
+                    Grand Launch
+                  </span>
+                </div>
+                <h3 className="text-3xl lg:text-4xl font-serif text-charcoal mb-8 leading-tight italic">
+                  the launch of The Guilt Free Vegan Cookbook by Mala Barua with
+                  Mrs Maneka Gandhi as chief guest
+                </h3>
+                <p className="text-charcoal/60 font-light leading-relaxed mb-8">
+                  A momentous occasion merging culinary innovation with social
+                  advocacy, curated to the highest standards of literary
+                  prestige.
+                </p>
+                <div className="h-px w-full bg-charcoal/10 mb-8" />
+                <div className="flex gap-12">
+                  <div>
+                    <span className="text-[10px] uppercase tracking-widest text-charcoal/40 block mb-2">
+                      Location
+                    </span>
+                    <span className="text-sm font-medium uppercase tracking-tight">
+                      New Delhi
+                    </span>
+                  </div>
+                  <div>
+                    <span className="text-[10px] uppercase tracking-widest text-charcoal/40 block mb-2">
+                      Service
+                    </span>
+                    <span className="text-sm font-medium uppercase tracking-tight">
+                      Literary Curation
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* --- CTA --- */}
       <section className="py-20 lg:py-40 px-6 lg:px-12 bg-white text-center">
         <Reveal>

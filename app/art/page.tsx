@@ -155,6 +155,9 @@ const involvementHighlights = [
   "/art/imp/32.jpeg",
   "/art/imp/33.jpeg",
   "/art/imp/34.jpeg",
+  "/art/imp/35.jpeg",
+  "/art/imp/36.jpeg",
+  "/art/imp/37.jpeg",
 ];
 
 import { mediaCoverage } from "@/lib/data";
@@ -277,8 +280,11 @@ export default function ArtPage() {
               </span>
             </h1>
             <p className="text-base md:text-lg text-white/70 max-w-xl font-light leading-relaxed border-l border-white/20 pl-6 uppercase tracking-widest text-[10px]">
-              <span className="text-white font-semibold normal-case tracking-normal">Thirty years</span> of curatorial expertise, bridging the gap between
-              historical heritage and contemporary art.
+              <span className="text-white font-semibold normal-case tracking-normal">
+                Thirty years
+              </span>{" "}
+              of curatorial expertise, bridging the gap between historical
+              heritage and contemporary art.
             </p>
           </Reveal>
         </div>
@@ -309,9 +315,13 @@ export default function ArtPage() {
                     of identity.
                   </p>
                   <p>
-                    With <span className="font-semibold text-charcoal underline decoration-charcoal/30 decoration-2 underline-offset-2">thirty years of experience</span> in our culturally rich
-                    verticals, we operate as boutique advisors for discerning
-                    private collectors and corporate headquarters.
+                    With{" "}
+                    <span className="font-semibold text-charcoal underline decoration-charcoal/30 decoration-2 underline-offset-2">
+                      thirty years of experience
+                    </span>{" "}
+                    in our culturally rich verticals, we operate as boutique
+                    advisors for discerning private collectors and corporate
+                    headquarters.
                   </p>
                 </div>
               </Reveal>
@@ -762,7 +772,9 @@ export default function ArtPage() {
             {engagements.map((item, index) => (
               <Reveal key={index} delay={index * 0.1}>
                 <div className="h-full bg-white border border-charcoal/5 group hover:border-charcoal/20 transition-all duration-500 flex flex-col overflow-hidden shadow-sm hover:shadow-xl">
-                  <div className={`relative h-fit lg:h-[46vh] w-full overflow-hidden`}>
+                  <div
+                    className={`relative h-fit lg:h-[46vh] w-full overflow-hidden`}
+                  >
                     <Image
                       src={item.img || "/images/art.png"}
                       alt={`${item.title} - ${item.type} at ${item.location}, Haute Services curatorial footprint`}
@@ -869,8 +881,8 @@ export default function ArtPage() {
               },
               {
                 id: "T9GHR-ET2jw",
-                url: "https://youtube.com/shorts/T9GHR-ET2jw?si=XYlQ3r6z6peQvwZV"
-              }
+                url: "https://youtube.com/shorts/T9GHR-ET2jw?si=XYlQ3r6z6peQvwZV",
+              },
             ].map((short, index) => (
               <Reveal key={short.id} delay={index * 0.15}>
                 <div className="group relative">

@@ -330,6 +330,18 @@ const galleryImages = {
       src: "/gallery/celebs/31.jpeg",
       alt: "Immunity too begins at home",
     },
+    {
+      src: "/gallery/celebs/32.jpeg",
+      alt: "Immunity too begins at home",
+    },
+    {
+      src: "/gallery/celebs/33.jpeg",
+      alt: "Immunity too begins at home",
+    },
+    {
+      src: "/gallery/celebs/34.jpeg",
+      alt: "The Guilt Free Vegan Cookbook by Mala Barua at IIC in 2016",
+    },
   ] as GalleryImage[],
 };
 
