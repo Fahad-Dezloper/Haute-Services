@@ -8,7 +8,17 @@ import Image from "next/image";
 
 import { mediaCoverage } from "@/lib/data";
 
-const news = mediaCoverage.slice(0, 6);
+const latestNews = mediaCoverage.slice(0, 3);
+
+// Top 6 all-time featured news — curate by picking indices from mediaCoverage
+const legacyNews = [
+  mediaCoverage[5], // Times of India – Art of India's Starry Night
+  mediaCoverage[15], // Power Creator Travel Awards
+  mediaCoverage[7], // Fortune Exchange Magazine
+  mediaCoverage[9], // Outlook India
+  mediaCoverage[16], // The Print – Cuba Beyond Postcards
+  mediaCoverage[10], // Shantanu & Nikhil
+];
 
 // --- Components ---
 
@@ -47,7 +57,7 @@ const ParallaxImage = ({
 
   return (
     <div ref={ref} className={`overflow-hidden ${className}`}>
-      <motion.div style={{ y }} className="w-full h-[120%] -mt-[10%]">
+      <motion.div style={{ y }} className="w-full h-fit">
         <img
           src={src}
           alt={alt}
@@ -252,7 +262,8 @@ export default function HomePage() {
                 <span className="italic font-light"> Corporate Film</span>
               </h2>
               <p className="text-base lg:text-lg text-charcoal/60 font-light max-w-2xl mx-auto">
-                Discover our journey, values, and vision through our corporate narrative.
+                Discover our journey, values, and vision through our corporate
+                narrative.
               </p>
             </div>
           </Reveal>
@@ -416,7 +427,7 @@ export default function HomePage() {
               </div>
               <div className="lg:col-span-6">
                 <Reveal delay={0.2}>
-                  <div className="relative h-[250px] w-full bg-charcoal/5 rounded-sm overflow-hidden shadow-2xl">
+                  <div className="relative h-fit w-full bg-charcoal/5 rounded-sm overflow-hidden shadow-2xl">
                     <ParallaxImage
                       src="/lifestyle.avif"
                       alt="Haute Services Lifestyle Events, culinary festivals and cultural experiences"
@@ -430,20 +441,26 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* --- PRESS & RECOGNITION --- */}
+      {/* --- STOP PRESS (Latest News) --- */}
       <section className="py-24 lg:py-40 px-6 lg:px-12 max-w-7xl mx-auto">
         <Reveal>
+          <div className="flex items-center justify-center gap-4 mb-6">
+            <div className="h-px w-12 bg-charcoal/20" />
+            <span className="text-charcoal/60 uppercase tracking-[0.3em] text-[10px] lg:text-xs font-bold">
+              Latest
+            </span>
+            <div className="h-px w-12 bg-charcoal/20" />
+          </div>
           <h2 className="text-3xl lg:text-4xl font-serif mb-16 text-center">
-            Legacy & Recognition
+            Stop Press
           </h2>
         </Reveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-12 xl:gap-24">
-          {news.map((item, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 xl:gap-24">
+          {latestNews.map((item, index) => (
             <Reveal key={index} delay={index * 0.1}>
               <div className="group cursor-pointer">
                 <div className="relative aspect-3/2 w-full bg-charcoal/5 rounded-sm overflow-hidden mb-6">
-                  {/* Image Placeholder - User mentioned they will add links later */}
                   <Image
                     src={item.image}
                     alt={`${item.title} - ${item.source} ${item.date}, Haute Services media coverage`}
@@ -451,8 +468,6 @@ export default function HomePage() {
                     height={400}
                     className="w-full h-full object-fill"
                   />
-                  {/* <div className="abso?lute inset-0 bg-charcoal/10 group-hover:bg-transparent transition-colors duration-500" /> */}
-                  {/* <div className="w-full h-full bg-linear-to-t from-charcoal/20 to-transparent absolute inset-0" /> */}
                 </div>
                 <div className="space-y-3">
                   <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.2em] font-bold text-charcoal/40">
@@ -462,7 +477,7 @@ export default function HomePage() {
                   <h3 className="text-xl lg:text-2xl font-serif text-charcoal leading-snug group-hover:text-charcoal/70 transition-colors">
                     {item.title}
                   </h3>
-                  <p className="text-sm text-charcoal/60 leading-relaxed ">
+                  <p className="text-sm text-charcoal/60 leading-relaxed">
                     {item.description}
                   </p>
                 </div>
@@ -471,13 +486,13 @@ export default function HomePage() {
           ))}
         </div>
 
-        <Reveal delay={0.6}>
+        <Reveal delay={0.4}>
           <div className="mt-20 flex justify-center">
             <Link
               href="/media-coverage"
               className="inline-flex items-center gap-6 group"
             >
-              <span className="text-xs uppercase tracking-[0.4em] font-bold text-charcoal border-b border-charcoal/20 pb-1 group-hover:border-charcoal transition-colors">
+              <span className="text-xs uppercase whitespace-nowrap tracking-[0.4em] font-bold text-charcoal border-b border-charcoal/20 pb-1 group-hover:border-charcoal transition-colors">
                 View All Media Coverage
               </span>
               <div className="w-12 h-12 rounded-full border border-charcoal/10 flex items-center justify-center group-hover:bg-charcoal group-hover:text-white transition-all duration-500">
@@ -486,6 +501,70 @@ export default function HomePage() {
             </Link>
           </div>
         </Reveal>
+      </section>
+
+      {/* --- LEGACY & RECOGNITION (Top 6 All-Time) --- */}
+      <section className="py-24 lg:py-40 px-6 lg:px-12 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <Reveal>
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <div className="h-px w-12 bg-charcoal/20" />
+              <span className="text-charcoal/60 uppercase tracking-[0.3em] text-[10px] lg:text-xs font-bold">
+                All-Time
+              </span>
+              <div className="h-px w-12 bg-charcoal/20" />
+            </div>
+            <h2 className="text-3xl lg:text-4xl font-serif mb-16 text-center">
+              Legacy & Recognition
+            </h2>
+          </Reveal>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 xl:gap-24">
+            {legacyNews.map((item, index) => (
+              <Reveal key={index} delay={index * 0.1}>
+                <div className="group cursor-pointer">
+                  <div className="relative aspect-3/2 w-full bg-charcoal/5 rounded-sm overflow-hidden mb-6">
+                    <Image
+                      src={item.image}
+                      alt={`${item.title} - ${item.source} ${item.date}, Haute Services media coverage`}
+                      width={400}
+                      height={400}
+                      className="w-full h-full object-fill"
+                    />
+                  </div>
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.2em] font-bold text-charcoal/40">
+                      <span>{item.source}</span>
+                      <span>{item.date}</span>
+                    </div>
+                    <h3 className="text-xl lg:text-2xl font-serif text-charcoal leading-snug group-hover:text-charcoal/70 transition-colors">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm text-charcoal/60 leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+
+          <Reveal delay={0.7}>
+            <div className="mt-20 flex justify-center">
+              <Link
+                href="/media-coverage"
+                className="inline-flex items-center gap-6 group"
+              >
+                <span className="text-xs uppercase whitespace-nowrap tracking-[0.4em] font-bold text-charcoal border-b border-charcoal/20 pb-1 group-hover:border-charcoal transition-colors">
+                  View All Media Coverage
+                </span>
+                <div className="w-12 h-12 rounded-full border border-charcoal/10 flex items-center justify-center group-hover:bg-charcoal group-hover:text-white transition-all duration-500">
+                  <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                </div>
+              </Link>
+            </div>
+          </Reveal>
+        </div>
       </section>
 
       {/* --- MISSION / FOOTER TEASER --- */}
