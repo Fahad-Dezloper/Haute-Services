@@ -115,8 +115,21 @@ export default function LifestylePage() {
           {categories.map((cat, i) => (
             <Reveal key={i} delay={i * 0.1}>
               <Link href={cat.href} className="group block">
-                <div className="relative h-full overflow-hidden mb-10 rounded-sm shadow-xl">
-                  {/* <div className="absolute inset-0 group-hover:bg-transparent transition-all duration-700 z-10" /> */}
+                <div className="relative hidden md:block h-[35vh] overflow-hidden mb-10 rounded-sm shadow-xl">
+                  <Image
+                    src={cat.img}
+                    alt={`${cat.title} - Haute Services lifestyle events`}
+                    width={400}
+                    height={400}
+                    className="w-full h-full object-contain transition-all duration-1000"
+                  />
+                  <div className="absolute top-4 right-4 sm:top-6 sm:right-6 z-20">
+                    <div className="w-10 h-10 sm:w-14 sm:h-14 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center shadow-lg transform group-hover:rotate-45 transition-transform duration-500">
+                      <ArrowUpRight className="w-4 h-4 sm:w-6 sm:h-6 text-charcoal" />
+                    </div>
+                  </div>
+                </div>
+                <div className="relative md:hidden block h-full overflow-hidden mb-10 rounded-sm shadow-xl">
                   <Image
                     src={cat.img}
                     alt={`${cat.title} - Haute Services lifestyle events`}
@@ -129,11 +142,6 @@ export default function LifestylePage() {
                       <ArrowUpRight className="w-4 h-4 sm:w-6 sm:h-6 text-charcoal" />
                     </div>
                   </div>
-                  {/* <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 z-20">
-                    <div className="px-4 py-2 bg-white/95 backdrop-blur-md text-[10px] sm:text-xs uppercase tracking-[0.2em] font-bold text-charcoal shadow-sm">
-                      0{i + 1}
-                    </div>
-                  </div> */}
                 </div>
                 <div className="space-y-6">
                   <div className="flex items-center justify-between border-b border-charcoal/5 pb-6">

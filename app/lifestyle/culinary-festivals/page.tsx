@@ -678,7 +678,7 @@ export default function CulinaryFestivalsPage() {
                 <div className="h-px w-12 bg-white/20" />
               </div>
 
-              <div className="relative h-[40vh]  w-full mb-12 rounded-sm overflow-hidden shadow-2xl border border-white/10 group">
+              <div className="relative h-[40vh] md:h-[70vh] w-full mb-12 rounded-sm overflow-hidden shadow-2xl border border-white/10 group">
                 <Image
                   src="/food/imp/25.jpeg"
                   alt="Haute Services founder Maneesh Baheti with celebrity chef Vikas Khanna at Food For Thought Fest"

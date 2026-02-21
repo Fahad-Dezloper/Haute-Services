@@ -293,6 +293,41 @@ export default function BookLaunchesPage() {
         </div>
       </section>
 
+      {/* --- MASONRY GRID: BOOK LAUNCH GALLERY --- */}
+      <section className="py-24 lg:py-40 bg-charcoal text-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          <Reveal>
+            <div className="mb-20">
+              <h2 className="text-4xl lg:text-7xl text-center font-serif leading-tight">
+                Gallery of <span className="italic">Moments</span>
+              </h2>
+            </div>
+          </Reveal>
+
+          <div className="columns-2 lg:columns-3 gap-6 space-y-6">
+            {[
+              "/book/extra/556A6079.jpg",
+              "/book/extra/556A6086.jpg",
+              "/book/extra/556A6935.jpg",
+              "/book/extra/556A7011.jpg",
+              "/book/extra/SUB_2204.JPG",
+            ].map((item, i) => (
+              <Reveal key={i} delay={i * 0.1}>
+                <div className="relative group overflow-hidden bg-white/5 rounded-sm">
+                  <Image
+                    src={item}
+                    alt="Haute Services curated book launch event moments and literary celebrations"
+                    width={400}
+                    height={400}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* --- CTA --- */}
       <section className="py-20 lg:py-40 px-6 lg:px-12 bg-white text-center">
         <Reveal>

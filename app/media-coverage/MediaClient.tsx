@@ -80,15 +80,24 @@ export default function MediaClient({
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-16 lg:gap-32">
           {mediaCoverage.map((item, index) => (
             <Reveal key={index} delay={index * 0.1}>
-              <div className="group flex flex-col h-full border-b border-charcoal/10 pb-12">
-                <div className="relative h-full w-full bg-charcoal/5 overflow-hidden mb-8 rounded-sm">
+              <div className="group flex flex-col  items-center h-full border-b border-charcoal/10 pb-12">
+                <div className="relative h-fit md:h-[40vh] w-fit bg-charcoal/5 overflow-hidden mb-8 rounded-sm">
                   <Image
                     src={item.image || "/placeholder.jpg"}
                     alt={`${item.title} - ${item.source} ${item.date}, Haute Services media coverage`}
                     width={500}
                     height={500}
-                    className="object-cover h-full transition-all duration-700"
+                    className="object-contain w-full h-full transition-all duration-700"
                   />
+                  {item.image === "/art/news/toi1.jpeg" && (
+                    <Image
+                      src="/art/news/toi2.jpeg"
+                      alt="Times of India coverage of Art of India exhibition by Haute Services"
+                      width={300}
+                      height={200}
+                      className="absolute bottom-0 right-0 w-[40%] h-[50%] object-cover shadow-[0_8px_30px_rgba(0,0,0,0.4)] border-2 border-white/90 z-10"
+                    />
+                  )}
                   {/* <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full flex items-center gap-2 shadow-sm">
                                         {getIcon(item.category)}
                                         <span className="text-[10px] font-bold uppercase tracking-widest text-charcoal">{item.category || 'Press'}</span>
@@ -147,7 +156,7 @@ export default function MediaClient({
               <div className="flex items-center gap-6">
                 <div className="w-16 h-16 rounded-full overflow-hidden relative border-2 border-white/20">
                   <Image
-                    src="/founder/Maneesh.jpeg"
+                    src="/founder/Manish.jpeg"
                     alt="Maneesh Baheti, Founder Haute Services"
                     fill
                     className="object-cover"

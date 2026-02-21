@@ -531,6 +531,15 @@ export default function HomePage() {
                       height={400}
                       className="w-full h-full object-fill"
                     />
+                    {item.image === "/art/news/toi1.jpeg" && (
+                      <Image
+                        src="/art/news/toi2.jpeg"
+                        alt="Times of India coverage of Art of India exhibition by Haute Services"
+                        width={300}
+                        height={200}
+                        className="absolute bottom-0 right-0 w-[45%] h-[55%] object-cover shadow-[0_8px_30px_rgba(0,0,0,0.4)] border-2 border-white/90 z-10"
+                      />
+                    )}
                   </div>
                   <div className="space-y-3">
                     <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.2em] font-bold text-charcoal/40">

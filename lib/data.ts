@@ -59,7 +59,7 @@ export const mediaCoverage: MediaItem[] = [
         date: "January 13, 2025",
         title: "Art of India’s Starry Night Captures the Energy and Colour of Indian Art",
         description: "Times of India National Edition covered the Art of India exhibition in a half page article on 16th Jan 2025. The article highlights the vibrancy and cultural significance of contemporary Indian art and featured the interview of our Founder.",
-        image: "/news/toi.png",
+        image: "/art/news/toi1.jpeg",
         link: "",
         category: 'Press'
     },
