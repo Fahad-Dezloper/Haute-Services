@@ -60,34 +60,34 @@ const ParallaxImage = ({
 
 export default function AboutPage() {
   const clients = [
-    "Ahmedabad Municipal Corporation (A.M.C)",
-    "GMR Group",
-    "Seasons Catering",
-    "Shantanu & Nikhil",
-    "Travel + Leisure Magazine",
-    "Delhi Art Gallery",
-    "Taj Palace, New Delhi",
-    "India Habitat Center, New Delhi",
-    "Global Spa Magazine",
-    "Peaklife Magazine",
-    "Usha- Lexus Hotels and Resorts",
-    "Sanspareils Greenlands",
-    "Wrap art & Design Pvt. Ltd.",
-    "The Roseate, New Delhi",
-    "JW Marriott, New Delhi",
-    "Marriott Hotels",
-    "The Claridges, New Delhi",
-    "Sinclairs Hotels & Resorts",
-    "South Asian Association for Gastronomy",
-    "Embassy of Sri Lanka",
-    "Embassy of Indonesia",
-    "Anglow, Delhi",
-    "Embassy of Hungary",
-    "Concern India Foundation",
-    "Pernod Ricard India",
-    "NDTV Good Times",
-    "NewsX Channel",
-    "92.7 Big FM",
+    { name: "Ahmedabad Municipal Corporation (A.M.C)", logo: "AMC.png" },
+    { name: "GMR Group", logo: "GMR.png" },
+    { name: "Seasons Catering", logo: "Seasons.png" },
+    { name: "Shantanu & Nikhil", logo: "S&N.png" },
+    { name: "Travel + Leisure Magazine", logo: "Travel.png" },
+    { name: "Delhi Art Gallery", logo: "DAG.png" },
+    { name: "Taj Palace, New Delhi", logo: "TAJ.png" },
+    { name: "India Habitat Center, New Delhi", logo: "IHC.png" },
+    { name: "Global Spa Magazine", logo: "GlobalSpa.png" },
+    { name: "Peaklife Magazine", logo: "Peak.png" },
+    { name: "Usha- Lexus Hotels and Resorts", logo: "USHA.png" },
+    { name: "Sanspareils Greenlands", logo: "SG.png" },
+    { name: "Wrap art & Design Pvt. Ltd.", logo: "Wrap.png" },
+    { name: "The Roseate, New Delhi", logo: "Roseate.svg", invert: true },
+    { name: "JW Marriott, New Delhi", logo: "Marriott.avif", invert: true },
+    { name: "Marriott Hotels", logo: "Marriott2.png" },
+    { name: "The Claridges, New Delhi", logo: "Claridges.avif" },
+    { name: "Sinclairs Hotels & Resorts", logo: "Sinclairs.png" },
+    { name: "South Asian Association for Gastronomy", logo: "Saag.webp" },
+    { name: "Embassy of Sri Lanka", logo: "Embassy-Srilanka.svg" },
+    { name: "Embassy of Indonesia", logo: "Indonasia.jpg" },
+    { name: "Anglow, Delhi", logo: "Anglow.webp" },
+    { name: "Embassy of Hungary", logo: "Hungary.jpeg" },
+    { name: "Concern India Foundation", logo: "Concern.avif" },
+    { name: "Pernod Ricard India", logo: "Pernod.svg", invert: true },
+    { name: "NDTV Good Times", logo: "Goodtimes.png" },
+    { name: "NewsX Channel", logo: "newsx.png" },
+    { name: "92.7 Big FM", logo: "bigFM.png" },
   ];
 
   return (
@@ -289,9 +289,20 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-y-12 gap-x-12 border-l border-charcoal/5 pl-6 md:pl-12">
             {clients.map((client, i) => (
               <Reveal key={i} delay={i * 0.05}>
-                <div className="group cursor-default">
-                  <p className="text-lg lg:text-xl font-serif text-charcoal/60 group-hover:text-charcoal group-hover:italic transition-all duration-300 transform group-hover:translate-x-2">
-                    {client}
+                <div className="group cursor-default flex flex-col items-start gap-3">
+                  <div
+                    className={`relative w-24 h-16 md:w-28 md:h-20 grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 ${client.invert ? "invert" : ""}`}
+                  >
+                    <Image
+                      src={`/clients/${client.logo}`}
+                      alt={client.name}
+                      fill
+                      className="object-contain object-left"
+                      sizes="(max-width: 768px) 96px, 112px"
+                    />
+                  </div>
+                  <p className="text-sm lg:text-base font-serif text-charcoal/60 group-hover:text-charcoal group-hover:italic transition-all duration-300 transform group-hover:translate-x-2">
+                    {client.name}
                   </p>
                 </div>
               </Reveal>

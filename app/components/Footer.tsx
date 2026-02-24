@@ -96,6 +96,14 @@ export default function Footer() {
                   Media Coverage
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/gallery"
+                  className="text-lg hover:text-white/60 transition-colors"
+                >
+                  Gallery
+                </Link>
+              </li>
             </ul>
           </div>
 
