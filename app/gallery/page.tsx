@@ -2,8 +2,9 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { X } from "lucide-react";
+import { X, ArrowUpRight, Palette, Utensils, Sparkles, BookOpen } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 type GalleryImage = {
   src: string;
@@ -602,6 +603,122 @@ export default function GalleryPage() {
         images={galleryImages.celebs}
         objectFit="cover"
       />
+
+      {/* --- EXPLORE MORE GALLERIES --- */}
+      <section className="py-20 lg:py-32 bg-charcoal text-white">
+        <div className="max-w-screen-2xl mx-auto px-6 lg:px-12">
+          <div className="mb-12 lg:mb-16">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="h-px w-10 bg-white/30" />
+              <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-white/50">
+                Explore
+              </span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-serif text-white leading-tight">
+              More Galleries
+            </h2>
+            <p className="mt-4 text-white/60 font-light max-w-2xl">
+              Discover curated imagery from our Art Advisory, Culinary Festivals, Fashion Shows, and Book Launches.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                href: "/art#gallery-artists",
+                title: "Gallery of Artists",
+                subtitle: "Art Advisory",
+                previews: [
+                  { src: "/art/imp/raza.jpeg", aspect: "aspect-square" },
+                  { src: "/art/imp/2.jpeg", aspect: "aspect-3/4" },
+                  { src: "/art/imp/3.jpeg", aspect: "aspect-4/5" },
+                  { src: "/art/imp/4.jpeg", aspect: "aspect-video" },
+                ],
+                icon: Palette,
+              },
+              {
+                href: "/lifestyle/culinary-festivals#gallery-culinary",
+                title: "Gallery of Culinary Stars",
+                subtitle: "Food For Thought Fest",
+                previews: [
+                  { src: "/food/imp/25.jpeg", aspect: "aspect-square" },
+                  { src: "/food/imp/2.jpeg", aspect: "aspect-3/4" },
+                  { src: "/food/imp/23.jpeg", aspect: "aspect-4/5" },
+                  { src: "/food/imp/24.jpeg", aspect: "aspect-video" },
+                ],
+                icon: Utensils,
+              },
+              {
+                href: "/lifestyle/fashion-shows#gallery-fashion",
+                title: "Gallery of Fashionistas",
+                subtitle: "Fashion Shows",
+                previews: [
+                  { src: "/fashion/Maison2.jpeg", aspect: "aspect-square" },
+                  // { src: "/extra/sunisethi.png", aspect: "aspect-square" },
+                  { src: "/extra/ashishsoni2.png", aspect: "aspect-3/4" },
+                  { src: "/extra/1.jpeg", aspect: "aspect-4/5" },
+                  { src: "/extra/3.jpeg", aspect: "aspect-video" },
+                ],
+                icon: Sparkles,
+              },
+              {
+                href: "/lifestyle/book-launches#gallery-book",
+                title: "Gallery of Moments",
+                subtitle: "Book Launches",
+                previews: [
+                  { src: "/book/extra/556A6079.jpg", aspect: "aspect-square" },
+                  { src: "/book/extra/556A6086.jpg", aspect: "aspect-3/4" },
+                  { src: "/book/extra/556A6935.jpg", aspect: "aspect-4/5" },
+                  { src: "/book/extra/556A7011.jpg", aspect: "aspect-video" },
+                ],
+                icon: BookOpen,
+              },
+            ].map((item, i) => (
+              <Link key={item.href} href={item.href}>
+                <motion.article
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-30px" }}
+                  transition={{ duration: 0.5, delay: i * 0.1 }}
+                  className="group relative overflow-hidden rounded-sm bg-white/5 border border-white/10 hover:border-white/30 transition-all duration-500 h-full flex flex-col"
+                >
+                  <div className="relative aspect-4/3 overflow-hidden">
+                    <div className="absolute inset-0 columns-2 gap-0.5 sm:gap-1 p-0.5 sm:p-1">
+                      {item.previews.map((img) => (
+                        <div
+                          key={img.src}
+                          className={`relative overflow-hidden break-inside-avoid mb-0.5 sm:mb-1 ${img.aspect}`}
+                        >
+                          <Image
+                            src={img.src}
+                            alt=""
+                            fill
+                            className="object-cover group-hover:scale-105 transition-transform duration-700"
+                            sizes="(max-width: 640px) 50vw, 12.5vw"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                    <div className="absolute inset-0 bg-linear-to-t from-charcoal via-charcoal/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500" />
+                    <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
+                      {/* <item.icon className="w-6 h-6 text-white/80" /> */}
+                      <ArrowUpRight className="w-5 h-5 text-white/80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
+                    </div>
+                  </div>
+                  <div className="p-5 flex-1 flex flex-col">
+                    <span className="text-[10px] uppercase tracking-widest text-white/50 mb-1">
+                      {item.subtitle}
+                    </span>
+                    <h3 className="text-lg font-serif text-white group-hover:italic transition-all">
+                      {item.title}
+                    </h3>
+                  </div>
+                </motion.article>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

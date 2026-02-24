@@ -698,7 +698,7 @@ export default function CulinaryFestivalsPage() {
           </div>
         </section>
 
-        <section className="py-20 lg:py-32 px-6 lg:px-12 bg-charcoal">
+        <section id="gallery-culinary" className="py-20 lg:py-32 px-6 lg:px-12 bg-charcoal">
           <div className="max-w-screen-2xl mx-auto">
             <Reveal>
               <h2 className="text-4xl md:text-5xl lg:text-7xl font-serif mb-16 lg:mb-24 text-center text-white">

@@ -294,7 +294,7 @@ export default function BookLaunchesPage() {
       </section>
 
       {/* --- MASONRY GRID: BOOK LAUNCH GALLERY --- */}
-      <section className="py-24 lg:py-40 bg-charcoal text-white">
+      <section id="gallery-book" className="py-24 lg:py-40 bg-charcoal text-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <Reveal>
             <div className="mb-20">
