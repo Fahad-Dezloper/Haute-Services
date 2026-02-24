@@ -10,6 +10,15 @@ export interface MediaItem {
 
 export const mediaCoverage: MediaItem[] = [
     {
+        source: "Times of India – Gadgets Now Awards",
+        date: "February 23, 2026",
+        title: "Guest of Honour at Gadgets Now Awards 2025 by Times of India",
+        description: "Maneesh Baheti and Sonali Anand Baheti were invited as Guests of Honour to present the prestigious Gadgets Now Awards 2025 by Times of India, held at The Westin Hotel. The awards celebrate the finest innovations in consumer technology, reaffirming Maneesh's standing as a distinguished voice across lifestyle, luxury, and culture.",
+        image: "/news/gadgetsnow.png",
+        link: "https://youtu.be/k8RbM9eLOHs",
+        category: 'Award'
+    },
+    {
         source: "Everything Experiential",
         date: "February 18, 2026",
         title: "Inside Budweiser’s Marketing Playbook: Experience Design",

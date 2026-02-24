@@ -20,6 +20,14 @@ const legacyNews = [
   mediaCoverage[10], // Shantanu & Nikhil
 ];
 
+// --- Helpers ---
+const getYouTubeId = (url: string): string | null => {
+  const match = url.match(
+    /(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([-\w]+)/,
+  );
+  return match ? match[1] : null;
+};
+
 // --- Components ---
 
 const Reveal = ({
@@ -461,13 +469,23 @@ export default function HomePage() {
             <Reveal key={index} delay={index * 0.1}>
               <div className="group cursor-pointer">
                 <div className="relative aspect-3/2 w-full bg-charcoal/5 rounded-sm overflow-hidden mb-6">
-                  <Image
-                    src={item.image}
-                    alt={`${item.title} - ${item.source} ${item.date}, Haute Services media coverage`}
-                    width={400}
-                    height={400}
-                    className="w-full h-full object-fill"
-                  />
+                  {item.link && getYouTubeId(item.link) ? (
+                    <iframe
+                      src={`https://www.youtube.com/embed/${getYouTubeId(item.link)}`}
+                      title={item.title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="absolute inset-0 w-full h-full"
+                    />
+                  ) : (
+                    <Image
+                      src={item.image}
+                      alt={`${item.title} - ${item.source} ${item.date}, Haute Services media coverage`}
+                      width={400}
+                      height={400}
+                      className="w-full h-full object-fill"
+                    />
+                  )}
                 </div>
                 <div className="space-y-3">
                   <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.2em] font-bold text-charcoal/40">

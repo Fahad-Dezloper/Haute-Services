@@ -14,6 +14,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { MediaItem } from "@/lib/data";
 
+const getYouTubeId = (url: string): string | null => {
+  const match = url.match(
+    /(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([-\w]+)/
+  );
+  return match ? match[1] : null;
+};
+
 const Reveal = ({
   children,
   delay = 0,
@@ -81,27 +88,35 @@ export default function MediaClient({
           {mediaCoverage.map((item, index) => (
             <Reveal key={index} delay={index * 0.1}>
               <div className="group flex flex-col  items-center h-full border-b border-charcoal/10 pb-12">
-                <div className="relative h-fit md:h-[40vh] w-fit bg-charcoal/5 overflow-hidden mb-8 rounded-sm">
-                  <Image
-                    src={item.image || "/placeholder.jpg"}
-                    alt={`${item.title} - ${item.source} ${item.date}, Haute Services media coverage`}
-                    width={500}
-                    height={500}
-                    className="object-contain w-full h-full transition-all duration-700"
-                  />
-                  {item.image === "/art/news/toi1.jpeg" && (
-                    <Image
-                      src="/art/news/toi2.jpeg"
-                      alt="Times of India coverage of Art of India exhibition by Haute Services"
-                      width={300}
-                      height={200}
-                      className="absolute bottom-0 right-0 w-[40%] h-[50%] object-cover shadow-[0_8px_30px_rgba(0,0,0,0.4)] border-2 border-white/90 z-10"
+                <div className="relative h-fit md:h-[40vh] w-full bg-charcoal/5 overflow-hidden mb-8 rounded-sm">
+                  {item.link && getYouTubeId(item.link) ? (
+                    <iframe
+                      src={`https://www.youtube.com/embed/${getYouTubeId(item.link)}`}
+                      title={item.title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="w-full h-full min-h-[240px] md:h-[40vh]"
                     />
+                  ) : (
+                    <>
+                      <Image
+                        src={item.image || "/placeholder.jpg"}
+                        alt={`${item.title} - ${item.source} ${item.date}, Haute Services media coverage`}
+                        width={500}
+                        height={500}
+                        className="object-contain w-full h-full transition-all duration-700"
+                      />
+                      {item.image === "/art/news/toi1.jpeg" && (
+                        <Image
+                          src="/art/news/toi2.jpeg"
+                          alt="Times of India coverage of Art of India exhibition by Haute Services"
+                          width={300}
+                          height={200}
+                          className="absolute bottom-0 right-0 w-[40%] h-[50%] object-cover shadow-[0_8px_30px_rgba(0,0,0,0.4)] border-2 border-white/90 z-10"
+                        />
+                      )}
+                    </>
                   )}
-                  {/* <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full flex items-center gap-2 shadow-sm">
-                                        {getIcon(item.category)}
-                                        <span className="text-[10px] font-bold uppercase tracking-widest text-charcoal">{item.category || 'Press'}</span>
-                                    </div> */}
                 </div>
 
                 <div className="grow space-y-4">
