@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { MessageCircle, X, Send } from "lucide-react";
 
-const WHATSAPP_NUMBER = "919871035511"; // +91 8750043123 without + and spaces
+const WHATSAPP_NUMBER = "918750043123";
 
 const instantAnswers = [
   "Would you like to organise a lifestyle event around food, fashion, and art?",
