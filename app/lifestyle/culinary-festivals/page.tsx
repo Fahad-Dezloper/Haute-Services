@@ -318,6 +318,44 @@ export default function CulinaryFestivalsPage() {
 
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
 
+  const published_articles = [
+    {
+      title: "Gastronomically Speaking!",
+      publication: "BWAerocity Live",
+      section: "",
+      date: "June 2022",
+      excerpt:
+        "Maneesh Baheti explores food philosophy and the diets of sports icons at Food For Thought Fest—from Gautam Gambhir's sleep habits to Shikhar Dhawan's protein regime, and why ghee and moderation matter. Featuring insights from Bishen Singh Bedi, Virendra Sehwag, and Olympian Deepa Mallik.",
+      image: "/food/article/1.jpg",
+      images: ["/food/article/1.jpg", "/food/article/2.jpg"],
+    },
+    {
+      title: "Eating Right",
+      publication: "BWAerocity Live",
+      section: "",
+      date: "July 2022",
+      excerpt:
+        "Maneesh Baheti highlights how understanding your body type, nurturing gut health, and returning to seasonal, probiotic-rich foods and traditional herbs can transform well-being—from the vagus nerve’s role in mood to turmeric, green leafy vegetables, and homemade remedies.",
+      image: "/food/article/3.jpg",
+      images: ["/food/article/3.jpg", "/food/article/4.jpg"],
+    },
+    {
+      title: "Food For Thought at Aerocity",
+      publication: "BWAerocity Live",
+      section: "",
+      date: "January–February 2023",
+      excerpt:
+        "A galaxy of chefs, authors, and hospitality leaders reunite at GMR Aerocity for the sixth edition of Food For Thought Fest—two days of masterclasses, conversations on wellness and heritage, and powerful insights on how cuisine can unite people across South Asia.",
+      image: "/food/article/9.jpg",
+      images: [
+        "/food/article/5.jpg",
+        // "/food/article/6.jpg",
+        // "/food/article/7.jpg",
+        "/food/article/9.jpg",
+      ],
+    },
+  ];
+
   return (
     <main className="bg-cream min-h-screen text-charcoal font-sans selection:bg-charcoal selection:text-white overflow-hidden pb-12">
       {/* --- VIDEO MODAL --- */}
@@ -623,6 +661,81 @@ export default function CulinaryFestivalsPage() {
             ))}
           </div>
         </div>
+
+        {/* --- PUBLISHED ARTICLES SECTION --- */}
+        <section className="py-20 lg:py-32 px-6 lg:px-12 bg-white">
+          <div className="max-w-screen-2xl mx-auto">
+            <Reveal>
+              <div className="text-center mb-16 lg:mb-24">
+                <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-charcoal/30 mb-4 block">
+                  Thought Leadership
+                </span>
+                <h2 className="text-4xl md:text-5xl lg:text-7xl font-serif text-charcoal leading-none">
+                  Published <span className="italic font-light">Articles</span>
+                </h2>
+              </div>
+            </Reveal>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+              {published_articles.map((item, index) => (
+                <Reveal key={index} delay={index * 0.1}>
+                  <div className="group cursor-pointer flex flex-col h-full border-b border-charcoal/5 pb-10 lg:pb-12">
+                    <div className="relative aspect-video w-full overflow-hidden mb-6 lg:mb-8 rounded-sm transition-all duration-700 bg-charcoal/5">
+                      {item.images && item.images.length > 1 ? (
+                        <div
+                          className={`grid w-full h-full gap-1 ${
+                            item.images.length === 2
+                              ? "grid-cols-2 grid-rows-1"
+                              : "grid-cols-2 grid-rows-2"
+                          }`}
+                        >
+                          {item.images.slice(0, 4).map((src, imgIndex) => (
+                            <div
+                              key={imgIndex}
+                              className="relative w-full h-full overflow-hidden bg-white"
+                            >
+                              <Image
+                                src={src}
+                                alt={`${item.title} - image ${
+                                  imgIndex + 1
+                                } from ${item.publication} ${item.section} ${item.date}, Haute Services culinary thought leadership`}
+                                fill
+                                className="object-contain transition-transform duration-1000 group-hover:scale-105"
+                              />
+                            </div>
+                          ))}
+                        </div>
+                      ) : (
+                        <Image
+                          src={item.image}
+                          alt={`${item.title} - ${item.publication} ${item.section} ${item.date}, Haute Services culinary thought leadership`}
+                          fill
+                          className="group-hover:scale-105 object-contain transition-transform duration-1000"
+                        />
+                      )}
+                    </div>
+                    <div className="flex-1 space-y-4">
+                      <div className="flex justify-between text-[10px] uppercase tracking-[0.3em] font-bold text-charcoal/40">
+                        <span>
+                          {item.publication}{" "}
+                          <span className="opacity-30 mx-2">|</span>{" "}
+                          {item.section}
+                        </span>
+                        <span>{item.date}</span>
+                      </div>
+                      <h3 className="text-xl lg:text-2xl font-serif text-charcoal leading-tight group-hover:text-charcoal/70 transition-colors">
+                        {item.title}
+                      </h3>
+                      <p className="text-sm text-charcoal/60 leading-relaxed font-light">
+                        {item.excerpt}
+                      </p>
+                    </div>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
 
         <section className="py-20 lg:py-32 px-6 lg:px-12 bg-cream/30">
           <div className="max-w-screen-2xl mx-auto">
