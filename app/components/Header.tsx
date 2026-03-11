@@ -27,6 +27,7 @@ export default function Header() {
       subLinks: [
         { name: "Our Story", href: "/about" },
         { name: "Media Coverage", href: "/media-coverage" },
+        { name: "Published Articles", href: "/published-articles" },
         { name: "Gallery", href: "/gallery" },
         { name: "Awards", href: "/awards" },
       ],

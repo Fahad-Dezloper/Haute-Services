@@ -666,11 +666,11 @@ export default function CulinaryFestivalsPage() {
         <section className="py-20 lg:py-32 px-6 lg:px-12 bg-white">
           <div className="max-w-screen-2xl mx-auto">
             <Reveal>
-              <div className="text-center mb-16 lg:mb-24">
+              <div className="text-center mb-16 lg:mb-20">
                 <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-charcoal/30 mb-4 block">
                   Thought Leadership
                 </span>
-                <h2 className="text-4xl md:text-5xl lg:text-7xl font-serif text-charcoal leading-none">
+                <h2 className="text-4xl md:text-5xl lg:text-7xl font-serif text-charcoal leading-none mb-6">
                   Published <span className="italic font-light">Articles</span>
                 </h2>
               </div>
@@ -679,7 +679,7 @@ export default function CulinaryFestivalsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
               {published_articles.map((item, index) => (
                 <Reveal key={index} delay={index * 0.1}>
-                  <div className="group cursor-pointer flex flex-col h-full border-b border-charcoal/5 pb-10 lg:pb-12">
+                  <div className="group cursor-pointer flex flex-col h-full  pb-10 lg:pb-12">
                     <div className="relative aspect-video w-full overflow-hidden mb-6 lg:mb-8 rounded-sm transition-all duration-700 bg-charcoal/5">
                       {item.images && item.images.length > 1 ? (
                         <div
@@ -733,6 +733,15 @@ export default function CulinaryFestivalsPage() {
                   </div>
                 </Reveal>
               ))}
+              <div className="w-full flex items-center justify-center">
+              <Link
+                  href="/published-articles"
+                  className="inline-flex items-center gap-3 text-[10px] md:text-xs uppercase tracking-[0.3em] font-bold text-charcoal border-b border-charcoal/20 pb-2 hover:border-charcoal transition-all"
+                >
+                  View All Published Articles
+                  <ArrowUpRight className="w-4 h-4" />
+                </Link>
+              </div>
             </div>
           </div>
         </section>

@@ -13,6 +13,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { MediaItem } from "@/lib/data";
+import { latestPublishedArticle } from "@/lib/publishedArticles";
 
 const getYouTubeId = (url: string): string | null => {
   const match = url.match(
@@ -223,6 +224,66 @@ export default function MediaClient({
           </a>
         </Reveal>
       </section>
+
+      {/* --- LATEST PUBLISHED ARTICLE --- */}
+      {latestPublishedArticle && (
+        <section className="py-16 lg:py-24 px-6 lg:px-12 bg-cream/30">
+          <div className="max-w-screen-2xl mx-auto">
+            <Reveal>
+              <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-10">
+                <div>
+                  <span className="text-[10px] lg:text-xs uppercase tracking-[0.4em] font-bold text-charcoal/30 block mb-4">
+                    Thought Leadership
+                  </span>
+                  <h2 className="text-3xl lg:text-5xl font-serif text-charcoal leading-tight">
+                    Latest Published <span className="italic font-light">Article</span>
+                  </h2>
+                </div>
+                <Link
+                  href="/published-articles"
+                  className="inline-flex items-center gap-3 text-xs uppercase tracking-[0.2em] font-bold text-charcoal border-b border-charcoal/20 pb-2 hover:border-charcoal transition-all w-fit"
+                >
+                  View All Published Articles <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            </Reveal>
+
+            <Reveal delay={0.1}>
+              <div className="grid lg:grid-cols-12 gap-10 items-stretch bg-white border border-charcoal/5 rounded-sm overflow-hidden shadow-sm">
+                <div className="lg:col-span-5 relative aspect-video lg:aspect-auto min-h-[220px] bg-charcoal/5">
+                  <Image
+                    src={latestPublishedArticle.image}
+                    alt={`${latestPublishedArticle.title} - ${latestPublishedArticle.publication} ${latestPublishedArticle.section || ""} ${latestPublishedArticle.date}, Haute Services published article`}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <div className="lg:col-span-7 p-6 lg:p-10 flex flex-col justify-center">
+                  <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.3em] font-bold text-charcoal/40 mb-4">
+                    <span>
+                      {latestPublishedArticle.publication}
+                      {latestPublishedArticle.section && (
+                        <span className="opacity-40">
+                          {" "}
+                          <span className="mx-1">|</span>{" "}
+                          {latestPublishedArticle.section}
+                        </span>
+                      )}
+                    </span>
+                    <span>{latestPublishedArticle.date}</span>
+                  </div>
+                  <h3 className="text-2xl lg:text-4xl font-serif text-charcoal leading-tight mb-4">
+                    {latestPublishedArticle.title}
+                  </h3>
+                  <p className="text-base lg:text-lg text-charcoal/60 leading-relaxed font-light">
+                    {latestPublishedArticle.excerpt}
+                  </p>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+      )}
     </main>
   );
 }
