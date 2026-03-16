@@ -161,6 +161,7 @@ const involvementHighlights = [
   "/art/imp/38.png",
   "/art/imp/39.png",
   "/art/imp/40.png",
+  "/art/imp/41.png",
 ];
 
 import { mediaCoverage } from "@/lib/data";

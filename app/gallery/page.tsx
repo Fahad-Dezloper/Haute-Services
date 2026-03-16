@@ -343,6 +343,10 @@ const galleryImages = {
       src: "/gallery/celebs/34.jpeg",
       alt: "The Guilt Free Vegan Cookbook by Mala Barua at IIC in 2016",
     },
+    {
+      src: "/gallery/celebs/35.png",
+      alt: "Ambani Wedding",
+    },
   ] as GalleryImage[],
 };
 
