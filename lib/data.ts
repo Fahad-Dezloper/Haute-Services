@@ -10,6 +10,16 @@ export interface MediaItem {
 
 export const mediaCoverage: MediaItem[] = [
     {
+        source: "CD Goenka University x Le Cordon Bleu",
+        date: "March 18, 2026",
+        title: "My Story: Inside the Mind of an Entrepreneur",
+        description:
+            "Inspirational talk series featuring Mr. Manish Kumar Baheti (Founder, South Asian Association for gastronomy food). The session was hosted at Le Cordon Bleu School of Hospitality & Tourism, with the event running from 11:00 AM onwards.",
+        image: "/news/TalkGD.png",
+        link: "",
+        category: 'Interview'
+    },
+    {
         source: "Times of India – Gadgets Now Awards",
         date: "February 23, 2026",
         title: "Guest of Honour at Gadgets Now Awards 2025 by Times of India",
