@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import WhatsAppWidget from "./components/WhatsAppWidget";
+import { Analytics } from "@vercel/analytics/next";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -102,6 +103,7 @@ export default function RootLayout({
         </div>
         <Footer />
         <WhatsAppWidget />
+        <Analytics />
       </body>
     </html>
   );
