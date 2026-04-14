@@ -204,6 +204,14 @@ const galleryImages = {
       src: "/gallery/podcast/7.jpeg",
       alt: "Broadcast promotional graphic featuring Haute Services founder Maneesh Baheti discussing hospitality industry trends and Food For Thought Fest",
     },
+    {
+      src: "/gallery/podcast/10.png",
+      alt: "Broadcast promotional graphic featuring Haute Services founder Maneesh Baheti discussing hospitality industry trends and Food For Thought Fest",
+    },
+    {
+      src: "/gallery/podcast/11.png",
+      alt: "Broadcast promotional graphic featuring Haute Services founder Maneesh Baheti discussing hospitality industry trends and Food For Thought Fest",
+    },
   ] as GalleryImage[],
   celebs: [
     // Photos with specific context/events (arranged by likely chronological order)
