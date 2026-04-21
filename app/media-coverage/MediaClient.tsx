@@ -14,6 +14,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MediaItem } from "@/lib/data";
 import { latestPublishedArticle } from "@/lib/publishedArticles";
+import Reveal from "@/app/components/Reveal";
 
 const getYouTubeId = (url: string): string | null => {
   const match = url.match(
@@ -22,22 +23,7 @@ const getYouTubeId = (url: string): string | null => {
   return match ? match[1] : null;
 };
 
-const Reveal = ({
-  children,
-  delay = 0,
-}: {
-  children: React.ReactNode;
-  delay?: number;
-}) => (
-  <motion.div
-    initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true, margin: "-100px" }}
-    transition={{ duration: 0.8, delay, ease: [0.21, 0.47, 0.32, 0.98] }}
-  >
-    {children}
-  </motion.div>
-);
+// Reveal is centralized in app/components/Reveal.tsx
 
 const getIcon = (category?: string) => {
   switch (category) {

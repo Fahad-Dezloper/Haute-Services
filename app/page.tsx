@@ -7,6 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { mediaCoverage } from "@/lib/data";
+import Reveal from "@/app/components/Reveal";
 
 const latestNews = mediaCoverage.slice(0, 3);
 
@@ -20,6 +21,11 @@ const legacyNews = [
   mediaCoverage[10], // Shantanu & Nikhil
 ];
 
+const uptodateGallery = [3, 2, 1].map((n) => ({
+  src: `/uptodate/${n}.png`,
+  alt: `Haute Services recent event gallery image ${n}`,
+}));
+
 // --- Helpers ---
 const getYouTubeId = (url: string): string | null => {
   const match = url.match(
@@ -30,22 +36,7 @@ const getYouTubeId = (url: string): string | null => {
 
 // --- Components ---
 
-const Reveal = ({
-  children,
-  delay = 0,
-}: {
-  children: React.ReactNode;
-  delay?: number;
-}) => (
-  <motion.div
-    initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true, margin: "-100px" }}
-    transition={{ duration: 0.8, delay, ease: [0.21, 0.47, 0.32, 0.98] }}
-  >
-    {children}
-  </motion.div>
-);
+// Reveal is centralized in app/components/Reveal.tsx
 
 const ParallaxImage = ({
   src,
@@ -591,6 +582,43 @@ export default function HomePage() {
               </Link>
             </div>
           </Reveal>
+        </div>
+      </section>
+
+      {/* --- RECENT GALLERY (Up To Date) --- */}
+      <section className="py-24 lg:py-40 px-6 lg:px-12 bg-cream/30">
+        <div className="max-w-7xl mx-auto">
+          <Reveal>
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <div className="h-px w-12 bg-charcoal/20" />
+              <span className="text-charcoal/60 uppercase tracking-[0.3em] text-[10px] lg:text-xs font-bold">
+                Latest Highlights
+              </span>
+              <div className="h-px w-12 bg-charcoal/20" />
+            </div>
+            <h2 className="text-3xl lg:text-4xl font-serif mb-16 text-center">
+              Recent Moments
+            </h2>
+          </Reveal>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-12">
+            {uptodateGallery.map((img, index) => (
+              <Reveal key={img.src} delay={index * 0.08}>
+                <div className="group">
+                  <div className="relative aspect-3/2 w-full bg-white rounded-sm overflow-hidden shadow-lg border border-charcoal/5 group-hover:shadow-2xl transition-all duration-700">
+                    <Image
+                      src={img.src}
+                      alt={img.alt}
+                      fill
+                      className="object-contain grayscale-20 group-hover:grayscale-0 group-hover:scale-[1.02] transition-all duration-1000"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 33vw, 33vw"
+                    />
+                    <div className="absolute inset-0 bg-charcoal/5 group-hover:bg-transparent transition-colors duration-700" />
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 

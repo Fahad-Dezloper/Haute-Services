@@ -69,7 +69,7 @@ export default function WhatsAppWidget() {
               initial={{ opacity: 0, y: 20, scale: 0.95 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 20, scale: 0.95 }}
-              transition={{ type: "spring", damping: 25, stiffness: 300 }}
+              transition={{ type: "spring", damping: 30, stiffness: 420 }}
               className="fixed bottom-24 right-6 z-50 w-[calc(100vw-3rem)] sm:w-96 max-w-sm bg-cream rounded-lg shadow-2xl overflow-hidden flex flex-col max-h-[80vh] border border-charcoal/10"
             >
               {/* Header */}

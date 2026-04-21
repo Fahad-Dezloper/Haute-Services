@@ -4,23 +4,9 @@ import React from "react";
 import { motion } from "motion/react";
 import Image from "next/image";
 import { publishedArticles } from "@/lib/publishedArticles";
+import Reveal from "@/app/components/Reveal";
 
-const Reveal = ({
-  children,
-  delay = 0,
-}: {
-  children: React.ReactNode;
-  delay?: number;
-}) => (
-  <motion.div
-    initial={{ opacity: 0, y: 24 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true, margin: "-80px" }}
-    transition={{ duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] }}
-  >
-    {children}
-  </motion.div>
-);
+// Reveal is centralized in app/components/Reveal.tsx
 
 export default function PublishedArticlesPage() {
   return (
