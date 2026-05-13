@@ -10,6 +10,15 @@ export interface MediaItem {
 
 export const mediaCoverage: MediaItem[] = [
     {
+        source: "Kathmandu",
+        date: "May 7, 2026",
+        title: "Guest of Honour at 'Memories On A Platter' Launch",
+        description: "Manish Kumar Baheti , as a Guest of Honour in Kathmandu , at the launch of the cookbook “ Memories On A Platter” by noted author Rohini Rana on 7th May 2026",
+        image: "/uptodate/4.png",
+        link: "",
+        category: 'Press'
+    },
+    {
         source: "CD Goenka University x Le Cordon Bleu",
         date: "March 18, 2026",
         title: "My Story: Inside the Mind of an Entrepreneur",

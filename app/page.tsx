@@ -13,18 +13,32 @@ const latestNews = mediaCoverage.slice(0, 3);
 
 // Top 6 all-time featured news — curate by picking indices from mediaCoverage
 const legacyNews = [
-  mediaCoverage[5], // Times of India – Art of India's Starry Night
-  mediaCoverage[15], // Power Creator Travel Awards
-  mediaCoverage[7], // Fortune Exchange Magazine
-  mediaCoverage[9], // Outlook India
-  mediaCoverage[16], // The Print – Cuba Beyond Postcards
-  mediaCoverage[10], // Shantanu & Nikhil
+  mediaCoverage[6], // Times of India – Art of India's Starry Night
+  mediaCoverage[16], // Power Creator Travel Awards
+  mediaCoverage[8], // Fortune Exchange Magazine
+  mediaCoverage[10], // Outlook India
+  mediaCoverage[17], // The Print – Cuba Beyond Postcards
+  mediaCoverage[11], // Shantanu & Nikhil
 ];
 
-const uptodateGallery = [3, 2, 1].map((n) => ({
-  src: `/uptodate/${n}.png`,
-  alt: `Haute Services recent event gallery image ${n}`,
-}));
+const uptodateGallery = [
+  {
+    src: "/uptodate/4.png",
+    alt: "Manish Kumar Baheti at the launch of the cookbook Memories On A Platter by Rohini Rana in Kathmandu",
+  },
+  {
+    src: "/uptodate/3.png",
+    alt: "Haute Services recent event gallery image 3",
+  },
+  {
+    src: "/uptodate/2.png",
+    alt: "Haute Services recent event gallery image 2",
+  },
+  {
+    src: "/uptodate/1.png",
+    alt: "Haute Services recent event gallery image 1",
+  },
+];
 
 // --- Helpers ---
 const getYouTubeId = (url: string): string | null => {
