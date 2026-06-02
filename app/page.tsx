@@ -23,6 +23,10 @@ const legacyNews = [
 
 const uptodateGallery = [
   {
+    src: "/uptodate/5.png",
+    alt: "Manish Kumar Baheti in talk with rohini rana",
+  },
+  {
     src: "/uptodate/4.png",
     alt: "Manish Kumar Baheti at the launch of the cookbook Memories On A Platter by Rohini Rana in Kathmandu",
   },
