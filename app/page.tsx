@@ -23,6 +23,10 @@ const legacyNews = [
 
 const uptodateGallery = [
   {
+    src: "/maingallery/FrenchNationalDay.png",
+    alt: "Manish Kumar Baheti in talk with rohini rana",
+  },
+  {
     src: "/uptodate/5.png",
     alt: "Manish Kumar Baheti in talk with rohini rana",
   },
