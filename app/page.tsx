@@ -2,7 +2,7 @@
 
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -11,17 +11,43 @@ import Reveal from "@/app/components/Reveal";
 
 const latestNews = mediaCoverage.slice(0, 3);
 
-// Top 6 all-time featured news — curate by picking indices from mediaCoverage
-const legacyNews = [
-  mediaCoverage[6], // Times of India – Art of India's Starry Night
-  mediaCoverage[16], // Power Creator Travel Awards
-  mediaCoverage[8], // Fortune Exchange Magazine
-  mediaCoverage[10], // Outlook India
-  mediaCoverage[17], // The Print – Cuba Beyond Postcards
-  mediaCoverage[11], // Shantanu & Nikhil
+// Top 6 all-time featured news
+const legacyTitles = [
+  "Art of India’s Starry Night Captures the Energy and Colour of Indian Art",
+  "Power Creator Travel Awards",
+  "A Gentleman Passionate About Gastronomy & Art",
+  "Maneesh Baheti – A Visionary in Lifestyle Consultancy & Gastronomy",
+  "Cuba Beyond Postcards: The Art of Reinvention",
+  "Customer Excellence Project for Shantanu & Nikhil",
 ];
+const legacyNews = legacyTitles
+  .map((title) => mediaCoverage.find((item) => item.title === title))
+  .filter((item): item is (typeof mediaCoverage)[number] => Boolean(item));
 
-const uptodateGallery = [
+type GalleryMoment = {
+  src: string;
+  alt: string;
+  link?: string;
+};
+
+const uptodateGallery: GalleryMoment[] = [
+  {
+    src: "/fashion/latest/latestupdate.jpeg",
+    alt: "Maneesh Baheti and Sonali Anand Baheti at the launch of Awigna Luxury Retail Store in New Delhi",
+  },
+  {
+    src: "/fashion/latest/Oris.jpeg",
+    alt: "Maneesh Baheti and Sonali Anand Baheti at the ORIS x The Muppets and Ethos event",
+    link: "https://www.linkedin.com/posts/haute-services_launch-of-holstein-edition-2026-in-india-activity-7504449775304609792-Xsfp?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEtvTFkBw1PJC9AuHmSVqVmASXZTMSUn16c",
+  },
+  {
+    src: "/fashion/latest/eazydiner.jpeg",
+    alt: "Maneesh Baheti and Sonali Anand Baheti presenting awards at EazyDiner Foodie Awards Delhi NCR Edition",
+  },
+  {
+    src: "/fashion/latest/Ambassdedefrance.jpeg",
+    alt: "Maneesh Baheti with guests at French National Day hosted by Ambassade de France en Inde",
+  },
   {
     src: "/maingallery/indiaCoutureweek.png",
     alt: "Manish Kumar Baheti in talk with rohini rana",
@@ -630,18 +656,44 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-12">
             {uptodateGallery.map((img, index) => (
               <Reveal key={img.src} delay={index * 0.08}>
-                <div className="group">
-                  <div className="relative aspect-3/2 w-full bg-white rounded-sm overflow-hidden shadow-lg border border-charcoal/5 group-hover:shadow-2xl transition-all duration-700">
-                    <Image
-                      src={img.src}
-                      alt={img.alt}
-                      fill
-                      className="object-contain grayscale-20 group-hover:grayscale-0 group-hover:scale-[1.02] transition-all duration-1000"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 33vw, 33vw"
-                    />
-                    <div className="absolute inset-0 bg-charcoal/5 group-hover:bg-transparent transition-colors duration-700" />
+                {img.link ? (
+                  <a
+                    href={img.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group block relative cursor-pointer"
+                  >
+                    <div className="relative aspect-3/2 w-full bg-white rounded-sm overflow-hidden shadow-lg border border-charcoal/5 group-hover:shadow-2xl transition-all duration-700">
+                      <Image
+                        src={img.src}
+                        alt={img.alt}
+                        fill
+                        className="object-contain grayscale-20 group-hover:grayscale-0 group-hover:scale-[1.02] transition-all duration-1000"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 33vw, 33vw"
+                      />
+                      <div className="absolute inset-0 bg-charcoal/5 group-hover:bg-transparent transition-colors duration-700" />
+                      <div className="absolute bottom-3 right-3 z-10">
+                        <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-charcoal text-white text-[11px] uppercase tracking-wider font-semibold rounded-full shadow-lg group-hover:bg-charcoal/80 transition-all duration-300">
+                          See Post
+                          <ExternalLink className="w-3.5 h-3.5" />
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                ) : (
+                  <div className="group">
+                    <div className="relative aspect-3/2 w-full bg-white rounded-sm overflow-hidden shadow-lg border border-charcoal/5 group-hover:shadow-2xl transition-all duration-700">
+                      <Image
+                        src={img.src}
+                        alt={img.alt}
+                        fill
+                        className="object-contain grayscale-20 group-hover:grayscale-0 group-hover:scale-[1.02] transition-all duration-1000"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 33vw, 33vw"
+                      />
+                      <div className="absolute inset-0 bg-charcoal/5 group-hover:bg-transparent transition-colors duration-700" />
+                    </div>
                   </div>
-                </div>
+                )}
               </Reveal>
             ))}
           </div>

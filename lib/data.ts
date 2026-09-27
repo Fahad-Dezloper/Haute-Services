@@ -10,6 +10,15 @@ export interface MediaItem {
 
 export const mediaCoverage: MediaItem[] = [
     {
+        source: "AWIGNA Luxury Retail",
+        date: "September 24, 2026",
+        title: "Launch of AWIGNA Luxury Retail Store",
+        description: "HSPL provided strategic marketing consulting services for Positioning , with brand collaboration with SULA Wines and Don Romeo Tequila for the launch of AWIGNA Luxury Retail Store in New Delhi on 24th Sep 26’",
+        image: "/fashion/latest/awingna.jpeg",
+        link: "",
+        category: 'Press'
+    },
+    {
         source: "Kathmandu",
         date: "May 7, 2026",
         title: "Guest of Honour at 'Memories On A Platter' Launch",
