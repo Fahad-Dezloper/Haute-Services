@@ -45,6 +45,16 @@ const ParallaxImage = ({
 export default function FashionShowsPage() {
   const fashionWork = [
     {
+      title: "AWIGNA Flagship Store Launch",
+      role: "Strategic Marketing & Brand Collaboration",
+      date: "24 Sep 2026",
+      location: "New Delhi",
+      desc: "HSPL provided strategic marketing consulting services for Positioning , with brand collaboration with SULA Wines and Don Romeo Tequila for the launch of AWIGNA Luxury Retail Store in New Delhi on 24th Sep 26’",
+      highlights: "Strategic Positioning & Brand Collab",
+      tag: "Luxury Launch",
+      image: "/fashion/latest/awingna.jpeg",
+    },
+    {
       title: "Audi E-Tron Launch",
       role: "Partner",
       date: "26 Sep 2021",
@@ -121,6 +131,8 @@ export default function FashionShowsPage() {
   ];
 
   const involvementHighlights = [
+    "/fashion/latest/latestupdate.jpeg",
+    "/fashion/latest/Oris.jpeg",
     "/extra/sunisethi.png",
     // "/extra/fashionicons.png",
     "/extra/ashishsoni2.png",
@@ -237,6 +249,15 @@ export default function FashionShowsPage() {
                     height={400}
                     className="w-full h-full object-cover"
                   />
+                  {work.image == "/fashion/latest/awingna.jpeg" && (
+                    <Image
+                      src="/fashion/latest/latestupdate.jpeg"
+                      alt="Maneesh Baheti and Sonali Anand Baheti at the AWIGNA Luxury Retail Store launch"
+                      width={300}
+                      height={200}
+                      className="absolute bottom-0 right-0 w-[40%] h-[50%] object-cover shadow-[0_8px_30px_rgba(0,0,0,0.4)] border-2 border-white/90 z-10"
+                    />
+                  )}
                   {work.image == "/fashion/Dfw2.png" && (
                     <Image
                       src="/fashion/Dfw.png"

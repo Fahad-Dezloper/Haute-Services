@@ -55,7 +55,7 @@ export default function LifestylePage() {
       title: "Fashion Shows",
       subtitle: "Luxury Excellence",
       desc: "Organizing luxury events and brand standard excellence projects for elite couture brands.",
-      href: "/banner/fashion.png",
+      href: "/lifestyle/fashion-shows",
       img: "/banner/fashion.png",
     },
     {
@@ -182,6 +182,7 @@ export default function LifestylePage() {
             {mediaCoverage
               .filter(
                 (item) =>
+                  item.source.includes("AWIGNA") ||
                   item.category === "Interview" ||
                   item.category === "Award" ||
                   item.source.includes("Outlook") ||
