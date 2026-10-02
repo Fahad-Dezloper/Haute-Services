@@ -10,6 +10,24 @@ export interface MediaItem {
 
 export const mediaCoverage: MediaItem[] = [
     {
+        source: "Warpaint Journal",
+        date: "September 29, 2026",
+        title: "Shaping India\'s Luxury Landscape: Maneesh Baheti Featured",
+        description: "Maneesh Baheti | Haute Services featured among India\'s leading luxury professionals by Warpaint Journal. India\'s luxury landscape is increasingly shaped by the people working behind the scenes — Baheti\'s work translating brand identity into considered, culturally relevant experiences is highlighted alongside top industry voices.",
+        image: "/news/warpaint-baheti.jpg",
+        link: "https://www.instagram.com/p/Dd1IxuIH1ZX/?img_index=1",
+        category: 'Expert Opinion'
+    },
+    {
+        source: "Bold Outline",
+        date: "September 25, 2026",
+        title: "Poonam Bhatnagar’s ‘Odyssey’ at Bikaner House",
+        description: "Artist Poonam Bhatnagar’s ‘Odyssey’, presented by KHUSHII Art and curated by Uma Nair, opened at Bikaner House. The exhibition was inaugurated by Dr. Jai Madaan, cricketer Kapil Dev, Rohit Kumar (Resident Commissioner, Bikaner House), with Maneesh Baheti and distinguished guests celebrating this vibrant artistic exploration.",
+        image: "/art/news/odyssey.jpg",
+        link: "https://boldoutline.in/post-press-release-poonam-bhatnagars-odyssey/",
+        category: 'Press'
+    },
+    {
         source: "AWIGNA Luxury Retail",
         date: "September 24, 2026",
         title: "Launch of AWIGNA Luxury Retail Store",

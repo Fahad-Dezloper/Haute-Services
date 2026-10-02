@@ -16,6 +16,7 @@ import {
   Sparkles,
   Globe,
   Instagram,
+  ExternalLink,
 } from "lucide-react";
 import Reveal from "@/app/components/Reveal";
 
@@ -918,39 +919,81 @@ export default function ArtPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
             {news_cycle.map((item, index) => (
               <Reveal key={index} delay={index * 0.1}>
-                <div className="group cursor-pointer">
-                  <div className="relative h-fit lg:h-[40vh] w-full bg-charcoal/5 rounded-sm overflow-hidden mb-6 shadow-md lg:shadow-lg transition-all duration-700">
-                    <img
-                      src={item.image}
-                      alt={`${item.title} - ${item.source} ${item.date}, Haute Services media and press coverage`}
-                      className="w-full h-full object-contain grayscale-20 group-hover:grayscale-0 transition-all duration-700"
-                    />
-                    {item.image === "/art/news/toi1.jpeg" && (
-                      <span className="absolute bottom-0 right-0 w-32 h-36 lg:w-44 lg:h-48 shadow-[0_20px_50px_rgba(0,0,0,0.3)] border-2 border-white overflow-hidden group-hover:scale-105 transition-transform duration-700">
-                        <Image
-                          src="/art/news/toi2.jpeg"
-                          alt="Times of India recognition for Haute Services art advisory and cultural footprint"
-                          width={200}
-                          height={200}
-                          className="w-full h-full object-cover brightness-110 contrast-105"
-                        />
-                      </span>
-                    )}
-                    <div className="absolute inset-0 bg-charcoal/10 group-hover:bg-transparent transition-colors duration-500" />
-                  </div>
-                  <div className="space-y-3 px-1">
-                    <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.3em] font-bold text-charcoal/40">
-                      <span>{item.source}</span>
-                      <span>{item.date}</span>
+                {item.link ? (
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group cursor-pointer block"
+                  >
+                    <div className="relative h-fit lg:h-[40vh] w-full bg-charcoal/5 rounded-sm overflow-hidden mb-6 shadow-md lg:shadow-lg transition-all duration-700">
+                      <img
+                        src={item.image}
+                        alt={`${item.title} - ${item.source} ${item.date}, Haute Services media and press coverage`}
+                        className="w-full h-full object-cover grayscale-20 group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+                      />
+                      {item.image === "/art/news/toi1.jpeg" && (
+                        <span className="absolute bottom-0 right-0 w-32 h-36 lg:w-44 lg:h-48 shadow-[0_20px_50px_rgba(0,0,0,0.3)] border-2 border-white overflow-hidden group-hover:scale-105 transition-transform duration-700">
+                          <Image
+                            src="/art/news/toi2.jpeg"
+                            alt="Times of India recognition for Haute Services art advisory and cultural footprint"
+                            width={200}
+                            height={200}
+                            className="w-full h-full object-cover brightness-110 contrast-105"
+                          />
+                        </span>
+                      )}
+                      <div className="absolute inset-0 bg-charcoal/10 group-hover:bg-transparent transition-colors duration-500" />
                     </div>
-                    <h3 className="text-xl lg:text-2xl font-serif text-charcoal group-hover:text-charcoal/70 transition-colors">
-                      {item.title}
-                    </h3>
-                    <p className="text-sm text-charcoal/60 leading-relaxed font-light line-clamp-2">
-                      {item.description}
-                    </p>
+                    <div className="space-y-3 px-1">
+                      <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.3em] font-bold text-charcoal/40">
+                        <span>{item.source}</span>
+                        <span>{item.date}</span>
+                      </div>
+                      <h3 className="text-xl lg:text-2xl font-serif text-charcoal group-hover:text-charcoal/70 transition-colors flex items-center justify-between gap-2">
+                        <span>{item.title}</span>
+                        <ExternalLink className="w-4 h-4 shrink-0 text-charcoal/40 group-hover:text-charcoal transition-colors" />
+                      </h3>
+                      <p className="text-sm text-charcoal/60 leading-relaxed font-light line-clamp-2">
+                        {item.description}
+                      </p>
+                    </div>
+                  </a>
+                ) : (
+                  <div className="group cursor-pointer">
+                    <div className="relative h-fit lg:h-[40vh] w-full bg-charcoal/5 rounded-sm overflow-hidden mb-6 shadow-md lg:shadow-lg transition-all duration-700">
+                      <img
+                        src={item.image}
+                        alt={`${item.title} - ${item.source} ${item.date}, Haute Services media and press coverage`}
+                        className="w-full h-full object-contain grayscale-20 group-hover:grayscale-0 transition-all duration-700"
+                      />
+                      {item.image === "/art/news/toi1.jpeg" && (
+                        <span className="absolute bottom-0 right-0 w-32 h-36 lg:w-44 lg:h-48 shadow-[0_20px_50px_rgba(0,0,0,0.3)] border-2 border-white overflow-hidden group-hover:scale-105 transition-transform duration-700">
+                          <Image
+                            src="/art/news/toi2.jpeg"
+                            alt="Times of India recognition for Haute Services art advisory and cultural footprint"
+                            width={200}
+                            height={200}
+                            className="w-full h-full object-cover brightness-110 contrast-105"
+                          />
+                        </span>
+                      )}
+                      <div className="absolute inset-0 bg-charcoal/10 group-hover:bg-transparent transition-colors duration-500" />
+                    </div>
+                    <div className="space-y-3 px-1">
+                      <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.3em] font-bold text-charcoal/40">
+                        <span>{item.source}</span>
+                        <span>{item.date}</span>
+                      </div>
+                      <h3 className="text-xl lg:text-2xl font-serif text-charcoal group-hover:text-charcoal/70 transition-colors">
+                        {item.title}
+                      </h3>
+                      <p className="text-sm text-charcoal/60 leading-relaxed font-light line-clamp-2">
+                        {item.description}
+                      </p>
+                    </div>
                   </div>
-                </div>
+                )}
               </Reveal>
             ))}
           </div>

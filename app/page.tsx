@@ -510,39 +510,73 @@ export default function HomePage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 xl:gap-24">
           {latestNews.map((item, index) => (
             <Reveal key={index} delay={index * 0.1}>
-              <div className="group cursor-pointer">
-                <div className="relative aspect-3/2 w-full bg-charcoal/5 rounded-sm overflow-hidden mb-6">
-                  {item.link && getYouTubeId(item.link) ? (
-                    <iframe
-                      src={`https://www.youtube.com/embed/${getYouTubeId(item.link)}`}
-                      title={item.title}
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className="absolute inset-0 w-full h-full"
-                    />
-                  ) : (
+              {item.link && !getYouTubeId(item.link) ? (
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group cursor-pointer block"
+                >
+                  <div className="relative w-full bg-charcoal/5 rounded-sm overflow-hidden mb-6">
                     <Image
                       src={item.image}
                       alt={`${item.title} - ${item.source} ${item.date}, Haute Services media coverage`}
-                      width={400}
-                      height={400}
-                      className="w-full h-full object-fill"
+                      width={800}
+                      height={1200}
+                      className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105"
                     />
-                  )}
-                </div>
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.2em] font-bold text-charcoal/40">
-                    <span>{item.source}</span>
-                    <span>{item.date}</span>
                   </div>
-                  <h3 className="text-xl lg:text-2xl font-serif text-charcoal leading-snug group-hover:text-charcoal/70 transition-colors">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-charcoal/60 leading-relaxed">
-                    {item.description}
-                  </p>
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.2em] font-bold text-charcoal/40">
+                      <span>{item.source}</span>
+                      <span>{item.date}</span>
+                    </div>
+                    <h3 className="text-xl lg:text-2xl font-serif text-charcoal leading-snug group-hover:text-charcoal/70 transition-colors flex items-center justify-between gap-2">
+                      <span>{item.title}</span>
+                      <ExternalLink className="w-4 h-4 shrink-0 text-charcoal/40 group-hover:text-charcoal transition-colors" />
+                    </h3>
+                    <p className="text-sm text-charcoal/60 leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                </a>
+              ) : (
+                <div className="group cursor-pointer">
+                  <div className="relative w-full bg-charcoal/5 rounded-sm overflow-hidden mb-6">
+                    {item.link && getYouTubeId(item.link) ? (
+                      <div className="aspect-3/2 relative">
+                      <iframe
+                        src={`https://www.youtube.com/embed/${getYouTubeId(item.link)}`}
+                        title={item.title}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="absolute inset-0 w-full h-full"
+                      />
+                      </div>
+                    ) : (
+                      <Image
+                        src={item.image}
+                        alt={`${item.title} - ${item.source} ${item.date}, Haute Services media coverage`}
+                        width={800}
+                        height={1200}
+                        className="w-full h-auto object-contain"
+                      />
+                    )}
+                  </div>
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.2em] font-bold text-charcoal/40">
+                      <span>{item.source}</span>
+                      <span>{item.date}</span>
+                    </div>
+                    <h3 className="text-xl lg:text-2xl font-serif text-charcoal leading-snug group-hover:text-charcoal/70 transition-colors">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm text-charcoal/60 leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
                 </div>
-              </div>
+              )}
             </Reveal>
           ))}
         </div>

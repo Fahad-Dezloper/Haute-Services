@@ -17,6 +17,10 @@ type GalleryImage = {
 const galleryImages = {
   newspaper: [
     {
+      src: "/gallery/newspaper/warpaint-baheti.jpg",
+      alt: "Warpaint Journal feature on Maneesh Baheti, Founder & Managing Director of Haute Services, recognized among India's leading luxury professionals shaping the country's luxury landscape",
+    },
+    {
       src: "/gallery/newspaper/1.jpeg",
       alt: "Newspaper clipping featuring Haute Services coverage in leading publication",
     },
